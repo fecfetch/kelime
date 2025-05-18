@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88afd11c802cdf6449faf33ed6e4e3bd, type: 3}
+  m_Name: Level_10
+  m_EditorClassIdentifier: 
+  arananlar: "Kuruyemi\u015F | Birim | Ayd\u0131nlat\u0131lm\u0131\u015F | -a kadar
+    | Ayd\u0131nlat\u0131lmam\u0131\u015F"
+  word: untIl
+  answers: NUT|LIT|UNIT|UNTIL|UNLIT|
+  validWords: NUT|UNIT|LIT|TIN|UNTIL|UNLIT|LINT

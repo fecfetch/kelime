@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88afd11c802cdf6449faf33ed6e4e3bd, type: 3}
+  m_Name: Level_16
+  m_EditorClassIdentifier: 
+  arananlar: "Orta | S\xF6n\xFCk | K\u0131zg\u0131n/Deli | Baraj | Hedef | \xD6lmek
+    | Yard\u0131m | Yap\u0131ld\u0131/m\u0131\u015F | Hizmet\xE7i | Ortas\u0131nda
+    | Fikir | Medya "
+  word: medIa
+  answers: MID|DIM|MAD|DAM|AIM|DIE|AID|MADE|MAID|AMID|IDEA|MEDIA|
+  validWords: MED|DIME|MAID|AIDE|AIMED|DIM|MAD|DAM|AIM|DIE|AID|MADE|MAID|AMID|IDEA|MEDIA|
