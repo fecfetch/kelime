@@ -1,0 +1,5 @@
+There is a problem with the hint system. When all letters of a word is revealed, clicking on the hint button again does not switch to the next word and reveal letters from the second unfound word. 
+
+English → German: isnt really working. When the user selects English → German, the app just uses fallback generation but the words are English and the texts are in Turkish
+
+Level database should not be 100s of json files for each language. We need to either combine the files for a certain language into a few files or have all the languages for the same level in the same json.

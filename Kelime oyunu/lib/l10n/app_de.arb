@@ -1,0 +1,70 @@
+{
+  "@@locale": "de",
+  "appTitle": "Wort Koch",
+  "settings": "Einstellungen",
+  "play": "Spielen",
+  "home": "Startseite",
+  "back": "Zurück",
+  "continueButton": "Weiter",
+  "pause": "Pause",
+  "resume": "Fortsetzen",
+  "restart": "Neu starten",
+  "quit": "Beenden",
+  "yes": "Ja",
+  "no": "Nein",
+  "ok": "OK",
+  "cancel": "Abbrechen",
+  "save": "Speichern",
+  "loading": "Laden...",
+  
+  "gameInstructions": "Tippen Sie auf Buchstaben, um Wörter zu bilden",
+  "foundWords": "Gefundene Wörter",
+  "targetWords": "Zielwörter",
+  "validWords": "Gültige Wörter",
+  "score": "Punkte",
+  "level": "Level",
+  "world": "Welt",
+  "subWorld": "Unterwelt",
+  "rubies": "Rubine",
+  
+  "levelComplete": "Level abgeschlossen!",
+  "worldComplete": "Welt abgeschlossen!",
+  "congratulations": "Herzlichen Glückwunsch!",
+  "nextLevel": "Nächstes Level",
+  "nextWorld": "Nächste Welt",
+  "reward": "Belohnung",
+  "earnedRubies": "Sie haben {count} Rubine verdient!",
+  "@earnedRubies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "hint": "Hinweis",
+  "useHint": "Hinweis verwenden (2 Rubine)",
+  "notEnoughRubies": "Nicht genug Rubine",
+  "shuffle": "Mischen",
+  
+  "nativeLanguage": "Muttersprache",
+  "targetLanguage": "Zielsprache",
+  "languageSettings": "Spracheinstellungen",
+  "selectNativeLanguage": "Wählen Sie Ihre Muttersprache",
+  "selectTargetLanguage": "Wählen Sie die zu lernende Sprache",
+  "applyLanguages": "Sprachen anwenden",
+  "languageChanged": "Spracheinstellungen geändert",
+  
+  "english": "Englisch",
+  "german": "Deutsch",
+  "french": "Französisch",
+  "spanish": "Spanisch",
+  "turkish": "Türkisch",
+  "portuguese": "Portugiesisch",
+  "italian": "Italienisch",
+  
+  "soundSettings": "Toneinstellungen",
+  "musicVolume": "Musiklautstärke",
+  "soundEffects": "Soundeffekte",
+  "vibration": "Vibration"
+}

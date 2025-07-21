@@ -1,0 +1,70 @@
+{
+  "@@locale": "en",
+  "appTitle": "Word Chef",
+  "settings": "Settings",
+  "play": "Play",
+  "home": "Home",
+  "back": "Back",
+  "continueButton": "Continue",
+  "pause": "Pause",
+  "resume": "Resume",
+  "restart": "Restart",
+  "quit": "Quit",
+  "yes": "Yes",
+  "no": "No",
+  "ok": "OK",
+  "cancel": "Cancel",
+  "save": "Save",
+  "loading": "Loading...",
+  
+  "gameInstructions": "Tap letters to form words",
+  "foundWords": "Found Words",
+  "targetWords": "Target Words",
+  "validWords": "Valid Words",
+  "score": "Score",
+  "level": "Level",
+  "world": "World",
+  "subWorld": "Sub-World",
+  "rubies": "Rubies",
+  
+  "levelComplete": "Level Complete!",
+  "worldComplete": "World Complete!",
+  "congratulations": "Congratulations!",
+  "nextLevel": "Next Level",
+  "nextWorld": "Next World",
+  "reward": "Reward",
+  "earnedRubies": "You earned {count} rubies!",
+  "@earnedRubies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "hint": "Hint",
+  "useHint": "Use Hint (2 rubies)",
+  "notEnoughRubies": "Not enough rubies",
+  "shuffle": "Shuffle",
+  
+  "nativeLanguage": "Native Language",
+  "targetLanguage": "Target Language",
+  "languageSettings": "Language Settings",
+  "selectNativeLanguage": "Select your native language",
+  "selectTargetLanguage": "Select language to learn",
+  "applyLanguages": "Apply Languages",
+  "languageChanged": "Language settings changed",
+  
+  "english": "English",
+  "german": "German",
+  "french": "French",
+  "spanish": "Spanish",
+  "turkish": "Turkish",
+  "portuguese": "Portuguese",
+  "italian": "Italian",
+  
+  "soundSettings": "Sound Settings",
+  "musicVolume": "Music Volume",
+  "soundEffects": "Sound Effects",
+  "vibration": "Vibration"
+}

@@ -1,0 +1,70 @@
+{
+  "@@locale": "tr",
+  "appTitle": "Kelime Şefi",
+  "settings": "Ayarlar",
+  "play": "Oyna",
+  "home": "Ana Sayfa",
+  "back": "Geri",
+  "continueButton": "Devam Et",
+  "pause": "Duraklat",
+  "resume": "Devam Et",
+  "restart": "Yeniden Başla",
+  "quit": "Çık",
+  "yes": "Evet",
+  "no": "Hayır",
+  "ok": "Tamam",
+  "cancel": "İptal",
+  "save": "Kaydet",
+  "loading": "Yükleniyor...",
+  
+  "gameInstructions": "Kelime oluşturmak için harflere dokunun",
+  "foundWords": "Bulunan Kelimeler",
+  "targetWords": "Hedef Kelimeler",
+  "validWords": "Geçerli Kelimeler",
+  "score": "Puan",
+  "level": "Seviye",
+  "world": "Dünya",
+  "subWorld": "Alt Dünya",
+  "rubies": "Yakut",
+  
+  "levelComplete": "Seviye Tamamlandı!",
+  "worldComplete": "Dünya Tamamlandı!",
+  "congratulations": "Tebrikler!",
+  "nextLevel": "Sonraki Seviye",
+  "nextWorld": "Sonraki Dünya",
+  "reward": "Ödül",
+  "earnedRubies": "{count} yakut kazandınız!",
+  "@earnedRubies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "hint": "İpucu",
+  "useHint": "İpucu Kullan (2 yakut)",
+  "notEnoughRubies": "Yeterli yakut yok",
+  "shuffle": "Karıştır",
+  
+  "nativeLanguage": "Ana Dil",
+  "targetLanguage": "Öğrenilecek Dil",
+  "languageSettings": "Dil Ayarları",
+  "selectNativeLanguage": "Ana dilinizi seçin",
+  "selectTargetLanguage": "Öğrenmek istediğiniz dili seçin",
+  "applyLanguages": "Dilleri Uygula",
+  "languageChanged": "Dil ayarları değiştirildi",
+  
+  "english": "İngilizce",
+  "german": "Almanca",
+  "french": "Fransızca",
+  "spanish": "İspanyolca",
+  "turkish": "Türkçe",
+  "portuguese": "Portekizce",
+  "italian": "İtalyanca",
+  
+  "soundSettings": "Ses Ayarları",
+  "musicVolume": "Müzik Sesi",
+  "soundEffects": "Ses Efektleri",
+  "vibration": "Titreşim"
+}

@@ -1,0 +1,70 @@
+{
+  "@@locale": "fr",
+  "appTitle": "Chef de Mots",
+  "settings": "Paramètres",
+  "play": "Jouer",
+  "home": "Accueil",
+  "back": "Retour",
+  "continueButton": "Continuer",
+  "pause": "Pause",
+  "resume": "Reprendre",
+  "restart": "Redémarrer",
+  "quit": "Quitter",
+  "yes": "Oui",
+  "no": "Non",
+  "ok": "OK",
+  "cancel": "Annuler",
+  "save": "Sauvegarder",
+  "loading": "Chargement...",
+  
+  "gameInstructions": "Touchez les lettres pour former des mots",
+  "foundWords": "Mots Trouvés",
+  "targetWords": "Mots Cibles",
+  "validWords": "Mots Valides",
+  "score": "Score",
+  "level": "Niveau",
+  "world": "Monde",
+  "subWorld": "Sous-Monde",
+  "rubies": "Rubis",
+  
+  "levelComplete": "Niveau Terminé!",
+  "worldComplete": "Monde Terminé!",
+  "congratulations": "Félicitations!",
+  "nextLevel": "Niveau Suivant",
+  "nextWorld": "Monde Suivant",
+  "reward": "Récompense",
+  "earnedRubies": "Vous avez gagné {count} rubis!",
+  "@earnedRubies": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "hint": "Indice",
+  "useHint": "Utiliser un Indice (2 rubis)",
+  "notEnoughRubies": "Pas assez de rubis",
+  "shuffle": "Mélanger",
+  
+  "nativeLanguage": "Langue Maternelle",
+  "targetLanguage": "Langue Cible",
+  "languageSettings": "Paramètres de Langue",
+  "selectNativeLanguage": "Sélectionnez votre langue maternelle",
+  "selectTargetLanguage": "Sélectionnez la langue à apprendre",
+  "applyLanguages": "Appliquer les Langues",
+  "languageChanged": "Paramètres de langue modifiés",
+  
+  "english": "Anglais",
+  "german": "Allemand",
+  "french": "Français",
+  "spanish": "Espagnol",
+  "turkish": "Turc",
+  "portuguese": "Portugais",
+  "italian": "Italien",
+  
+  "soundSettings": "Paramètres Audio",
+  "musicVolume": "Volume de la Musique",
+  "soundEffects": "Effets Sonores",
+  "vibration": "Vibration"
+}

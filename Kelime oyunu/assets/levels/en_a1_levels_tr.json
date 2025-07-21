@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "targetLanguage": "en",
+    "nativeLanguage": "tr",
+    "cefrLevel": "A1",
+    "totalLevels": 2,
+    "generatedAt": "2025-07-22T01:03:26.082387"
+  },
+  "levels": [
+    {
+      "levelId": 11,
+      "sourceWord": "WOMAN",
+      "targetWords": [
+        "WOMAN",
+        "MAN"
+      ],
+      "hints": "kadın | adam",
+      "validWords": [
+        "woman",
+        "man"
+      ],
+      "difficulty": 5
+    },
+    {
+      "levelId": 21,
+      "sourceWord": "WOMAN",
+      "targetWords": [
+        "WOMAN",
+        "MAN"
+      ],
+      "hints": "kadın | adam",
+      "validWords": [
+        "woman",
+        "man"
+      ],
+      "difficulty": 5
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "hints": "Yapmak | Tamam | İskele",
+    "sourceWord": "dock",
+    "targetWords": ["DO", "OK", "DOCK"],
+    "validWords": ["do", "ok", "dock"]
+  },
+  {
+    "hints": "Bir | Ve",
+    "sourceWord": "and",
+    "targetWords": ["AN", "AND"],
+    "validWords": ["an", "ad", "and"]
+  },
+  {
+    "hints": "nın-nin | Veya | İçin",
+    "sourceWord": "for",
+    "targetWords": ["OF", "OR", "FOR"],
+    "validWords": ["of", "or", "for"]
+  },
+  {
+    "hints": "Kedi | Araba | Sanat",
+    "sourceWord": "cart",
+    "targetWords": ["CAT", "CAR", "ART", "CART"],
+    "validWords": ["cat", "car", "art", "cart", "tar", "rat"]
+  },
+  {
+    "hints": "Ev | Sahip olmak | Nasıl",
+    "sourceWord": "how",
+    "targetWords": ["HOW", "WHO", "OW"],
+    "validWords": ["how", "who", "ow", "oh"]
+  }
+]
