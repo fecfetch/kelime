@@ -1,0 +1,2045 @@
+{
+  "metadata": {
+    "targetLanguage": "de",
+    "nativeLanguage": "all",
+    "cefrLevel": "A1",
+    "totalLevels": 80,
+    "generatedAt": "2025-08-21T01:40:38.727532",
+    "description": "Levels for A1 proficiency in DE"
+  },
+  "levels": [
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 0,
+      "sourceWord": "schwester",
+      "targetWords": [
+        "SCHWESTER",
+        "SECHS",
+        "TEE",
+        "WER"
+      ],
+      "hints": {
+        "spanish": "hermana | seis | té | quién",
+        "chinese": "姐妹 | 六 | 茶 | 谁",
+        "turkish": "kız kardeş | altı | çay | kim",
+        "hindi": "बहन | छह | चाय | कौन",
+        "english": "sister | six | tea | who",
+        "french": "sœur | six | thé | qui"
+      },
+      "validWords": [
+        "schwester",
+        "sechs",
+        "tee",
+        "wer"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 1,
+      "sourceWord": "isprechen",
+      "targetWords": [
+        "SPRECHEN",
+        "SEHEN",
+        "EINE",
+        "SEIN",
+        "EINS",
+        "HIER"
+      ],
+      "hints": {
+        "spanish": "hablar | ver | una | ser/estar | uno | aquí",
+        "chinese": "说话 | 看 | 一个 | 是 | 一 | 这里",
+        "turkish": "konuşmak | görmek | bir | olmak | bir | burada",
+        "hindi": "बोलना | देखना | एक | होना | एक | यहाँ",
+        "english": "to speak | to see | a/an (feminine) | to be | one | here",
+        "french": "parler | voir | une | être | un | ici"
+      },
+      "validWords": [
+        "ein",
+        "eine",
+        "eins",
+        "hier",
+        "ich",
+        "nie",
+        "sehen",
+        "sein",
+        "sie",
+        "sprechen"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 2,
+      "sourceWord": "arbeiten",
+      "targetWords": [
+        "ARBEITEN",
+        "ABER",
+        "BIER",
+        "EIN",
+        "NIE"
+      ],
+      "hints": {
+        "spanish": "trabajar | pero | cerveza | un | nunca",
+        "chinese": "工作 | 但是 | 啤酒 | 一个 | 从不",
+        "turkish": "çalışmak | ama | bira | bir | asla",
+        "hindi": "काम करना | लेकिन | बीयर | एक | कभी नहीं",
+        "english": "to work | but | beer | a/an | never",
+        "french": "travailler | mais | bière | un | jamais"
+      },
+      "validWords": [
+        "aber",
+        "arbeiten",
+        "bier",
+        "ein",
+        "eine",
+        "nie",
+        "tee"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 3,
+      "sourceWord": "ischlecht",
+      "targetWords": [
+        "SCHLECHT",
+        "TISCH",
+        "ICH",
+        "SIE",
+        "IST"
+      ],
+      "hints": {
+        "spanish": "malo | mesa | yo | ella | es",
+        "chinese": "坏 | 桌子 | 我 | 她 | 是",
+        "turkish": "kötü | masa | ben | o (kadın) | dir",
+        "hindi": "बुरा | मेज | मैं | वह | है",
+        "english": "bad | table | I | she | is",
+        "french": "mauvais | table | je | elle | est"
+      },
+      "validWords": [
+        "ich",
+        "ist",
+        "schlecht",
+        "sie",
+        "tisch"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 4,
+      "sourceWord": "trinken",
+      "targetWords": [
+        "TRINKEN",
+        "NEIN"
+      ],
+      "hints": {
+        "spanish": "beber | no",
+        "chinese": "喝 | 不",
+        "turkish": "içmek | hayır",
+        "hindi": "पीना | नहीं",
+        "english": "to drink | no",
+        "french": "boire | non"
+      },
+      "validWords": [
+        "ein",
+        "nein",
+        "nie",
+        "trinken"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 5,
+      "sourceWord": "nfamilie",
+      "targetWords": [
+        "FAMILIE",
+        "EIN",
+        "NIE"
+      ],
+      "hints": {
+        "spanish": "familia | un | nunca",
+        "chinese": "家庭 | 一个 | 从不",
+        "turkish": "aile | bir | asla",
+        "hindi": "परिवार | एक | कभी नहीं",
+        "english": "family | a/an | never",
+        "french": "famille | un | jamais"
+      },
+      "validWords": [
+        "ein",
+        "familie",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 6,
+      "sourceWord": "ifenster",
+      "targetWords": [
+        "FENSTER",
+        "TEE"
+      ],
+      "hints": {
+        "spanish": "ventana | té",
+        "chinese": "窗户 | 茶",
+        "turkish": "pencere | çay",
+        "hindi": "खिड़की | चाय",
+        "english": "window | tea",
+        "french": "fenêtre | thé"
+      },
+      "validWords": [
+        "ein",
+        "eine",
+        "eins",
+        "fenster",
+        "ist",
+        "nie",
+        "sein",
+        "sie",
+        "tee"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 7,
+      "sourceWord": "fleisch",
+      "targetWords": [
+        "FLEISCH",
+        "FISCH"
+      ],
+      "hints": {
+        "spanish": "carne | pescado",
+        "chinese": "肉 | 鱼",
+        "turkish": "et | balık",
+        "hindi": "मांस | मछली",
+        "english": "meat | fish",
+        "french": "viande | poisson"
+      },
+      "validWords": [
+        "fisch",
+        "fleisch",
+        "ich",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 8,
+      "sourceWord": "tschwarz",
+      "targetWords": [
+        "SCHWARZ",
+        "ACHT",
+        "HAT",
+        "WAS"
+      ],
+      "hints": {
+        "spanish": "negro | ocho | tiene | qué",
+        "chinese": "黑色 | 八 | 有 | 什么",
+        "turkish": "siyah | sekiz | sahip | ne",
+        "hindi": "काला | आठ | है | क्या",
+        "english": "black | eight | has | what",
+        "french": "noir | huit | a | quoi"
+      },
+      "validWords": [
+        "acht",
+        "hat",
+        "schwarz",
+        "was"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 9,
+      "sourceWord": "ischnell",
+      "targetWords": [
+        "SCHNELL",
+        "SEIN",
+        "EINS"
+      ],
+      "hints": {
+        "spanish": "rápido | ser/estar | uno",
+        "chinese": "快 | 是 | 一",
+        "turkish": "hızlı | olmak | bir",
+        "hindi": "तेज़ | होना | एक",
+        "english": "fast | to be | one",
+        "french": "rapide | être | un"
+      },
+      "validWords": [
+        "ein",
+        "eins",
+        "ich",
+        "nie",
+        "schnell",
+        "sein",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 10,
+      "sourceWord": "dlangsam",
+      "targetWords": [
+        "LANGSAM",
+        "LAND",
+        "DAS"
+      ],
+      "hints": {
+        "spanish": "lento | país | lo",
+        "chinese": "慢 | 国家 | 这个",
+        "turkish": "yavaş | ülke | şu/bu (nesne)",
+        "hindi": "धीमा | देश | यह",
+        "english": "slow | country | the (neuter)",
+        "french": "lent | pays | le"
+      },
+      "validWords": [
+        "das",
+        "land",
+        "langsam"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 11,
+      "sourceWord": "igestern",
+      "targetWords": [
+        "GESTERN",
+        "EINE",
+        "SIE"
+      ],
+      "hints": {
+        "spanish": "ayer | una | ella",
+        "chinese": "昨天 | 一个 | 她",
+        "turkish": "dün | bir | o (kadın)",
+        "hindi": "कल | एक | वह",
+        "english": "yesterday | a/an (feminine) | she",
+        "french": "hier | une | elle"
+      },
+      "validWords": [
+        "ein",
+        "eine",
+        "eins",
+        "gestern",
+        "ist",
+        "nie",
+        "sein",
+        "sie",
+        "tee"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 12,
+      "sourceWord": "ikommen",
+      "targetWords": [
+        "KOMMEN",
+        "EIN",
+        "NIE"
+      ],
+      "hints": {
+        "spanish": "venir | un | nunca",
+        "chinese": "来 | 一个 | 从不",
+        "turkish": "gelmek | bir | asla",
+        "hindi": "आना | एक | कभी नहीं",
+        "english": "to come | a/an | never",
+        "french": "venir | un | jamais"
+      },
+      "validWords": [
+        "ein",
+        "kommen",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 13,
+      "sourceWord": "ilernen",
+      "targetWords": [
+        "LERNEN",
+        "NEIN"
+      ],
+      "hints": {
+        "spanish": "aprender | no",
+        "chinese": "学习 | 不",
+        "turkish": "öğrenmek | hayır",
+        "hindi": "सीखना | नहीं",
+        "english": "to learn | no",
+        "french": "apprendre | non"
+      },
+      "validWords": [
+        "ein",
+        "eine",
+        "lernen",
+        "nein",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 14,
+      "sourceWord": "dkaufen",
+      "targetWords": [
+        "KAUFEN",
+        "DANKE",
+        "UND",
+        "AUF",
+        "NEU"
+      ],
+      "hints": {
+        "spanish": "comprar | gracias | y | en | nuevo",
+        "chinese": "买 | 谢谢 | 和 | 在上面 | 新",
+        "turkish": "satın almak | teşekkürler | ve | üzerinde | yeni",
+        "hindi": "खरीदना | धन्यवाद | और | पर | नया",
+        "english": "to buy | thank you | and | on | new",
+        "french": "acheter | merci | et | sur | nouveau"
+      },
+      "validWords": [
+        "auf",
+        "danke",
+        "kaufen",
+        "neu",
+        "und"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 15,
+      "sourceWord": "muttered",
+      "targetWords": [
+        "MUTTER",
+        "DER",
+        "TEE"
+      ],
+      "hints": {
+        "spanish": "madre | el | té",
+        "chinese": "母亲 | 这个 | 茶",
+        "turkish": "anne | şu/bu (erkek) | çay",
+        "hindi": "माँ | यह | चाय",
+        "english": "mother | the (masculine) | tea",
+        "french": "mère | le | thé"
+      },
+      "validWords": [
+        "der",
+        "mutter",
+        "tee"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 16,
+      "sourceWord": "ibruder",
+      "targetWords": [
+        "BRUDER",
+        "DREI",
+        "BIER",
+        "DIE"
+      ],
+      "hints": {
+        "spanish": "hermano | tres | cerveza | la",
+        "chinese": "兄弟 | 三 | 啤酒 | 这个",
+        "turkish": "erkek kardeş | üç | bira | şu/bu (kadın)",
+        "hindi": "भाई | तीन | बीयर | यह",
+        "english": "brother | three | beer | the (feminine)",
+        "french": "frère | trois | bière | la"
+      },
+      "validWords": [
+        "bier",
+        "bruder",
+        "der",
+        "die",
+        "drei"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 17,
+      "sourceWord": "freund",
+      "targetWords": [
+        "FREUND",
+        "DER",
+        "UND",
+        "NEU"
+      ],
+      "hints": {
+        "spanish": "amigo | el | y | nuevo",
+        "chinese": "朋友 | 这个 | 和 | 新",
+        "turkish": "arkadaş | şu/bu (erkek) | ve | yeni",
+        "hindi": "दोस्त | यह | और | नया",
+        "english": "friend | the (masculine) | and | new",
+        "french": "ami | le | et | nouveau"
+      },
+      "validWords": [
+        "der",
+        "freund",
+        "neu",
+        "und"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 0,
+      "sourceWord": "lehrertd",
+      "targetWords": [
+        "LEHRER",
+        "DER"
+      ],
+      "hints": {
+        "spanish": "maestro | el",
+        "chinese": "老师 | 这个",
+        "turkish": "öğretmen | şu/bu (erkek)",
+        "hindi": "शिक्षक | यह",
+        "english": "teacher | the (masculine)",
+        "french": "professeur | le"
+      },
+      "validWords": [
+        "der",
+        "lehrer",
+        "tee"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 1,
+      "sourceWord": "iwasser",
+      "targetWords": [
+        "WASSER",
+        "WEISS",
+        "WIR",
+        "WIE",
+        "WAS",
+        "WER"
+      ],
+      "hints": {
+        "spanish": "agua | blanco | nosotros | cómo | qué | quién",
+        "chinese": "水 | 白色 | 我们 | 怎么 | 什么 | 谁",
+        "turkish": "su | beyaz | biz | nasıl | ne | kim",
+        "hindi": "पानी | सफेद | हम | कैसे | क्या | कौन",
+        "english": "water | white | we | how | what | who",
+        "french": "eau | blanc | nous | comment | quoi | qui"
+      },
+      "validWords": [
+        "sie",
+        "was",
+        "wasser",
+        "weiss",
+        "wer",
+        "wie",
+        "wir"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 2,
+      "sourceWord": "kaffeein",
+      "targetWords": [
+        "KAFFEE",
+        "EINE"
+      ],
+      "hints": {
+        "spanish": "café | una",
+        "chinese": "咖啡 | 一个",
+        "turkish": "kahve | bir",
+        "hindi": "कॉफी | एक",
+        "english": "coffee | a/an (feminine)",
+        "french": "café | une"
+      },
+      "validWords": [
+        "ein",
+        "eine",
+        "kaffee",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 3,
+      "sourceWord": "sieben",
+      "targetWords": [
+        "SIEBEN",
+        "SEIN",
+        "EINS",
+        "SIE"
+      ],
+      "hints": {
+        "spanish": "siete | ser/estar | uno | ella",
+        "chinese": "七 | 是 | 一 | 她",
+        "turkish": "yedi | olmak | bir | o (kadın)",
+        "hindi": "सात | होना | एक | वह",
+        "english": "seven | to be | one | she",
+        "french": "sept | être | un | elle"
+      },
+      "validWords": [
+        "ein",
+        "eine",
+        "eins",
+        "nie",
+        "sein",
+        "sie",
+        "sieben"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 4,
+      "sourceWord": "dmorgen",
+      "targetWords": [
+        "MORGEN",
+        "ODER"
+      ],
+      "hints": {
+        "spanish": "mañana | o",
+        "chinese": "明天 | 或者",
+        "turkish": "yarın | veya",
+        "hindi": "कल | या",
+        "english": "tomorrow | or",
+        "french": "demain | ou"
+      },
+      "validWords": [
+        "der",
+        "morgen",
+        "oder"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 5,
+      "sourceWord": "ischule",
+      "targetWords": [
+        "SCHULE",
+        "ICH"
+      ],
+      "hints": {
+        "spanish": "escuela | yo",
+        "chinese": "学校 | 我",
+        "turkish": "okul | ben",
+        "hindi": "स्कूल | मैं",
+        "english": "school | I",
+        "french": "école | je"
+      },
+      "validWords": [
+        "ich",
+        "schule",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 6,
+      "sourceWord": "anicht",
+      "targetWords": [
+        "NICHT",
+        "NACHT",
+        "ACHT",
+        "HAT"
+      ],
+      "hints": {
+        "spanish": "no | noche | ocho | tiene",
+        "chinese": "不 | 夜晚 | 八 | 有",
+        "turkish": "değil | gece | sekiz | sahip",
+        "hindi": "नहीं | रात | आठ | है",
+        "english": "not | night | eight | has",
+        "french": "ne...pas | nuit | huit | a"
+      },
+      "validWords": [
+        "acht",
+        "hat",
+        "ich",
+        "nacht",
+        "nicht"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 7,
+      "sourceWord": "sbitte",
+      "targetWords": [
+        "BITTE",
+        "BETT",
+        "IST"
+      ],
+      "hints": {
+        "spanish": "por favor | cama | es",
+        "chinese": "请 | 床 | 是",
+        "turkish": "lütfen | yatak | dir",
+        "hindi": "कृपया | बिस्तर | है",
+        "english": "please | bed | is",
+        "french": "s\\ | lit | est"
+      },
+      "validWords": [
+        "bett",
+        "bitte",
+        "ist",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 8,
+      "sourceWord": "idanke",
+      "targetWords": [
+        "DANKE",
+        "KIND",
+        "DIE"
+      ],
+      "hints": {
+        "spanish": "gracias | niño | la",
+        "chinese": "谢谢 | 孩子 | 这个",
+        "turkish": "teşekkürler | çocuk | şu/bu (kadın)",
+        "hindi": "धन्यवाद | बच्चा | यह",
+        "english": "thank you | child | the (feminine)",
+        "french": "merci | enfant | la"
+      },
+      "validWords": [
+        "danke",
+        "die",
+        "ein",
+        "kind",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 9,
+      "sourceWord": "ihaben",
+      "targetWords": [
+        "HABEN",
+        "EIN",
+        "NIE"
+      ],
+      "hints": {
+        "spanish": "tener | un | nunca",
+        "chinese": "有 | 一个 | 从不",
+        "turkish": "sahip olmak | bir | asla",
+        "hindi": "होना | एक | कभी नहीं",
+        "english": "to have | a/an | never",
+        "french": "avoir | un | jamais"
+      },
+      "validWords": [
+        "ein",
+        "haben",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 10,
+      "sourceWord": "igehen",
+      "targetWords": [
+        "GEHEN",
+        "EINE",
+        "EIN",
+        "NIE"
+      ],
+      "hints": {
+        "spanish": "ir | una | un | nunca",
+        "chinese": "去 | 一个 | 一个 | 从不",
+        "turkish": "gitmek | bir | bir | asla",
+        "hindi": "जाना | एक | एक | कभी नहीं",
+        "english": "to go | a/an (feminine) | a/an | never",
+        "french": "aller | une | un | jamais"
+      },
+      "validWords": [
+        "ein",
+        "eine",
+        "gehen",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 11,
+      "sourceWord": "isehen",
+      "targetWords": [
+        "SEHEN",
+        "SEIN",
+        "EINS",
+        "EINE",
+        "SIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "ver | ser/estar | uno | una | ella | un",
+        "chinese": "看 | 是 | 一 | 一个 | 她 | 一个",
+        "turkish": "görmek | olmak | bir | bir | o (kadın) | bir",
+        "hindi": "देखना | होना | एक | एक | वह | एक",
+        "english": "to see | to be | one | a/an (feminine) | she | a/an",
+        "french": "voir | être | un | une | elle | un"
+      },
+      "validWords": [
+        "ein",
+        "eine",
+        "eins",
+        "nie",
+        "sehen",
+        "sein",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 12,
+      "sourceWord": "ihören",
+      "targetWords": [
+        "HÖREN",
+        "HIER"
+      ],
+      "hints": {
+        "spanish": "oír | aquí",
+        "chinese": "听 | 这里",
+        "turkish": "duymak | burada",
+        "hindi": "सुनना | यहाँ",
+        "english": "to hear | here",
+        "french": "entendre | ici"
+      },
+      "validWords": [
+        "ein",
+        "hier",
+        "hören",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 13,
+      "sourceWord": "iessen",
+      "targetWords": [
+        "ESSEN",
+        "SEIN",
+        "EINS",
+        "EINE",
+        "SIE",
+        "NIE"
+      ],
+      "hints": {
+        "spanish": "comer | ser/estar | uno | una | ella | nunca",
+        "chinese": "吃 | 是 | 一 | 一个 | 她 | 从不",
+        "turkish": "yemek | olmak | bir | bir | o (kadın) | asla",
+        "hindi": "खाना | होना | एक | एक | वह | कभी नहीं",
+        "english": "to eat | to be | one | a/an (feminine) | she | never",
+        "french": "manger | être | un | une | elle | jamais"
+      },
+      "validWords": [
+        "ein",
+        "eine",
+        "eins",
+        "essen",
+        "nie",
+        "sein",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 14,
+      "sourceWord": "vatersd",
+      "targetWords": [
+        "VATER",
+        "DAS"
+      ],
+      "hints": {
+        "spanish": "padre | lo",
+        "chinese": "父亲 | 这个",
+        "turkish": "baba | şu/bu (nesne)",
+        "hindi": "पिता | यह",
+        "english": "father | the (neuter)",
+        "french": "père | le"
+      },
+      "validWords": [
+        "das",
+        "der",
+        "vater"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 15,
+      "sourceWord": "atisch",
+      "targetWords": [
+        "TISCH",
+        "ACHT",
+        "ICH",
+        "IST",
+        "HAT"
+      ],
+      "hints": {
+        "spanish": "mesa | ocho | yo | es | tiene",
+        "chinese": "桌子 | 八 | 我 | 是 | 有",
+        "turkish": "masa | sekiz | ben | dir | sahip",
+        "hindi": "मेज | आठ | मैं | है | है",
+        "english": "table | eight | I | is | has",
+        "french": "table | huit | je | est | a"
+      },
+      "validWords": [
+        "acht",
+        "hat",
+        "ich",
+        "ist",
+        "tisch"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 16,
+      "sourceWord": "astuhl",
+      "targetWords": [
+        "STUHL",
+        "HAUS",
+        "ALT"
+      ],
+      "hints": {
+        "spanish": "silla | casa | viejo",
+        "chinese": "椅子 | 房子 | 老",
+        "turkish": "sandalye | ev | eski",
+        "hindi": "कुर्सी | घर | पुराना",
+        "english": "chair | house | old",
+        "french": "chaise | maison | vieux"
+      },
+      "validWords": [
+        "alt",
+        "hat",
+        "haus",
+        "stuhl"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 17,
+      "sourceWord": "tmilch",
+      "targetWords": [
+        "MILCH",
+        "MIT"
+      ],
+      "hints": {
+        "spanish": "leche | con",
+        "chinese": "牛奶 | 和",
+        "turkish": "süt | ile",
+        "hindi": "दूध | के साथ",
+        "english": "milk | with",
+        "french": "lait | avec"
+      },
+      "validWords": [
+        "ich",
+        "milch",
+        "mit"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 0,
+      "sourceWord": "tfisch",
+      "targetWords": [
+        "FISCH",
+        "ICH",
+        "IST"
+      ],
+      "hints": {
+        "spanish": "pescado | yo | es",
+        "chinese": "鱼 | 我 | 是",
+        "turkish": "balık | ben | dir",
+        "hindi": "मछली | मैं | है",
+        "english": "fish | I | is",
+        "french": "poisson | je | est"
+      },
+      "validWords": [
+        "fisch",
+        "ich",
+        "ist",
+        "tisch"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 1,
+      "sourceWord": "apfelte",
+      "targetWords": [
+        "APFEL",
+        "ALT"
+      ],
+      "hints": {
+        "spanish": "manzana | viejo",
+        "chinese": "苹果 | 老",
+        "turkish": "elma | eski",
+        "hindi": "सेब | पुराना",
+        "english": "apple | old",
+        "french": "pomme | vieux"
+      },
+      "validWords": [
+        "alt",
+        "apfel",
+        "tee"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 2,
+      "sourceWord": "katzele",
+      "targetWords": [
+        "KATZE",
+        "ALT"
+      ],
+      "hints": {
+        "spanish": "gato | viejo",
+        "chinese": "猫 | 老",
+        "turkish": "kedi | eski",
+        "hindi": "बिल्ली | पुराना",
+        "english": "cat | old",
+        "french": "chat | vieux"
+      },
+      "validWords": [
+        "alt",
+        "katze",
+        "tee"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 3,
+      "sourceWord": "sklein",
+      "targetWords": [
+        "KLEIN",
+        "SEIN",
+        "EINS",
+        "SIE",
+        "EIN",
+        "NIE"
+      ],
+      "hints": {
+        "spanish": "pequeño | ser/estar | uno | ella | un | nunca",
+        "chinese": "小 | 是 | 一 | 她 | 一个 | 从不",
+        "turkish": "küçük | olmak | bir | o (kadın) | bir | asla",
+        "hindi": "छोटा | होना | एक | वह | एक | कभी नहीं",
+        "english": "small | to be | one | she | a/an | never",
+        "french": "petit | être | un | elle | un | jamais"
+      },
+      "validWords": [
+        "ein",
+        "eins",
+        "klein",
+        "nie",
+        "sein",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 4,
+      "sourceWord": "schönie",
+      "targetWords": [
+        "SCHÖN",
+        "SEIN",
+        "EINS",
+        "ICH",
+        "SIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "hermoso | ser/estar | uno | yo | ella | un",
+        "chinese": "美丽 | 是 | 一 | 我 | 她 | 一个",
+        "turkish": "güzel | olmak | bir | ben | o (kadın) | bir",
+        "hindi": "सुंदर | होना | एक | मैं | वह | एक",
+        "english": "beautiful | to be | one | I | she | a/an",
+        "french": "beau | être | un | je | elle | un"
+      },
+      "validWords": [
+        "ein",
+        "eins",
+        "ich",
+        "nie",
+        "schön",
+        "sein",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 5,
+      "sourceWord": "isechs",
+      "targetWords": [
+        "SECHS",
+        "ICH",
+        "SIE"
+      ],
+      "hints": {
+        "spanish": "seis | yo | ella",
+        "chinese": "六 | 我 | 她",
+        "turkish": "altı | ben | o (kadın)",
+        "hindi": "छह | मैं | वह",
+        "english": "six | I | she",
+        "french": "six | je | elle"
+      },
+      "validWords": [
+        "ich",
+        "sechs",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 6,
+      "sourceWord": "nheute",
+      "targetWords": [
+        "HEUTE",
+        "NEU"
+      ],
+      "hints": {
+        "spanish": "hoy | nuevo",
+        "chinese": "今天 | 新",
+        "turkish": "bugün | yeni",
+        "hindi": "आज | नया",
+        "english": "today | new",
+        "french": "aujourd\\ | nouveau"
+      },
+      "validWords": [
+        "heute",
+        "neu",
+        "tee"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 7,
+      "sourceWord": "inacht",
+      "targetWords": [
+        "NACHT",
+        "ACHT",
+        "HAT",
+        "ICH"
+      ],
+      "hints": {
+        "spanish": "noche | ocho | tiene | yo",
+        "chinese": "夜晚 | 八 | 有 | 我",
+        "turkish": "gece | sekiz | sahip | ben",
+        "hindi": "रात | आठ | है | मैं",
+        "english": "night | eight | has | I",
+        "french": "nuit | huit | a | je"
+      },
+      "validWords": [
+        "acht",
+        "hat",
+        "ich",
+        "nacht",
+        "nicht"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 8,
+      "sourceWord": "fwarum",
+      "targetWords": [
+        "WARUM",
+        "FRAU",
+        "AUF"
+      ],
+      "hints": {
+        "spanish": "por qué | mujer | en",
+        "chinese": "为什么 | 女人 | 在上面",
+        "turkish": "neden | kadın | üzerinde",
+        "hindi": "क्यों | महिला | पर",
+        "english": "why | woman | on",
+        "french": "pourquoi | femme | sur"
+      },
+      "validWords": [
+        "auf",
+        "frau",
+        "warum"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 9,
+      "sourceWord": "lstadt",
+      "targetWords": [
+        "STADT",
+        "DAS"
+      ],
+      "hints": {
+        "spanish": "ciudad | lo",
+        "chinese": "城市 | 这个",
+        "turkish": "şehir | şu/bu (nesne)",
+        "hindi": "शहर | यह",
+        "english": "city | the (neuter)",
+        "french": "ville | le"
+      },
+      "validWords": [
+        "alt",
+        "das",
+        "stadt"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 10,
+      "sourceWord": "jetztis",
+      "targetWords": [
+        "JETZT",
+        "ZEIT"
+      ],
+      "hints": {
+        "spanish": "ahora | tiempo",
+        "chinese": "现在 | 时间",
+        "turkish": "şimdi | zaman",
+        "hindi": "अब | समय",
+        "english": "now | time",
+        "french": "t | temps"
+      },
+      "validWords": [
+        "ist",
+        "jetzt",
+        "sie",
+        "zeit"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 11,
+      "sourceWord": "dimmer",
+      "targetWords": [
+        "IMMER",
+        "DREI",
+        "DIE"
+      ],
+      "hints": {
+        "spanish": "siempre | tres | la",
+        "chinese": "总是 | 三 | 这个",
+        "turkish": "her zaman | üç | şu/bu (kadın)",
+        "hindi": "हमेशा | तीन | यह",
+        "english": "always | three | the (feminine)",
+        "french": "toujours | trois | la"
+      },
+      "validWords": [
+        "der",
+        "die",
+        "drei",
+        "immer"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 12,
+      "sourceWord": "wenig",
+      "targetWords": [
+        "WENIG",
+        "WIE"
+      ],
+      "hints": {
+        "spanish": "poco | cómo",
+        "chinese": "少 | 怎么",
+        "turkish": "az | nasıl",
+        "hindi": "कम | कैसे",
+        "english": "little/few | how",
+        "french": "peu | comment"
+      },
+      "validWords": [
+        "ein",
+        "nie",
+        "wenig",
+        "wie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 13,
+      "sourceWord": "toder",
+      "targetWords": [
+        "DORT",
+        "ODER",
+        "ROT"
+      ],
+      "hints": {
+        "spanish": "allí | o | rojo",
+        "chinese": "那里 | 或者 | 红色",
+        "turkish": "orada | veya | kırmızı",
+        "hindi": "वहाँ | या | लाल",
+        "english": "there | or | red",
+        "french": "là | ou | rouge"
+      },
+      "validWords": [
+        "der",
+        "dort",
+        "oder",
+        "rot"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 14,
+      "sourceWord": "abersd",
+      "targetWords": [
+        "ABER",
+        "DER",
+        "DAS"
+      ],
+      "hints": {
+        "spanish": "pero | el | lo",
+        "chinese": "但是 | 这个 | 这个",
+        "turkish": "ama | şu/bu (erkek) | şu/bu (nesne)",
+        "hindi": "लेकिन | यह | यह",
+        "english": "but | the (masculine) | the (neuter)",
+        "french": "mais | le | le"
+      },
+      "validWords": [
+        "aber",
+        "das",
+        "der"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 15,
+      "sourceWord": "snein",
+      "targetWords": [
+        "NEIN",
+        "SEIN",
+        "EINS",
+        "NIE",
+        "SIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "no | ser/estar | uno | nunca | ella | un",
+        "chinese": "不 | 是 | 一 | 从不 | 她 | 一个",
+        "turkish": "hayır | olmak | bir | asla | o (kadın) | bir",
+        "hindi": "नहीं | होना | एक | कभी नहीं | वह | एक",
+        "english": "no | to be | one | never | she | a/an",
+        "french": "non | être | un | jamais | elle | un"
+      },
+      "validWords": [
+        "ein",
+        "eins",
+        "nein",
+        "nie",
+        "sein",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 16,
+      "sourceWord": "ekind",
+      "targetWords": [
+        "KIND",
+        "DIE",
+        "NIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "niño | la | nunca | un",
+        "chinese": "孩子 | 这个 | 从不 | 一个",
+        "turkish": "çocuk | şu/bu (kadın) | asla | bir",
+        "hindi": "बच्चा | यह | कभी नहीं | एक",
+        "english": "child | the (feminine) | never | a/an",
+        "french": "enfant | la | jamais | un"
+      },
+      "validWords": [
+        "die",
+        "ein",
+        "kind",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 17,
+      "sourceWord": "mannie",
+      "targetWords": [
+        "MANN",
+        "NIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "hombre | nunca | un",
+        "chinese": "男人 | 从不 | 一个",
+        "turkish": "adam | asla | bir",
+        "hindi": "आदमी | कभी नहीं | एक",
+        "english": "man | never | a/an",
+        "french": "homme | jamais | un"
+      },
+      "validWords": [
+        "ein",
+        "mann",
+        "nein",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 0,
+      "sourceWord": "frausd",
+      "targetWords": [
+        "FRAU",
+        "AUF"
+      ],
+      "hints": {
+        "spanish": "mujer | en",
+        "chinese": "女人 | 在上面",
+        "turkish": "kadın | üzerinde",
+        "hindi": "महिला | पर",
+        "english": "woman | on",
+        "french": "femme | sur"
+      },
+      "validWords": [
+        "auf",
+        "das",
+        "frau"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 1,
+      "sourceWord": "hausdn",
+      "targetWords": [
+        "HUND",
+        "HAUS",
+        "UND"
+      ],
+      "hints": {
+        "spanish": "perro | casa | y",
+        "chinese": "狗 | 房子 | 和",
+        "turkish": "köpek | ev | ve",
+        "hindi": "कुत्ता | घर | और",
+        "english": "dog | house | and",
+        "french": "chien | maison | et"
+      },
+      "validWords": [
+        "das",
+        "haus",
+        "hund",
+        "und"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 2,
+      "sourceWord": "bettis",
+      "targetWords": [
+        "BETT",
+        "IST",
+        "SIE"
+      ],
+      "hints": {
+        "spanish": "cama | es | ella",
+        "chinese": "床 | 是 | 她",
+        "turkish": "yatak | dir | o (kadın)",
+        "hindi": "बिस्तर | है | वह",
+        "english": "bed | is | she",
+        "french": "lit | est | elle"
+      },
+      "validWords": [
+        "bett",
+        "bitte",
+        "ist",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 3,
+      "sourceWord": "buchdn",
+      "targetWords": [
+        "BUCH",
+        "HUND"
+      ],
+      "hints": {
+        "spanish": "libro | perro",
+        "chinese": "书 | 狗",
+        "turkish": "kitap | köpek",
+        "hindi": "किताब | कुत्ता",
+        "english": "book | dog",
+        "french": "livre | chien"
+      },
+      "validWords": [
+        "buch",
+        "hund",
+        "und"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 4,
+      "sourceWord": "dbrot",
+      "targetWords": [
+        "BROT",
+        "DORT",
+        "ROT"
+      ],
+      "hints": {
+        "spanish": "pan | allí | rojo",
+        "chinese": "面包 | 那里 | 红色",
+        "turkish": "ekmek | orada | kırmızı",
+        "hindi": "रोटी | वहाँ | लाल",
+        "english": "bread | there | red",
+        "french": "pain | là | rouge"
+      },
+      "validWords": [
+        "brot",
+        "dort",
+        "rot"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 5,
+      "sourceWord": "käseid",
+      "targetWords": [
+        "KÄSE",
+        "DIE",
+        "SIE"
+      ],
+      "hints": {
+        "spanish": "queso | la | ella",
+        "chinese": "奶酪 | 这个 | 她",
+        "turkish": "peynir | şu/bu (kadın) | o (kadın)",
+        "hindi": "पनीर | यह | वह",
+        "english": "cheese | the (feminine) | she",
+        "french": "fromage | la | elle"
+      },
+      "validWords": [
+        "die",
+        "käse",
+        "sie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 6,
+      "sourceWord": "dbier",
+      "targetWords": [
+        "BIER",
+        "DREI"
+      ],
+      "hints": {
+        "spanish": "cerveza | tres",
+        "chinese": "啤酒 | 三",
+        "turkish": "bira | üç",
+        "hindi": "बीयर | तीन",
+        "english": "beer | three",
+        "french": "bière | trois"
+      },
+      "validWords": [
+        "bier",
+        "der",
+        "die",
+        "drei"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 7,
+      "sourceWord": "ehund",
+      "targetWords": [
+        "HUND",
+        "UND",
+        "NEU"
+      ],
+      "hints": {
+        "spanish": "perro | y | nuevo",
+        "chinese": "狗 | 和 | 新",
+        "turkish": "köpek | ve | yeni",
+        "hindi": "कुत्ता | और | नया",
+        "english": "dog | and | new",
+        "french": "chien | et | nouveau"
+      },
+      "validWords": [
+        "hund",
+        "neu",
+        "und"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 8,
+      "sourceWord": "blausd",
+      "targetWords": [
+        "BLAU",
+        "BUS"
+      ],
+      "hints": {
+        "spanish": "azul | autobús",
+        "chinese": "蓝色 | 公交车",
+        "turkish": "mavi | otobüs",
+        "hindi": "नीला | बस",
+        "english": "blue | bus",
+        "french": "bleu | bus"
+      },
+      "validWords": [
+        "blau",
+        "bus",
+        "das"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 9,
+      "sourceWord": "grünie",
+      "targetWords": [
+        "GRÜN",
+        "NIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "verde | nunca | un",
+        "chinese": "绿色 | 从不 | 一个",
+        "turkish": "yeşil | asla | bir",
+        "hindi": "हरा | कभी नहीं | एक",
+        "english": "green | never | a/an",
+        "french": "vert | jamais | un"
+      },
+      "validWords": [
+        "ein",
+        "grün",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 10,
+      "sourceWord": "gelbin",
+      "targetWords": [
+        "GELB",
+        "NIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "amarillo | nunca | un",
+        "chinese": "黄色 | 从不 | 一个",
+        "turkish": "sarı | asla | bir",
+        "hindi": "पीला | कभी नहीं | एक",
+        "english": "yellow | never | a/an",
+        "french": "jaune | jamais | un"
+      },
+      "validWords": [
+        "ein",
+        "gelb",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 11,
+      "sourceWord": "nweiß",
+      "targetWords": [
+        "WEISS",
+        "WIE"
+      ],
+      "hints": {
+        "spanish": "blanco | cómo",
+        "chinese": "白色 | 怎么",
+        "turkish": "beyaz | nasıl",
+        "hindi": "सफेद | कैसे",
+        "english": "white | how",
+        "french": "blanc | comment"
+      },
+      "validWords": [
+        "ein",
+        "eins",
+        "nie",
+        "sein",
+        "sie",
+        "weiss",
+        "wie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 12,
+      "sourceWord": "großed",
+      "targetWords": [
+        "GROSS",
+        "DER"
+      ],
+      "hints": {
+        "spanish": "grande | el",
+        "chinese": "大 | 这个",
+        "turkish": "büyük | şu/bu (erkek)",
+        "hindi": "बड़ा | यह",
+        "english": "big | the (masculine)",
+        "french": "grand | le"
+      },
+      "validWords": [
+        "der",
+        "gross",
+        "oder"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 13,
+      "sourceWord": "rzwei",
+      "targetWords": [
+        "ZWEI",
+        "WIR",
+        "WER"
+      ],
+      "hints": {
+        "spanish": "dos | nosotros | quién",
+        "chinese": "二 | 我们 | 谁",
+        "turkish": "iki | biz | kim",
+        "hindi": "दो | हम | कौन",
+        "english": "two | we | who",
+        "french": "deux | nous | qui"
+      },
+      "validWords": [
+        "wer",
+        "wie",
+        "wir",
+        "zwei"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 14,
+      "sourceWord": "dvier",
+      "targetWords": [
+        "VIER",
+        "DREI",
+        "DER",
+        "DIE"
+      ],
+      "hints": {
+        "spanish": "cuatro | tres | el | la",
+        "chinese": "四 | 三 | 这个 | 这个",
+        "turkish": "dört | üç | şu/bu (erkek) | şu/bu (kadın)",
+        "hindi": "चार | तीन | यह | यह",
+        "english": "four | three | the (masculine) | the (feminine)",
+        "french": "quatre | trois | le | la"
+      },
+      "validWords": [
+        "der",
+        "die",
+        "drei",
+        "vier"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 15,
+      "sourceWord": "fünftr",
+      "targetWords": [
+        "FÜNF",
+        "FÜR",
+        "TÜR"
+      ],
+      "hints": {
+        "spanish": "cinco | para | puerta",
+        "chinese": "五 | 为了 | 门",
+        "turkish": "beş | için | kapı",
+        "hindi": "पांच | के लिए | दरवाजा",
+        "english": "five | for | door",
+        "french": "cinq | pour | porte"
+      },
+      "validWords": [
+        "fünf",
+        "für",
+        "tür"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 16,
+      "sourceWord": "ineun",
+      "targetWords": [
+        "NEUN",
+        "NEU",
+        "NIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "nueve | nuevo | nunca | un",
+        "chinese": "九 | 新 | 从不 | 一个",
+        "turkish": "dokuz | yeni | asla | bir",
+        "hindi": "नौ | नया | कभी नहीं | एक",
+        "english": "nine | new | never | a/an",
+        "french": "neuf | nouveau | jamais | un"
+      },
+      "validWords": [
+        "ein",
+        "nein",
+        "neu",
+        "neun",
+        "nie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 17,
+      "sourceWord": "izehn",
+      "targetWords": [
+        "ZEHN",
+        "NIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "diez | nunca | un",
+        "chinese": "十 | 从不 | 一个",
+        "turkish": "on | asla | bir",
+        "hindi": "दस | कभी नहीं | एक",
+        "english": "ten | never | a/an",
+        "french": "dix | jamais | un"
+      },
+      "validWords": [
+        "ein",
+        "nie",
+        "zehn"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 0,
+      "sourceWord": "szeit",
+      "targetWords": [
+        "ZEIT",
+        "IST",
+        "SIE"
+      ],
+      "hints": {
+        "spanish": "tiempo | es | ella",
+        "chinese": "时间 | 是 | 她",
+        "turkish": "zaman | dir | o (kadın)",
+        "hindi": "समय | है | वह",
+        "english": "time | is | she",
+        "french": "temps | est | elle"
+      },
+      "validWords": [
+        "ist",
+        "sie",
+        "zeit"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 1,
+      "sourceWord": "tjahr",
+      "targetWords": [
+        "JAHR",
+        "HAT"
+      ],
+      "hints": {
+        "spanish": "año | tiene",
+        "chinese": "年 | 有",
+        "turkish": "yıl | sahip",
+        "hindi": "साल | है",
+        "english": "year | has",
+        "french": "année | a"
+      },
+      "validWords": [
+        "hat",
+        "jahr"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 2,
+      "sourceWord": "wannsd",
+      "targetWords": [
+        "WANN",
+        "WAS"
+      ],
+      "hints": {
+        "spanish": "cuándo | qué",
+        "chinese": "什么时候 | 什么",
+        "turkish": "ne zaman | ne",
+        "hindi": "कब | क्या",
+        "english": "when | what",
+        "french": "quand | quoi"
+      },
+      "validWords": [
+        "das",
+        "wann",
+        "was"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 3,
+      "sourceWord": "landts",
+      "targetWords": [
+        "LAND",
+        "ALT",
+        "DAS"
+      ],
+      "hints": {
+        "spanish": "país | viejo | lo",
+        "chinese": "国家 | 老 | 这个",
+        "turkish": "ülke | eski | şu/bu (nesne)",
+        "hindi": "देश | पुराना | यह",
+        "english": "country | old | the (neuter)",
+        "french": "pays | vieux | le"
+      },
+      "validWords": [
+        "alt",
+        "das",
+        "land"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 4,
+      "sourceWord": "gauto",
+      "targetWords": [
+        "AUTO",
+        "GUT",
+        "TAG"
+      ],
+      "hints": {
+        "spanish": "coche | bueno | día",
+        "chinese": "汽车 | 好 | 天",
+        "turkish": "araba | iyi | gün",
+        "hindi": "कार | अच्छा | दिन",
+        "english": "car | good | day",
+        "french": "voiture | bon | jour"
+      },
+      "validWords": [
+        "auto",
+        "gut",
+        "tag"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 5,
+      "sourceWord": "dhier",
+      "targetWords": [
+        "HIER",
+        "DREI",
+        "DER",
+        "DIE"
+      ],
+      "hints": {
+        "spanish": "aquí | tres | el | la",
+        "chinese": "这里 | 三 | 这个 | 这个",
+        "turkish": "burada | üç | şu/bu (erkek) | şu/bu (kadın)",
+        "hindi": "यहाँ | तीन | यह | यह",
+        "english": "here | three | the (masculine) | the (feminine)",
+        "french": "ici | trois | le | la"
+      },
+      "validWords": [
+        "der",
+        "die",
+        "drei",
+        "hier"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 6,
+      "sourceWord": "edort",
+      "targetWords": [
+        "DORT",
+        "ROT"
+      ],
+      "hints": {
+        "spanish": "allí | rojo",
+        "chinese": "那里 | 红色",
+        "turkish": "orada | kırmızı",
+        "hindi": "वहाँ | लाल",
+        "english": "there | red",
+        "french": "là | rouge"
+      },
+      "validWords": [
+        "der",
+        "dort",
+        "oder",
+        "rot"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 7,
+      "sourceWord": "nviel",
+      "targetWords": [
+        "VIEL",
+        "NIE",
+        "EIN"
+      ],
+      "hints": {
+        "spanish": "mucho | nunca | un",
+        "chinese": "很多 | 从不 | 一个",
+        "turkish": "çok | asla | bir",
+        "hindi": "बहुत | कभी नहीं | एक",
+        "english": "much/many | never | a/an",
+        "french": "beaucoup | jamais | un"
+      },
+      "validWords": [
+        "ein",
+        "nie",
+        "viel"
+      ]
+    }
+  ]
+}

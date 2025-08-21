@@ -1,0 +1,119 @@
+{
+  "metadata": {
+    "targetLanguage": "en",
+    "nativeLanguage": "tr",
+    "cefrLevel": "A2",
+    "totalLevels": 2,
+    "generatedAt": "2025-08-15T23:19:03.257864",
+    "description": "Levels for A2 proficiency in EN"
+  },
+  "levels": [
+    {
+      "world": 1,
+      "subWorld": 0,
+      "level": 0,
+      "sourceWord": "weather",
+      "targetWords": [
+        "THERE",
+        "HEART",
+        "EARTH",
+        "WHERE",
+        "WATER",
+        "THREE"
+      ],
+      "hints": {
+        "chinese": "那里 | 心 | 地球 | 哪里 | 水 | 三",
+        "spanish": "allí | corazón | tierra | dónde | agua | tres",
+        "turkish": "orada | kalp | dünya | nerede | su | üç",
+        "german": "dort | Herz | Erde | wo | Wasser | drei",
+        "french": "là | cœur | terre | où | eau | trois",
+        "hindi": "वहाँ | दिल | पृथ्वी | कहाँ | पानी | तीन"
+      },
+      "validWords": [
+        "a",
+        "are",
+        "art",
+        "at",
+        "ear",
+        "earth",
+        "eat",
+        "hare",
+        "hat",
+        "hate",
+        "he",
+        "hear",
+        "heart",
+        "heat",
+        "her",
+        "here",
+        "rat",
+        "rate",
+        "tare",
+        "tea",
+        "tear",
+        "the",
+        "there",
+        "three",
+        "tree",
+        "war",
+        "ware",
+        "water",
+        "we",
+        "wear",
+        "weather",
+        "were",
+        "wet",
+        "what",
+        "where"
+      ]
+    },
+    {
+      "world": 1,
+      "subWorld": 0,
+      "level": 1,
+      "sourceWord": "teacher",
+      "targetWords": [
+        "THREE",
+        "THERE",
+        "HEART",
+        "EARTH"
+      ],
+      "hints": {
+        "chinese": "三 | 那里 | 心 | 地球",
+        "spanish": "tres | allí | corazón | tierra",
+        "turkish": "üç | orada | kalp | dünya",
+        "german": "drei | dort | Herz | Erde",
+        "french": "trois | là | cœur | terre",
+        "hindi": "तीन | वहाँ | दिल | पृथ्वी"
+      },
+      "validWords": [
+        "a",
+        "are",
+        "art",
+        "at",
+        "care",
+        "ear",
+        "earth",
+        "eat",
+        "hare",
+        "hat",
+        "hate",
+        "he",
+        "hear",
+        "heart",
+        "heat",
+        "her",
+        "here",
+        "rat",
+        "rate",
+        "tare",
+        "tea",
+        "tear",
+        "the",
+        "there",
+        "three",
+        "tree"
+      ]
+    }
+  ]
+}

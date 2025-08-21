@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../services/user_preferences_service.dart';
 
 enum SupportedLanguage {
   english('en', 'English'),
@@ -7,8 +8,8 @@ enum SupportedLanguage {
   french('fr', 'Français'),
   spanish('es', 'Español'),
   turkish('tr', 'Türkçe'),
-  portuguese('pt', 'Português'),
-  italian('it', 'Italiano');
+  chinese('zh', '中文'),
+  hindi('hi', 'हिन्दी');
 
   const SupportedLanguage(this.code, this.nativeName);
   
@@ -16,10 +17,15 @@ enum SupportedLanguage {
   final String nativeName;
   
   static SupportedLanguage fromCode(String code) {
-    return SupportedLanguage.values.firstWhere(
-      (lang) => lang.code == code,
-      orElse: () => SupportedLanguage.english,
-    );
+    try {
+      return SupportedLanguage.values.firstWhere(
+        (lang) => lang.code == code,
+        orElse: () => SupportedLanguage.english,
+      );
+    } catch (e) {
+      // If there's an error, return the default value
+      return SupportedLanguage.english;
+    }
   }
 }
 
@@ -34,90 +40,110 @@ class LanguageProvider extends ChangeNotifier {
   Locale get appLocale => _appLocale;
   
   // Available languages for learning (can be expanded)
-  List<SupportedLanguage> get availableNativeLanguages => [
-    SupportedLanguage.english,
-    SupportedLanguage.german,
-    SupportedLanguage.french,
-    SupportedLanguage.spanish,
-    SupportedLanguage.turkish,
-  ];
+  List<SupportedLanguage> get availableNativeLanguages {
+    try {
+      return [
+        SupportedLanguage.english,
+        SupportedLanguage.german,
+        SupportedLanguage.french,
+        SupportedLanguage.spanish,
+        SupportedLanguage.turkish,
+        SupportedLanguage.chinese,
+        SupportedLanguage.hindi,
+      ];
+    } catch (e) {
+      // If there's an error, return a default list
+      return [SupportedLanguage.english];
+    }
+  }
   
-  List<SupportedLanguage> get availableTargetLanguages => [
-    SupportedLanguage.german,
-    SupportedLanguage.french,
-    SupportedLanguage.spanish,
-    SupportedLanguage.italian,
-    SupportedLanguage.portuguese,
-  ];
+  List<SupportedLanguage> get availableTargetLanguages {
+    try {
+      return [
+        SupportedLanguage.english,
+        SupportedLanguage.german,
+        SupportedLanguage.french,
+        SupportedLanguage.spanish,
+        SupportedLanguage.turkish,
+        SupportedLanguage.chinese,
+        SupportedLanguage.hindi,
+      ];
+    } catch (e) {
+      // If there's an error, return a default list
+      return [SupportedLanguage.english];
+    }
+  }
   
   /// Initialize language settings from SharedPreferences
   Future<void> loadLanguageSettings() async {
-    final prefs = await SharedPreferences.getInstance();
-    
-    // Check if this is the first time the app is launched
-    final isFirstLaunch = !prefs.containsKey('native_language') && !prefs.containsKey('target_language');
-    
-    if (isFirstLaunch) {
-      // For new users, default to English UI with German learning
-      // This provides a better experience for international users
+    try {
+      final prefs = UserPreferencesService.instance;
+      
+      final nativeLanguageCode = await prefs.getUserLanguage();
+      final targetLanguageCode = await prefs.getSourceLanguage();
+      
+      _nativeLanguage = SupportedLanguage.fromCode(nativeLanguageCode);
+      _targetLanguage = SupportedLanguage.fromCode(targetLanguageCode);
+      
+      try {
+        _appLocale = Locale(_nativeLanguage.code);
+      } catch (e) {
+        // If there's an error creating the locale, use the default
+        _appLocale = const Locale('en');
+      }
+      
+      notifyListeners();
+    } catch (e) {
+      // If there's an error loading the settings, use default values
       _nativeLanguage = SupportedLanguage.english;
       _targetLanguage = SupportedLanguage.german;
+      _appLocale = const Locale('en');
       
-      // Save these defaults
-      await prefs.setString('native_language', _nativeLanguage.code);
-      await prefs.setString('target_language', _targetLanguage.code);
-    } else {
-      // Load saved settings for existing users
-      final nativeCode = prefs.getString('native_language') ?? 'en';
-      _nativeLanguage = SupportedLanguage.fromCode(nativeCode);
-      
-      final targetCode = prefs.getString('target_language') ?? 'de';
-      _targetLanguage = SupportedLanguage.fromCode(targetCode);
-      
-      // Special handling: If user has Turkish native + English target (old default),
-      // and they haven't explicitly chosen this, offer them the new default
-      if (_nativeLanguage == SupportedLanguage.turkish && 
-          _targetLanguage == SupportedLanguage.english &&
-          !(prefs.getBool('language_choice_confirmed') ?? false)) {
-        // Switch to the new default for better international experience
-        _nativeLanguage = SupportedLanguage.english;
-        _targetLanguage = SupportedLanguage.german;
-        
-        // Save the new settings
-        await prefs.setString('native_language', _nativeLanguage.code);
-        await prefs.setString('target_language', _targetLanguage.code);
-        await prefs.setBool('language_choice_confirmed', true);
-      }
+      notifyListeners();
     }
-    
-    // Set app locale to native language
-    _appLocale = Locale(_nativeLanguage.code);
-    
-    notifyListeners();
   }
   
   /// Save language settings to SharedPreferences
   Future<void> saveLanguageSettings() async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString('native_language', _nativeLanguage.code);
-    await prefs.setString('target_language', _targetLanguage.code);
+    try {
+      final prefs = UserPreferencesService.instance;
+      await prefs.setUserLanguage(_nativeLanguage.code);
+      await prefs.setSourceLanguage(_targetLanguage.code);
+    } catch (e) {
+      // If there's an error, just continue without saving
+    }
   }
   
   /// Change native language (UI language)
   Future<void> setNativeLanguage(SupportedLanguage language) async {
-    if (_nativeLanguage != language) {
-      _nativeLanguage = language;
-      _appLocale = Locale(language.code);
-      await saveLanguageSettings();
+    try {
+      if (_nativeLanguage != language) {
+        _nativeLanguage = language;
+        try {
+          _appLocale = Locale(language.code);
+        } catch (e) {
+          // If there's an error creating the locale, use the default
+          _appLocale = const Locale('en');
+        }
+        await saveLanguageSettings();
+        notifyListeners();
+      }
+    } catch (e) {
+      // If there's an error, just notify listeners to refresh the UI
       notifyListeners();
     }
   }
   
   /// Change target language (learning language)
   Future<void> setTargetLanguage(SupportedLanguage language) async {
-    if (_targetLanguage != language) {
-      _targetLanguage = language;
-      await saveLanguageSettings();
+    try {
+      if (_targetLanguage != language) {
+        _targetLanguage = language;
+        await saveLanguageSettings();
+        notifyListeners();
+      }
+    } catch (e) {
+      // If there's an error, just notify listeners to refresh the UI
       notifyListeners();
     }
   }
@@ -127,26 +153,34 @@ class LanguageProvider extends ChangeNotifier {
     required SupportedLanguage nativeLanguage,
     required SupportedLanguage targetLanguage,
   }) async {
-    bool changed = false;
-    
-    if (_nativeLanguage != nativeLanguage) {
-      _nativeLanguage = nativeLanguage;
-      _appLocale = Locale(nativeLanguage.code);
-      changed = true;
-    }
-    
-    if (_targetLanguage != targetLanguage) {
-      _targetLanguage = targetLanguage;
-      changed = true;
-    }
-    
-    if (changed) {
-      await saveLanguageSettings();
+    try {
+      bool changed = false;
       
-      // Mark that the user has explicitly chosen their language combination
-      final prefs = await SharedPreferences.getInstance();
-      await prefs.setBool('language_choice_confirmed', true);
+      if (_nativeLanguage != nativeLanguage) {
+        _nativeLanguage = nativeLanguage;
+        try {
+          _appLocale = Locale(nativeLanguage.code);
+        } catch (e) {
+          // If there's an error creating the locale, use the default
+          _appLocale = const Locale('en');
+        }
+        changed = true;
+      }
       
+      if (_targetLanguage != targetLanguage) {
+        _targetLanguage = targetLanguage;
+        changed = true;
+      }
+      
+      if (changed) {
+        await saveLanguageSettings();
+        
+        // Mark that the user has explicitly chosen their language combination
+        
+        notifyListeners();
+      }
+    } catch (e) {
+      // If there's an error, just notify listeners to refresh the UI
       notifyListeners();
     }
   }
@@ -166,10 +200,10 @@ class LanguageProvider extends ChangeNotifier {
         return 'Spanish';
       case SupportedLanguage.turkish:
         return 'Turkish';
-      case SupportedLanguage.portuguese:
-        return 'Portuguese';
-      case SupportedLanguage.italian:
-        return 'Italian';
+      case SupportedLanguage.chinese:
+        return 'Chinese';
+      case SupportedLanguage.hindi:
+        return 'Hindi';
     }
   }
   

@@ -1,0 +1,2673 @@
+{
+  "metadata": {
+    "targetLanguage": "en",
+    "nativeLanguage": "tr",
+    "cefrLevel": "B2",
+    "totalLevels": 90,
+    "generatedAt": "2025-07-22T03:39:01.896091",
+    "description": "Levels for B2 proficiency in English"
+  },
+  "levels": [
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 0,
+      "sourceWord": "section",
+      "targetWords": [
+        "SECTION",
+        "NOTICE",
+        "TIES",
+        "SITE",
+        "ITS",
+        "ICE"
+      ],
+      "hints": "bölüm | fark etmek | bağlar | site | onun | buz",
+      "validWords": [
+        "in",
+        "is",
+        "it",
+        "no",
+        "on",
+        "so",
+        "to",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "ties",
+        "site",
+        "ice",
+        "one",
+        "notice",
+        "section"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 1,
+      "sourceWord": "instead",
+      "targetWords": [
+        "INSTEAD",
+        "EAT",
+        "TIE",
+        "TEA",
+        "AND",
+        "SIT",
+        "AT",
+        "AN"
+      ],
+      "hints": "yerine | yemek | bağlamak | çay | ve | oturmak | de/da | bir",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "is",
+        "it",
+        "as",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "east",
+        "ties",
+        "site",
+        "eat",
+        "tea",
+        "sea",
+        "and",
+        "end",
+        "instead"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 2,
+      "sourceWord": "teacher",
+      "targetWords": [
+        "TEACHER",
+        "CREATE",
+        "THERE",
+        "THREE",
+        "HEART",
+        "EARTH",
+        "ART",
+        "ARE"
+      ],
+      "hints": "öğretmen | yaratmak | orada | üç | kalp | dünya | sanat | sin/sın",
+      "validWords": [
+        "at",
+        "he",
+        "are",
+        "her",
+        "the",
+        "cat",
+        "car",
+        "art",
+        "eat",
+        "tea",
+        "there",
+        "three",
+        "heart",
+        "earth",
+        "create",
+        "teacher"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 3,
+      "sourceWord": "article",
+      "targetWords": [
+        "ARTICLE",
+        "LATER",
+        "ALTER",
+        "CAR",
+        "AIR",
+        "LET",
+        "CAT",
+        "IT"
+      ],
+      "hints": "makale | sonra | değiştirmek | araba | hava | izin vermek | kedi | o (nesne)",
+      "validWords": [
+        "at",
+        "it",
+        "are",
+        "let",
+        "tie",
+        "cat",
+        "car",
+        "art",
+        "eat",
+        "tea",
+        "air",
+        "ice",
+        "later",
+        "alter",
+        "article"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 4,
+      "sourceWord": "question",
+      "targetWords": [
+        "QUESTION",
+        "SET",
+        "ONE",
+        "OUT",
+        "SUN",
+        "USE",
+        "IS",
+        "ON"
+      ],
+      "hints": "soru | ayarlamak | bir | dışarı | güneş | kullanmak | dir | üzerinde",
+      "validWords": [
+        "in",
+        "is",
+        "it",
+        "no",
+        "on",
+        "so",
+        "to",
+        "us",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "ties",
+        "site",
+        "sun",
+        "one",
+        "out",
+        "use",
+        "question"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 5,
+      "sourceWord": "storage",
+      "targetWords": [
+        "STORAGE",
+        "EAST",
+        "REST",
+        "GOT",
+        "EAT",
+        "SEA",
+        "AGE",
+        "GET"
+      ],
+      "hints": "depolama | doğu | dinlenmek | aldı | yemek | deniz | yaş | almak",
+      "validWords": [
+        "at",
+        "go",
+        "or",
+        "so",
+        "to",
+        "as",
+        "are",
+        "get",
+        "got",
+        "set",
+        "rest",
+        "east",
+        "art",
+        "eat",
+        "tea",
+        "sea",
+        "age",
+        "storage"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 6,
+      "sourceWord": "certain",
+      "targetWords": [
+        "CERTAIN",
+        "INTER",
+        "CAN",
+        "ICE",
+        "TEA",
+        "TIE",
+        "AT",
+        "AN"
+      ],
+      "hints": "kesin | arası | yapabilir | buz | çay | bağlamak | de/da | bir",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "it",
+        "are",
+        "can",
+        "tie",
+        "cat",
+        "car",
+        "art",
+        "eat",
+        "tea",
+        "air",
+        "ice",
+        "inter",
+        "certain"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 7,
+      "sourceWord": "society",
+      "targetWords": [
+        "SOCIETY",
+        "TIES",
+        "SITE",
+        "SIT",
+        "ITS",
+        "TOY",
+        "YES",
+        "YET"
+      ],
+      "hints": "toplum | bağlar | site | oturmak | onun | oyuncak | evet | henüz",
+      "validWords": [
+        "is",
+        "it",
+        "so",
+        "to",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "ties",
+        "site",
+        "toy",
+        "ice",
+        "yes",
+        "yet",
+        "society"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 8,
+      "sourceWord": "mistake",
+      "targetWords": [
+        "MISTAKE",
+        "ASK",
+        "SET",
+        "IT",
+        "AM",
+        "ME",
+        "AS"
+      ],
+      "hints": "hata | sormak | ayarlamak | o (nesne) | im | beni | gibi",
+      "validWords": [
+        "at",
+        "is",
+        "it",
+        "me",
+        "as",
+        "am",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "east",
+        "ties",
+        "site",
+        "eat",
+        "tea",
+        "sea",
+        "ask",
+        "mistake"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 9,
+      "sourceWord": "website",
+      "targetWords": [
+        "WEBSITE",
+        "WEST",
+        "BEST",
+        "SEE",
+        "BEE",
+        "BE",
+        "IS",
+        "WE"
+      ],
+      "hints": "web sitesi | batı | en iyi | görmek | arı | olmak | dir | biz",
+      "validWords": [
+        "be",
+        "is",
+        "it",
+        "we",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "best",
+        "west",
+        "ties",
+        "site",
+        "see",
+        "bee",
+        "website"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 10,
+      "sourceWord": "material",
+      "targetWords": [
+        "MATERIAL",
+        "LATER",
+        "ALTER",
+        "LET",
+        "ART",
+        "ARE",
+        "EAT",
+        "AIR"
+      ],
+      "hints": "malzeme | sonra | değiştirmek | izin vermek | sanat | sin/sın | yemek | hava",
+      "validWords": [
+        "at",
+        "it",
+        "me",
+        "am",
+        "are",
+        "let",
+        "tie",
+        "art",
+        "eat",
+        "tea",
+        "air",
+        "later",
+        "alter",
+        "material"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 11,
+      "sourceWord": "reality",
+      "targetWords": [
+        "REALITY",
+        "TRY",
+        "TEA",
+        "LAY",
+        "TIE",
+        "AT"
+      ],
+      "hints": "gerçeklik | denemek | çay | yatırmak | bağlamak | de/da",
+      "validWords": [
+        "at",
+        "it",
+        "are",
+        "let",
+        "tie",
+        "art",
+        "eat",
+        "tea",
+        "lay",
+        "try",
+        "air",
+        "yet",
+        "later",
+        "alter",
+        "reality"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 12,
+      "sourceWord": "tension",
+      "targetWords": [
+        "TENSION",
+        "TIES",
+        "SITE",
+        "SIT",
+        "ITS",
+        "ONE",
+        "NO",
+        "SO"
+      ],
+      "hints": "gerginlik | bağlar | site | oturmak | onun | bir | hayır | böylece",
+      "validWords": [
+        "in",
+        "is",
+        "it",
+        "no",
+        "on",
+        "so",
+        "to",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "ties",
+        "site",
+        "one",
+        "tension"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 13,
+      "sourceWord": "therapy",
+      "targetWords": [
+        "THERAPY",
+        "HEART",
+        "EARTH",
+        "PRAY",
+        "THE",
+        "PAY",
+        "YET",
+        "HER"
+      ],
+      "hints": "terapi | kalp | dünya | dua etmek | şu/bu | ödemek | henüz | onun",
+      "validWords": [
+        "at",
+        "he",
+        "are",
+        "her",
+        "the",
+        "art",
+        "eat",
+        "tea",
+        "pay",
+        "pray",
+        "try",
+        "yet",
+        "heart",
+        "earth",
+        "therapy"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 14,
+      "sourceWord": "anymore",
+      "targetWords": [
+        "ANYMORE",
+        "MAY",
+        "MAN",
+        "ANY",
+        "MY",
+        "AN",
+        "ME",
+        "AM"
+      ],
+      "hints": "artık | olabilir | adam | herhangi | benim | bir | beni | im",
+      "validWords": [
+        "an",
+        "me",
+        "my",
+        "no",
+        "on",
+        "or",
+        "am",
+        "are",
+        "may",
+        "any",
+        "man",
+        "one",
+        "anymore"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 15,
+      "sourceWord": "chapter",
+      "targetWords": [
+        "CHAPTER",
+        "CAR",
+        "ART",
+        "EAT",
+        "CAT",
+        "ARE",
+        "HE"
+      ],
+      "hints": "bölüm | araba | sanat | yemek | kedi | sin/sın | o (erkek)",
+      "validWords": [
+        "at",
+        "he",
+        "are",
+        "her",
+        "the",
+        "cat",
+        "car",
+        "art",
+        "eat",
+        "tea",
+        "heart",
+        "earth",
+        "chapter"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 16,
+      "sourceWord": "strange",
+      "targetWords": [
+        "STRANGE",
+        "ANGER",
+        "REST",
+        "EAST",
+        "GET",
+        "SET",
+        "TEA",
+        "SEA"
+      ],
+      "hints": "garip | öfke | dinlenmek | doğu | almak | ayarlamak | çay | deniz",
+      "validWords": [
+        "an",
+        "at",
+        "as",
+        "are",
+        "get",
+        "set",
+        "rest",
+        "east",
+        "art",
+        "eat",
+        "tea",
+        "sea",
+        "age",
+        "anger",
+        "strange"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 0,
+      "level": 17,
+      "sourceWord": "deposit",
+      "targetWords": [
+        "DEPOSIT",
+        "TIES",
+        "SITE",
+        "ITS",
+        "TIE",
+        "SIT",
+        "TOP",
+        "IS"
+      ],
+      "hints": "depozito | bağlar | site | onun | bağlamak | oturmak | üst | dir",
+      "validWords": [
+        "do",
+        "is",
+        "it",
+        "so",
+        "to",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "ties",
+        "site",
+        "top",
+        "deposit"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 0,
+      "sourceWord": "density",
+      "targetWords": [
+        "DENSITY",
+        "END",
+        "YES",
+        "YET",
+        "IT",
+        "IN"
+      ],
+      "hints": "yoğunluk | son | evet | henüz | o (nesne) | içinde",
+      "validWords": [
+        "in",
+        "is",
+        "it",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "ties",
+        "site",
+        "end",
+        "yes",
+        "yet",
+        "density"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 1,
+      "sourceWord": "justice",
+      "targetWords": [
+        "JUSTICE",
+        "CUT",
+        "ICE",
+        "USE",
+        "US"
+      ],
+      "hints": "adalet | kesmek | buz | kullanmak | biz",
+      "validWords": [
+        "is",
+        "it",
+        "us",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "ties",
+        "site",
+        "cut",
+        "ice",
+        "use",
+        "justice"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 2,
+      "sourceWord": "central",
+      "targetWords": [
+        "CENTRAL",
+        "ALTER",
+        "LATER",
+        "EAT",
+        "LET",
+        "CAN",
+        "CAR",
+        "ART"
+      ],
+      "hints": "merkezi | değiştirmek | sonra | yemek | izin vermek | yapabilir | araba | sanat",
+      "validWords": [
+        "an",
+        "at",
+        "are",
+        "can",
+        "let",
+        "cat",
+        "car",
+        "art",
+        "eat",
+        "tea",
+        "later",
+        "alter",
+        "central"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 3,
+      "sourceWord": "remains",
+      "targetWords": [
+        "REMAINS",
+        "RISE",
+        "AIR",
+        "ARE",
+        "SIR",
+        "MAN",
+        "ME",
+        "AN"
+      ],
+      "hints": "kalır | yükselmek | hava | sin/sın | efendi | adam | beni | bir",
+      "validWords": [
+        "an",
+        "in",
+        "is",
+        "me",
+        "as",
+        "am",
+        "are",
+        "sir",
+        "rise",
+        "sea",
+        "air",
+        "man",
+        "remains"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 4,
+      "sourceWord": "country",
+      "targetWords": [
+        "COUNTRY",
+        "RUN",
+        "TRY",
+        "CRY",
+        "YOU",
+        "TOY",
+        "OUR",
+        "OUT"
+      ],
+      "hints": "ülke | koşmak | denemek | ağlamak | sen | oyuncak | bizim | dışarı",
+      "validWords": [
+        "no",
+        "on",
+        "or",
+        "to",
+        "run",
+        "toy",
+        "try",
+        "cry",
+        "cut",
+        "our",
+        "out",
+        "you",
+        "country"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 5,
+      "sourceWord": "factory",
+      "targetWords": [
+        "FACTORY",
+        "CAT",
+        "FAR",
+        "FOR",
+        "AT",
+        "OR",
+        "OF",
+        "TO"
+      ],
+      "hints": "fabrika | kedi | uzak | için | de/da | veya | nin | e/a",
+      "validWords": [
+        "at",
+        "of",
+        "or",
+        "to",
+        "cat",
+        "car",
+        "art",
+        "toy",
+        "try",
+        "cry",
+        "far",
+        "for",
+        "factory"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 6,
+      "sourceWord": "shelter",
+      "targetWords": [
+        "SHELTER",
+        "THERE",
+        "THESE",
+        "THREE",
+        "REST",
+        "SHE",
+        "THE",
+        "HER"
+      ],
+      "hints": "barınak | orada | bunlar | üç | dinlenmek | o (kadın) | şu/bu | onun",
+      "validWords": [
+        "he",
+        "her",
+        "she",
+        "the",
+        "let",
+        "set",
+        "rest",
+        "see",
+        "she",
+        "there",
+        "three",
+        "these",
+        "shelter"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 7,
+      "sourceWord": "destroy",
+      "targetWords": [
+        "DESTROY",
+        "DRY",
+        "YET",
+        "RED",
+        "SET",
+        "YES",
+        "DO",
+        "SO"
+      ],
+      "hints": "yok etmek | kuru | henüz | kırmızı | ayarlamak | evet | yapmak | böylece",
+      "validWords": [
+        "do",
+        "or",
+        "so",
+        "to",
+        "set",
+        "rest",
+        "red",
+        "toy",
+        "try",
+        "dry",
+        "yes",
+        "yet",
+        "destroy"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 8,
+      "sourceWord": "hospital",
+      "targetWords": [
+        "HOSPITAL",
+        "HAS",
+        "HIS",
+        "SIT",
+        "ITS",
+        "TOP",
+        "IS",
+        "IT"
+      ],
+      "hints": "hastane | sahip | onun | oturmak | onun | üst | dir | o (nesne)",
+      "validWords": [
+        "at",
+        "is",
+        "it",
+        "so",
+        "to",
+        "as",
+        "has",
+        "his",
+        "sit",
+        "its",
+        "top",
+        "hospital"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 9,
+      "sourceWord": "research",
+      "targetWords": [
+        "RESEARCH",
+        "SEARCH",
+        "CAR",
+        "ARE",
+        "SEA",
+        "SEE",
+        "HE",
+        "AS"
+      ],
+      "hints": "araştırma | arama | araba | sin/sın | deniz | görmek | o (erkek) | gibi",
+      "validWords": [
+        "he",
+        "as",
+        "are",
+        "has",
+        "her",
+        "she",
+        "car",
+        "sea",
+        "see",
+        "she",
+        "search",
+        "research"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 10,
+      "sourceWord": "payment",
+      "targetWords": [
+        "PAYMENT",
+        "TEA",
+        "MAN",
+        "EAT",
+        "MAY",
+        "ANY",
+        "PAY",
+        "AT"
+      ],
+      "hints": "ödeme | çay | adam | yemek | olabilir | herhangi | ödemek | de/da",
+      "validWords": [
+        "an",
+        "at",
+        "me",
+        "my",
+        "am",
+        "eat",
+        "tea",
+        "may",
+        "pay",
+        "any",
+        "man",
+        "yet",
+        "payment"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 11,
+      "sourceWord": "position",
+      "targetWords": [
+        "POSITION",
+        "OPTION",
+        "IN",
+        "ON",
+        "TO",
+        "NO"
+      ],
+      "hints": "pozisyon | seçenek | içinde | üzerinde | e/a | hayır",
+      "validWords": [
+        "in",
+        "is",
+        "it",
+        "no",
+        "on",
+        "so",
+        "to",
+        "sit",
+        "its",
+        "top",
+        "option",
+        "position"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 12,
+      "sourceWord": "personal",
+      "targetWords": [
+        "PERSONAL",
+        "REASON",
+        "PERSON",
+        "ONE",
+        "AN",
+        "OR",
+        "SO"
+      ],
+      "hints": "kişisel | sebep | kişi | bir | bir | veya | böylece",
+      "validWords": [
+        "an",
+        "no",
+        "on",
+        "or",
+        "so",
+        "as",
+        "are",
+        "sea",
+        "one",
+        "person",
+        "reason",
+        "personal"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 13,
+      "sourceWord": "station",
+      "targetWords": [
+        "STATION",
+        "SIT",
+        "ITS",
+        "IS"
+      ],
+      "hints": "istasyon | oturmak | onun | dir",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "is",
+        "it",
+        "no",
+        "on",
+        "so",
+        "to",
+        "as",
+        "sit",
+        "its",
+        "station"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 14,
+      "sourceWord": "crystal",
+      "targetWords": [
+        "CRYSTAL",
+        "CLAY",
+        "STAY",
+        "LAY",
+        "TRY",
+        "CAR",
+        "CRY",
+        "CAT"
+      ],
+      "hints": "kristal | kil | kalmak | yatırmak | denemek | araba | ağlamak | kedi",
+      "validWords": [
+        "at",
+        "as",
+        "cat",
+        "car",
+        "art",
+        "say",
+        "lay",
+        "stay",
+        "clay",
+        "try",
+        "cry",
+        "crystal"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 15,
+      "sourceWord": "cabinet",
+      "targetWords": [
+        "CABINET",
+        "TEA",
+        "TIE",
+        "CAN",
+        "ICE",
+        "IT",
+        "BE"
+      ],
+      "hints": "dolap | çay | bağlamak | yapabilir | buz | o (nesne) | olmak",
+      "validWords": [
+        "an",
+        "at",
+        "be",
+        "in",
+        "it",
+        "can",
+        "tie",
+        "cat",
+        "eat",
+        "tea",
+        "ice",
+        "cabinet"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 16,
+      "sourceWord": "routine",
+      "targetWords": [
+        "ROUTINE",
+        "INTER",
+        "OUR",
+        "OUT",
+        "RUN"
+      ],
+      "hints": "rutin | arası | bizim | dışarı | koşmak",
+      "validWords": [
+        "in",
+        "it",
+        "no",
+        "on",
+        "or",
+        "to",
+        "tie",
+        "run",
+        "one",
+        "our",
+        "out",
+        "inter",
+        "routine"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 1,
+      "level": 17,
+      "sourceWord": "fortune",
+      "targetWords": [
+        "FORTUNE",
+        "FUN",
+        "FOR",
+        "NO",
+        "OF",
+        "TO",
+        "ON"
+      ],
+      "hints": "servet | eğlence | için | hayır | nin | e/a | üzerinde",
+      "validWords": [
+        "no",
+        "of",
+        "on",
+        "or",
+        "to",
+        "run",
+        "fun",
+        "for",
+        "one",
+        "our",
+        "out",
+        "fortune"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 0,
+      "sourceWord": "mountain",
+      "targetWords": [
+        "MOUNTAIN",
+        "NATION",
+        "MAN",
+        "AM",
+        "AT",
+        "AN",
+        "IN"
+      ],
+      "hints": "dağ | ulus | adam | im | de/da | bir | içinde",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "it",
+        "no",
+        "on",
+        "to",
+        "am",
+        "man",
+        "out",
+        "nation",
+        "mountain"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 1,
+      "sourceWord": "foreign",
+      "targetWords": [
+        "FOREIGN",
+        "FINGER",
+        "REGION",
+        "ONE",
+        "IF",
+        "OR",
+        "GO"
+      ],
+      "hints": "yabancı | parmak | bölge | bir | eğer | veya | gitmek",
+      "validWords": [
+        "go",
+        "in",
+        "no",
+        "of",
+        "on",
+        "or",
+        "if",
+        "for",
+        "one",
+        "finger",
+        "region",
+        "foreign"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 2,
+      "sourceWord": "history",
+      "targetWords": [
+        "HISTORY",
+        "ITS",
+        "SIR",
+        "TRY",
+        "SIT",
+        "TOY",
+        "HIS",
+        "SO"
+      ],
+      "hints": "tarih | onun | efendi | denemek | oturmak | oyuncak | onun | böylece",
+      "validWords": [
+        "is",
+        "it",
+        "or",
+        "so",
+        "to",
+        "his",
+        "sit",
+        "sir",
+        "its",
+        "toy",
+        "try",
+        "history"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 3,
+      "sourceWord": "setting",
+      "targetWords": [
+        "SETTING",
+        "SITE",
+        "TIES",
+        "TEST",
+        "SET",
+        "TIE",
+        "GET",
+        "IT"
+      ],
+      "hints": "ayar | site | bağlar | test | ayarlamak | bağlamak | almak | o (nesne)",
+      "validWords": [
+        "in",
+        "is",
+        "it",
+        "get",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "test",
+        "ties",
+        "site",
+        "setting"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 4,
+      "sourceWord": "decision",
+      "targetWords": [
+        "DECISION",
+        "INSIDE",
+        "ICE",
+        "END",
+        "DO",
+        "NO",
+        "ON",
+        "IS"
+      ],
+      "hints": "karar | içeride | buz | son | yapmak | hayır | üzerinde | dir",
+      "validWords": [
+        "do",
+        "in",
+        "is",
+        "no",
+        "on",
+        "so",
+        "end",
+        "ice",
+        "one",
+        "inside",
+        "decision"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 5,
+      "sourceWord": "version",
+      "targetWords": [
+        "VERSION",
+        "SENIOR",
+        "OVER",
+        "RISE",
+        "IN"
+      ],
+      "hints": "sürüm | kıdemli | üzerinde | yükselmek | içinde",
+      "validWords": [
+        "in",
+        "is",
+        "no",
+        "on",
+        "or",
+        "so",
+        "sir",
+        "rise",
+        "one",
+        "over",
+        "senior",
+        "version"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 6,
+      "sourceWord": "capture",
+      "targetWords": [
+        "CAPTURE",
+        "CAR",
+        "PUT",
+        "CAT",
+        "EAT",
+        "TEA",
+        "CUT",
+        "ART"
+      ],
+      "hints": "yakalamak | araba | koymak | kedi | yemek | çay | kesmek | sanat",
+      "validWords": [
+        "at",
+        "up",
+        "are",
+        "cat",
+        "car",
+        "art",
+        "eat",
+        "tea",
+        "cut",
+        "put",
+        "capture"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 7,
+      "sourceWord": "ancient",
+      "targetWords": [
+        "ANCIENT",
+        "CAN",
+        "AN",
+        "AT"
+      ],
+      "hints": "antik | yapabilir | bir | de/da",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "it",
+        "can",
+        "tie",
+        "cat",
+        "eat",
+        "tea",
+        "ice",
+        "ancient"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 8,
+      "sourceWord": "contain",
+      "targetWords": [
+        "CONTAIN",
+        "NATION",
+        "TO"
+      ],
+      "hints": "içermek | ulus | e/a",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "it",
+        "no",
+        "on",
+        "to",
+        "can",
+        "cat",
+        "nation",
+        "contain"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 9,
+      "sourceWord": "climate",
+      "targetWords": [
+        "CLIMATE",
+        "LET",
+        "TIE",
+        "AM",
+        "ME"
+      ],
+      "hints": "iklim | izin vermek | bağlamak | im | beni",
+      "validWords": [
+        "at",
+        "it",
+        "me",
+        "am",
+        "let",
+        "tie",
+        "cat",
+        "eat",
+        "tea",
+        "ice",
+        "climate"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 10,
+      "sourceWord": "healthy",
+      "targetWords": [
+        "HEALTHY",
+        "HEALTH",
+        "HEALTH",
+        "YET",
+        "THE",
+        "LAY",
+        "HE"
+      ],
+      "hints": "sağlıklı | sağlık | sağlık | henüz | şu/bu | yatırmak | o (erkek)",
+      "validWords": [
+        "at",
+        "he",
+        "the",
+        "let",
+        "eat",
+        "tea",
+        "lay",
+        "yet",
+        "health",
+        "health",
+        "healthy"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 11,
+      "sourceWord": "fashion",
+      "targetWords": [
+        "FASHION",
+        "HIS",
+        "HAS",
+        "NO",
+        "SO",
+        "IS",
+        "ON",
+        "AS"
+      ],
+      "hints": "moda | onun | sahip | hayır | böylece | dir | üzerinde | gibi",
+      "validWords": [
+        "an",
+        "in",
+        "is",
+        "no",
+        "of",
+        "on",
+        "so",
+        "as",
+        "if",
+        "has",
+        "his",
+        "fashion"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 12,
+      "sourceWord": "intense",
+      "targetWords": [
+        "INTENSE",
+        "TIES",
+        "SITE",
+        "SIT",
+        "SET",
+        "ITS",
+        "SEE",
+        "IT"
+      ],
+      "hints": "yoğun | bağlar | site | oturmak | ayarlamak | onun | görmek | o (nesne)",
+      "validWords": [
+        "in",
+        "is",
+        "it",
+        "set",
+        "sit",
+        "tie",
+        "its",
+        "ties",
+        "site",
+        "see",
+        "intense"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 13,
+      "sourceWord": "network",
+      "targetWords": [
+        "NETWORK",
+        "NOW",
+        "ONE",
+        "OWN",
+        "TWO",
+        "NEW",
+        "OR",
+        "WE"
+      ],
+      "hints": "ağ | şimdi | bir | sahip olmak | iki | yeni | veya | biz",
+      "validWords": [
+        "no",
+        "on",
+        "or",
+        "to",
+        "we",
+        "new",
+        "now",
+        "one",
+        "own",
+        "two",
+        "network"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 14,
+      "sourceWord": "company",
+      "targetWords": [
+        "COMPANY",
+        "MAY",
+        "PAY",
+        "MAN",
+        "CAN",
+        "ANY",
+        "AN",
+        "MY"
+      ],
+      "hints": "şirket | olabilir | ödemek | adam | yapabilir | herhangi | bir | benim",
+      "validWords": [
+        "an",
+        "my",
+        "no",
+        "on",
+        "am",
+        "can",
+        "may",
+        "pay",
+        "any",
+        "man",
+        "company"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 15,
+      "sourceWord": "computer",
+      "targetWords": [
+        "COMPUTER",
+        "TOP",
+        "CUT",
+        "OUT",
+        "OUR",
+        "PUT",
+        "TO",
+        "ME"
+      ],
+      "hints": "bilgisayar | üst | kesmek | dışarı | bizim | koymak | e/a | beni",
+      "validWords": [
+        "me",
+        "or",
+        "to",
+        "up",
+        "cut",
+        "our",
+        "out",
+        "put",
+        "top",
+        "computer"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 16,
+      "sourceWord": "uniform",
+      "targetWords": [
+        "UNIFORM",
+        "RUN",
+        "FUN",
+        "FOR",
+        "IF",
+        "OF",
+        "ON",
+        "IN"
+      ],
+      "hints": "üniforma | koşmak | eğlence | için | eğer | nin | üzerinde | içinde",
+      "validWords": [
+        "in",
+        "no",
+        "of",
+        "on",
+        "or",
+        "if",
+        "run",
+        "fun",
+        "for",
+        "our",
+        "uniform"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 2,
+      "level": 17,
+      "sourceWord": "physical",
+      "targetWords": [
+        "PHYSICAL",
+        "CLAY",
+        "PLAY",
+        "HAS",
+        "SAY",
+        "LAY",
+        "HIS",
+        "IS"
+      ],
+      "hints": "fiziksel | kil | oynamak | sahip | söylemek | yatırmak | onun | dir",
+      "validWords": [
+        "is",
+        "as",
+        "has",
+        "his",
+        "say",
+        "pay",
+        "lay",
+        "play",
+        "clay",
+        "physical"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 0,
+      "sourceWord": "related",
+      "targetWords": [
+        "RELATED",
+        "LEADER",
+        "RELATE",
+        "LATER",
+        "ALTER",
+        "ARE",
+        "TEA",
+        "EAT"
+      ],
+      "hints": "ilgili | lider | ilişkilendirmek | sonra | değiştirmek | sin/sın | çay | yemek",
+      "validWords": [
+        "at",
+        "are",
+        "let",
+        "art",
+        "eat",
+        "tea",
+        "red",
+        "later",
+        "alter",
+        "relate",
+        "leader",
+        "related"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 1,
+      "sourceWord": "variety",
+      "targetWords": [
+        "VARIETY",
+        "TIE",
+        "TRY",
+        "AIR",
+        "ART",
+        "YET",
+        "IT",
+        "AT"
+      ],
+      "hints": "çeşitlilik | bağlamak | denemek | hava | sanat | henüz | o (nesne) | de/da",
+      "validWords": [
+        "at",
+        "it",
+        "are",
+        "tie",
+        "art",
+        "eat",
+        "tea",
+        "try",
+        "air",
+        "yet",
+        "variety"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 2,
+      "sourceWord": "towards",
+      "targetWords": [
+        "TOWARDS",
+        "WAR",
+        "WAS",
+        "TWO",
+        "SO",
+        "OR",
+        "TO",
+        "AS"
+      ],
+      "hints": "doğru | savaş | idi | iki | böylece | veya | e/a | gibi",
+      "validWords": [
+        "at",
+        "do",
+        "or",
+        "so",
+        "to",
+        "as",
+        "was",
+        "art",
+        "two",
+        "war",
+        "towards"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 3,
+      "sourceWord": "anxiety",
+      "targetWords": [
+        "ANXIETY",
+        "ANY",
+        "AN",
+        "IN"
+      ],
+      "hints": "kaygı | herhangi | bir | içinde",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "it",
+        "tie",
+        "eat",
+        "tea",
+        "any",
+        "yet",
+        "anxiety"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 4,
+      "sourceWord": "anybody",
+      "targetWords": [
+        "ANYBODY",
+        "BAD",
+        "AND",
+        "BOY",
+        "DAY",
+        "DO",
+        "NO",
+        "ON"
+      ],
+      "hints": "herhangi biri | kötü | ve | erkek çocuk | gün | yapmak | hayır | üzerinde",
+      "validWords": [
+        "an",
+        "do",
+        "no",
+        "on",
+        "bad",
+        "boy",
+        "day",
+        "and",
+        "any",
+        "anybody"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 5,
+      "sourceWord": "account",
+      "targetWords": [
+        "ACCOUNT",
+        "CAN",
+        "CAT",
+        "CUT",
+        "OUT"
+      ],
+      "hints": "hesap | yapabilir | kedi | kesmek | dışarı",
+      "validWords": [
+        "an",
+        "at",
+        "no",
+        "on",
+        "to",
+        "can",
+        "cat",
+        "cut",
+        "out",
+        "account"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 6,
+      "sourceWord": "distant",
+      "targetWords": [
+        "DISTANT",
+        "SIT",
+        "ITS",
+        "IS"
+      ],
+      "hints": "uzak | oturmak | onun | dir",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "is",
+        "it",
+        "as",
+        "sit",
+        "its",
+        "and",
+        "distant"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 7,
+      "sourceWord": "consist",
+      "targetWords": [
+        "CONSIST",
+        "IT"
+      ],
+      "hints": "oluşmak | o (nesne)",
+      "validWords": [
+        "in",
+        "is",
+        "it",
+        "no",
+        "on",
+        "so",
+        "to",
+        "sit",
+        "its",
+        "consist"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 8,
+      "sourceWord": "counter",
+      "targetWords": [
+        "COUNTER",
+        "RUN",
+        "ONE",
+        "OUR"
+      ],
+      "hints": "sayaç | koşmak | bir | bizim",
+      "validWords": [
+        "no",
+        "on",
+        "or",
+        "to",
+        "run",
+        "cut",
+        "one",
+        "our",
+        "out",
+        "counter"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 9,
+      "sourceWord": "install",
+      "targetWords": [
+        "INSTALL",
+        "ALL",
+        "AT"
+      ],
+      "hints": "kurmak | hepsi | de/da",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "is",
+        "it",
+        "as",
+        "sit",
+        "its",
+        "all",
+        "install"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 10,
+      "sourceWord": "organic",
+      "targetWords": [
+        "ORGANIC",
+        "CAR",
+        "AIR",
+        "OR",
+        "GO"
+      ],
+      "hints": "organik | araba | hava | veya | gitmek",
+      "validWords": [
+        "an",
+        "go",
+        "in",
+        "no",
+        "on",
+        "or",
+        "can",
+        "car",
+        "air",
+        "organic"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 11,
+      "sourceWord": "emotion",
+      "targetWords": [
+        "EMOTION",
+        "MOTION",
+        "TIE",
+        "ME",
+        "IN",
+        "TO"
+      ],
+      "hints": "duygu | hareket | bağlamak | beni | içinde | e/a",
+      "validWords": [
+        "in",
+        "it",
+        "me",
+        "no",
+        "on",
+        "to",
+        "tie",
+        "one",
+        "motion",
+        "emotion"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 12,
+      "sourceWord": "product",
+      "targetWords": [
+        "PRODUCT",
+        "PUT",
+        "TOP",
+        "DO",
+        "UP"
+      ],
+      "hints": "ürün | koymak | üst | yapmak | yukarı",
+      "validWords": [
+        "do",
+        "or",
+        "to",
+        "up",
+        "cut",
+        "our",
+        "out",
+        "put",
+        "top",
+        "product"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 13,
+      "sourceWord": "battery",
+      "targetWords": [
+        "BATTERY",
+        "ARE",
+        "ART",
+        "TRY",
+        "BYE",
+        "TEA",
+        "EAT",
+        "YET"
+      ],
+      "hints": "pil | sin/sın | sanat | denemek | hoşçakal | çay | yemek | henüz",
+      "validWords": [
+        "at",
+        "be",
+        "are",
+        "art",
+        "eat",
+        "tea",
+        "try",
+        "bye",
+        "yet",
+        "battery"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 14,
+      "sourceWord": "respond",
+      "targetWords": [
+        "RESPOND",
+        "PERSON",
+        "RED",
+        "END",
+        "ON",
+        "NO",
+        "SO"
+      ],
+      "hints": "yanıtlamak | kişi | kırmızı | son | üzerinde | hayır | böylece",
+      "validWords": [
+        "do",
+        "no",
+        "on",
+        "or",
+        "so",
+        "red",
+        "end",
+        "one",
+        "person",
+        "respond"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 15,
+      "sourceWord": "harmony",
+      "targetWords": [
+        "HARMONY",
+        "ANY",
+        "MAY",
+        "MAN",
+        "AM",
+        "AN",
+        "MY"
+      ],
+      "hints": "uyum | herhangi | olabilir | adam | im | bir | benim",
+      "validWords": [
+        "an",
+        "my",
+        "no",
+        "on",
+        "or",
+        "am",
+        "may",
+        "any",
+        "man",
+        "harmony"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 16,
+      "sourceWord": "somehow",
+      "targetWords": [
+        "SOMEHOW",
+        "WHOSE",
+        "HOW",
+        "SHE",
+        "WHO",
+        "WE",
+        "HE"
+      ],
+      "hints": "bir şekilde | kimin | nasıl | o (kadın) | kim | biz | o (erkek)",
+      "validWords": [
+        "he",
+        "me",
+        "so",
+        "we",
+        "she",
+        "how",
+        "she",
+        "who",
+        "whose",
+        "somehow"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 3,
+      "level": 17,
+      "sourceWord": "housing",
+      "targetWords": [
+        "HOUSING",
+        "HIS",
+        "SUN",
+        "IN",
+        "US",
+        "GO",
+        "IS"
+      ],
+      "hints": "konut | onun | güneş | içinde | biz | gitmek | dir",
+      "validWords": [
+        "go",
+        "in",
+        "is",
+        "no",
+        "on",
+        "so",
+        "us",
+        "his",
+        "sun",
+        "housing"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 0,
+      "sourceWord": "support",
+      "targetWords": [
+        "SUPPORT",
+        "OUR",
+        "PUT",
+        "TOP",
+        "OUT",
+        "UP",
+        "TO",
+        "OR"
+      ],
+      "hints": "destek | bizim | koymak | üst | dışarı | yukarı | e/a | veya",
+      "validWords": [
+        "or",
+        "so",
+        "to",
+        "up",
+        "us",
+        "our",
+        "out",
+        "put",
+        "top",
+        "support"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 1,
+      "sourceWord": "voltage",
+      "targetWords": [
+        "VOLTAGE",
+        "LET",
+        "TEA",
+        "GOT",
+        "GET",
+        "EAT",
+        "AGE",
+        "AT"
+      ],
+      "hints": "voltaj | izin vermek | çay | aldı | almak | yemek | yaş | de/da",
+      "validWords": [
+        "at",
+        "go",
+        "to",
+        "get",
+        "got",
+        "let",
+        "eat",
+        "tea",
+        "age",
+        "voltage"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 2,
+      "sourceWord": "national",
+      "targetWords": [
+        "NATIONAL",
+        "NATION",
+        "IT",
+        "ON",
+        "AN",
+        "NO"
+      ],
+      "hints": "ulusal | ulus | o (nesne) | üzerinde | bir | hayır",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "it",
+        "no",
+        "on",
+        "to",
+        "nation",
+        "national"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 3,
+      "sourceWord": "charity",
+      "targetWords": [
+        "CHARITY",
+        "CAT",
+        "TRY",
+        "ART",
+        "CAR",
+        "AIR",
+        "CRY"
+      ],
+      "hints": "hayırseverlik | kedi | denemek | sanat | araba | hava | ağlamak",
+      "validWords": [
+        "at",
+        "it",
+        "cat",
+        "car",
+        "art",
+        "try",
+        "cry",
+        "air",
+        "charity"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 4,
+      "sourceWord": "combine",
+      "targetWords": [
+        "COMBINE",
+        "INCOME",
+        "ICE",
+        "ONE",
+        "IN",
+        "BE",
+        "ME"
+      ],
+      "hints": "birleştirmek | gelir | buz | bir | içinde | olmak | beni",
+      "validWords": [
+        "be",
+        "in",
+        "me",
+        "no",
+        "on",
+        "ice",
+        "one",
+        "income",
+        "combine"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 5,
+      "sourceWord": "exactly",
+      "targetWords": [
+        "EXACTLY",
+        "CLAY",
+        "YET",
+        "LAY"
+      ],
+      "hints": "tam olarak | kil | henüz | yatırmak",
+      "validWords": [
+        "at",
+        "let",
+        "cat",
+        "eat",
+        "tea",
+        "lay",
+        "clay",
+        "yet",
+        "exactly"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 6,
+      "sourceWord": "perhaps",
+      "targetWords": [
+        "PERHAPS",
+        "PHRASE",
+        "SEA",
+        "SHE",
+        "ARE",
+        "HAS",
+        "HER",
+        "AS"
+      ],
+      "hints": "belki | ifade | deniz | o (kadın) | sin/sın | sahip | onun | gibi",
+      "validWords": [
+        "he",
+        "as",
+        "are",
+        "has",
+        "her",
+        "she",
+        "sea",
+        "she",
+        "phrase",
+        "perhaps"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 7,
+      "sourceWord": "against",
+      "targetWords": [
+        "AGAINST",
+        "SIT",
+        "ITS",
+        "IS",
+        "AT"
+      ],
+      "hints": "karşı | oturmak | onun | dir | de/da",
+      "validWords": [
+        "an",
+        "at",
+        "in",
+        "is",
+        "it",
+        "as",
+        "sit",
+        "its",
+        "against"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 8,
+      "sourceWord": "machine",
+      "targetWords": [
+        "MACHINE",
+        "CAN",
+        "MAN",
+        "HE",
+        "AM",
+        "AN"
+      ],
+      "hints": "makine | yapabilir | adam | o (erkek) | im | bir",
+      "validWords": [
+        "an",
+        "he",
+        "in",
+        "me",
+        "am",
+        "can",
+        "ice",
+        "man",
+        "machine"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 9,
+      "sourceWord": "measure",
+      "targetWords": [
+        "MEASURE",
+        "USE",
+        "SEE",
+        "US"
+      ],
+      "hints": "ölçmek | kullanmak | görmek | biz",
+      "validWords": [
+        "me",
+        "us",
+        "as",
+        "am",
+        "are",
+        "sea",
+        "see",
+        "use",
+        "measure"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 10,
+      "sourceWord": "husband",
+      "targetWords": [
+        "HUSBAND",
+        "SUN",
+        "HAD",
+        "BAD",
+        "AND"
+      ],
+      "hints": "koca | güneş | sahipti | kötü | ve",
+      "validWords": [
+        "an",
+        "us",
+        "as",
+        "had",
+        "has",
+        "sun",
+        "bad",
+        "and",
+        "husband"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 11,
+      "sourceWord": "operate",
+      "targetWords": [
+        "OPERATE",
+        "EAT",
+        "TOP",
+        "ART",
+        "TEA",
+        "OR",
+        "TO"
+      ],
+      "hints": "çalıştırmak | yemek | üst | sanat | çay | veya | e/a",
+      "validWords": [
+        "at",
+        "or",
+        "to",
+        "are",
+        "art",
+        "eat",
+        "tea",
+        "top",
+        "operate"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 12,
+      "sourceWord": "serious",
+      "targetWords": [
+        "SERIOUS",
+        "RISE",
+        "SIR",
+        "OUR",
+        "SO"
+      ],
+      "hints": "ciddi | yükselmek | efendi | bizim | böylece",
+      "validWords": [
+        "is",
+        "or",
+        "so",
+        "us",
+        "sir",
+        "rise",
+        "our",
+        "use",
+        "serious"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 13,
+      "sourceWord": "manager",
+      "targetWords": [
+        "MANAGER",
+        "MANAGE",
+        "ANGER",
+        "AGE",
+        "ARE",
+        "ME"
+      ],
+      "hints": "müdür | yönetmek | öfke | yaş | sin/sın | beni",
+      "validWords": [
+        "an",
+        "me",
+        "am",
+        "are",
+        "age",
+        "man",
+        "anger",
+        "manage",
+        "manager"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 14,
+      "sourceWord": "traffic",
+      "targetWords": [
+        "TRAFFIC",
+        "AIR",
+        "FAR",
+        "CAR",
+        "CAT",
+        "IF",
+        "AT",
+        "IT"
+      ],
+      "hints": "trafik | hava | uzak | araba | kedi | eğer | de/da | o (nesne)",
+      "validWords": [
+        "at",
+        "it",
+        "if",
+        "cat",
+        "car",
+        "art",
+        "air",
+        "far",
+        "traffic"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 15,
+      "sourceWord": "working",
+      "targetWords": [
+        "WORKING",
+        "NOW",
+        "WIN",
+        "OWN",
+        "GO",
+        "NO",
+        "ON",
+        "IN"
+      ],
+      "hints": "çalışan | şimdi | kazanmak | sahip olmak | gitmek | hayır | üzerinde | içinde",
+      "validWords": [
+        "go",
+        "in",
+        "no",
+        "on",
+        "or",
+        "now",
+        "own",
+        "win",
+        "working"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 16,
+      "sourceWord": "because",
+      "targetWords": [
+        "BECAUSE",
+        "SEA",
+        "SEE",
+        "BEE",
+        "USE",
+        "BE",
+        "AS",
+        "US"
+      ],
+      "hints": "çünkü | deniz | görmek | arı | kullanmak | olmak | gibi | biz",
+      "validWords": [
+        "be",
+        "us",
+        "as",
+        "sea",
+        "see",
+        "bee",
+        "use",
+        "because"
+      ]
+    },
+    {
+      "world": 3,
+      "subWorld": 4,
+      "level": 17,
+      "sourceWord": "diamond",
+      "targetWords": [
+        "DIAMOND",
+        "AND",
+        "MAN",
+        "DO",
+        "AN",
+        "AM"
+      ],
+      "hints": "elmas | ve | adam | yapmak | bir | im",
+      "validWords": [
+        "an",
+        "do",
+        "in",
+        "no",
+        "on",
+        "am",
+        "and",
+        "man",
+        "diamond"
+      ]
+    }
+  ]
+}

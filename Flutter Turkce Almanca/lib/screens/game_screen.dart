@@ -4,13 +4,18 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../providers/game_state_provider.dart';
 import '../providers/progress_provider.dart';
 import '../providers/language_provider.dart';
+import '../providers/feature_timer_provider.dart';
 import '../models/game_level.dart';
 import '../widgets/letter_circle.dart';
 import '../widgets/word_grid.dart';
 import '../widgets/current_word_display.dart';
 import '../widgets/tutorial_overlay.dart';
+import '../widgets/translation_hints_widget.dart';
+import '../widgets/circular_hint_button.dart';
+import '../widgets/circular_letter_hint_button.dart';
 import '../services/level_service.dart';
-import 'settings_screen.dart';
+import '../services/user_preferences_service.dart';
+import 'language_settings_screen.dart';
 
 class GameScreen extends StatefulWidget {
   final int world;
@@ -127,136 +132,196 @@ class _GameScreenState extends State<GameScreen> {
       );
     }
 
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(
-            '${gameState.currentSubWorldName} - Level ${widget.level + 1}'),
-        backgroundColor: const Color(0xFF4A90E2),
-        foregroundColor: Colors.white,
-        actions: [
-          // Ruby counter
-          Consumer<ProgressProvider>(
-            builder: (context, progress, child) {
-              return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16),
-                child: Row(
-                  children: [
-                    const Icon(Icons.diamond, color: Colors.red),
-                    const SizedBox(width: 4),
-                    Text('${progress.rubies}'),
-                  ],
-                ),
-              );
-            },
-          ),
-          // Hint button
-          IconButton(
-            onPressed: _useHint,
-            icon: const Icon(Icons.lightbulb),
-          ),
-          // Shuffle button
-          IconButton(
-            onPressed: _shuffleLetters,
-            icon: const Icon(Icons.shuffle),
-          ),
-          // Settings button
-          IconButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => const SettingsScreen(),
-                ),
-              );
-            },
-            icon: const Icon(Icons.settings),
-          ),
-          // Tutorial button
-          IconButton(
-            onPressed: () {
-              setState(() {
-                showTutorial = true;
-              });
-            },
-            icon: const Icon(Icons.help_outline),
-          ),
-        ],
-      ),
-      body: Stack(
-        children: [
-          Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Color(0xFF4A90E2),
-                  Color(0xFF7B68EE),
-                ],
+    return Consumer<LanguageProvider>(
+      builder: (context, languageProvider, child) {
+        return Scaffold(
+          appBar: AppBar(
+            title: Text(
+                '${gameState.currentSubWorldName} - Level ${widget.level + 1}'),
+            backgroundColor: const Color(0xFF4A90E2),
+            foregroundColor: Colors.white,
+            actions: [
+              // Ruby counter
+              Consumer<ProgressProvider>(
+                builder: (context, progress, child) {
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: Row(
+                      children: [
+                        const Icon(Icons.diamond, color: Colors.red),
+                        const SizedBox(width: 4),
+                        Text('${progress.rubies}'),
+                      ],
+                    ),
+                  );
+                },
               ),
-            ),
-            child: SafeArea(
-              child: SingleChildScrollView(
-                child: ConstrainedBox(
-                  constraints: BoxConstraints(
-                    minHeight: MediaQuery.of(context).size.height -
-                        MediaQuery.of(context).padding.top -
-                        kToolbarHeight,
-                  ),
-                  child: Column(
-                    children: [
-                      // Hints section
-                      Container(
-                        padding: const EdgeInsets.all(16),
-                        child: Text(
-                          currentLevel!.hints,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            color: Colors.white,
-                            fontWeight: FontWeight.w500,
-                          ),
-                          textAlign: TextAlign.center,
-                        ),
-                      ),
 
-                      // Current word display
-                      const CurrentWordDisplay(),
-
-                      // Letter circle
-                      SizedBox(
-                        height: 300,
-                        child: LetterCircle(
-                          letters: currentLevel!.sourceWord.split(''),
-                          onWordFormed: _onWordFormed,
-                        ),
-                      ),
-
-                      // Word grid
-                      Container(
-                        constraints: const BoxConstraints(minHeight: 200),
-                        child: WordGrid(
-                          targetWords: currentLevel!.targetWords,
-                          hints: currentLevel!.hints.split(' | '),
-                        ),
-                      ),
-
-                      const SizedBox(height: 20),
+              // Shuffle button
+              IconButton(
+                onPressed: _shuffleLetters,
+                icon: const Icon(Icons.shuffle),
+              ),
+              // Settings button
+              IconButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const LanguageSettingsScreen(),
+                    ),
+                  ).then((_) {
+                    // Reload level data when returning from settings screen
+                    _loadLevel();
+                  });
+                },
+                icon: const Icon(Icons.settings),
+              ),
+              // Tutorial button
+              IconButton(
+                onPressed: () {
+                  setState(() {
+                    showTutorial = true;
+                  });
+                },
+                icon: const Icon(Icons.help_outline),
+              ),
+            ],
+          ),
+          body: Stack(
+            children: [
+              Container(
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Color(0xFF4A90E2),
+                      Color(0xFF7B68EE),
                     ],
                   ),
                 ),
-              ),
-            ),
-          ),
+                child: SafeArea(
+                  child: SingleChildScrollView(
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        minHeight: MediaQuery.of(context).size.height -
+                            MediaQuery.of(context).padding.top -
+                            kToolbarHeight,
+                      ),
+                      child: Column(
+                        children: [
+                          // Translation hints section
+                          Builder(
+                            builder: (context) {
+                              final languageProvider = context.read<LanguageProvider>();
+                              final nativeLanguageCode = languageProvider.nativeLanguage.code;
+                              final hintsForLanguage = currentLevel!.getHintsForLanguage(nativeLanguageCode);
+                              return TranslationHintsWidget(
+                                key: ValueKey('hints_${widget.world}_${widget.subWorld}_${widget.level}'),
+                                hints: hintsForLanguage,
+                                targetWords: currentLevel!.targetWords,
+                                world: widget.world,
+                                subWorld: widget.subWorld,
+                                level: widget.level,
+                                userLanguage: nativeLanguageCode,
+                              );
+                            },
+                          ),
 
-          // Tutorial overlay
-          if (showTutorial)
-            TutorialOverlay(
-              onComplete: _completeTutorial,
-              onWordFormed: _onTutorialWordFormed,
-              onCardTapped: _onTutorialCardTapped,
-            ),
-        ],
-      ),
+                          // Current word display
+                          const CurrentWordDisplay(),
+
+                          // Letter circle with hint buttons
+                          SizedBox(
+                            height: 300,
+                            child: Row(
+                              children: [
+                                // Letter hint button (left side)
+                                SizedBox(
+                                  width: 120,
+                                  child: Center(
+                                    child: CircularLetterHintButton(
+                                      onLetterRevealed: () {
+                                        // Trigger a rebuild to show revealed letters
+                                        setState(() {});
+                                      },
+                                    ),
+                                  ),
+                                ),
+                                
+                                // Letter circle
+                                Expanded(
+                                  child: LetterCircle(
+                                    letters: currentLevel!.sourceWord.split(''),
+                                    onWordFormed: _onWordFormed,
+                                  ),
+                                ),
+                                
+                                // Translation hint button (right side)
+                                SizedBox(
+                                  width: 120,
+                                  child: Center(
+                                    child: Builder(
+                                      builder: (context) {
+                                        final languageProvider = context.read<LanguageProvider>();
+                                        final nativeLanguageCode = languageProvider.nativeLanguage.code;
+                                        final hintsForLanguage = currentLevel!.getHintsForLanguage(nativeLanguageCode);
+                                        return CircularHintButton(
+                                          hints: hintsForLanguage,
+                                          targetWords: currentLevel!.targetWords,
+                                          world: widget.world,
+                                          subWorld: widget.subWorld,
+                                          level: widget.level,
+                                          onHintRevealed: () {
+                                            // Trigger a rebuild of the translation hints widget
+                                            setState(() {});
+                                          },
+                                        );
+                                      }
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+
+                          // Word grid
+                          Container(
+                            constraints: const BoxConstraints(minHeight: 200),
+                            child: Builder(
+                              builder: (context) {
+                                final languageProvider = context.read<LanguageProvider>();
+                                final nativeLanguageCode = languageProvider.nativeLanguage.code;
+                                final hintsForLanguage = currentLevel!.getHintsForLanguage(nativeLanguageCode);
+                                final hintsList = hintsForLanguage.split(' | ');
+                                return WordGrid(
+                                  targetWords: currentLevel!.targetWords,
+                                  hints: hintsList,
+                                );
+                              }
+                            ),
+                          ),
+
+                          const SizedBox(height: 20),
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+
+              // Tutorial overlay
+              if (showTutorial)
+                TutorialOverlay(
+                  onComplete: _completeTutorial,
+                  onWordFormed: _onTutorialWordFormed,
+                  onCardTapped: _onTutorialCardTapped,
+                ),
+            ],
+          ),
+        );
+      },
     );
   }
 
@@ -267,6 +332,16 @@ class _GameScreenState extends State<GameScreen> {
       if (!gameState.isWordFound(upperWord)) {
         gameState.addFoundWord(upperWord);
         _saveProgress();
+        
+        // Auto-reveal the translation for the found word
+        final timerProvider = context.read<FeatureTimerProvider>();
+        timerProvider.autoRevealHintForFoundWord(
+          widget.world, 
+          widget.subWorld, 
+          widget.level, 
+          upperWord, 
+          currentLevel!.targetWords
+        );
 
         // Check if game is complete
         if (gameState.isGameComplete) {
@@ -374,33 +449,6 @@ class _GameScreenState extends State<GameScreen> {
         ],
       ),
     );
-  }
-
-  void _useHint() async {
-    const hintCost = 2;
-    if (await progress.spendRubies(hintCost)) {
-      // Use the new hint system to reveal a letter
-      gameState.useHint();
-      
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Bir harf açıldı!'),
-            backgroundColor: Colors.blue,
-            duration: Duration(seconds: 1),
-          ),
-        );
-      }
-    } else {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Yeterli elmas yok! 2 💎 gerekli'),
-            backgroundColor: Colors.red,
-          ),
-        );
-      }
-    }
   }
 
   void _shuffleLetters() {

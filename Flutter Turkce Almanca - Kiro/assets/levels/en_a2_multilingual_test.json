@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "targetLanguage": "en",
+    "nativeLanguage": "tr",
+    "cefrLevel": "A2",
+    "totalLevels": 1,
+    "generatedAt": "2025-08-15T23:01:37.288088",
+    "description": "Levels for A2 proficiency in EN"
+  },
+  "levels": [
+    {
+      "world": 1,
+      "subWorld": 0,
+      "level": 0,
+      "sourceWord": "weather",
+      "targetWords": [
+        "WATER",
+        "WHERE",
+        "HEART",
+        "THREE",
+        "THERE"
+      ],
+      "hints": {
+        "hindi": "पानी | कहाँ | दिल | तीन | वहाँ",
+        "chinese": "水 | 哪里 | 心 | 三 | 那里",
+        "spanish": "agua | dónde | corazón | tres | allí",
+        "turkish": "su | nerede | kalp | üç | orada",
+        "french": "eau | où | cœur | trois | là",
+        "german": "Wasser | wo | Herz | drei | dort"
+      },
+      "validWords": [
+        "are",
+        "art",
+        "at",
+        "ear",
+        "earth",
+        "eat",
+        "hare",
+        "hat",
+        "hate",
+        "he",
+        "hear",
+        "heart",
+        "heat",
+        "her",
+        "here",
+        "rat",
+        "rate",
+        "tare",
+        "tea",
+        "tear",
+        "the",
+        "there",
+        "three",
+        "tree",
+        "war",
+        "ware",
+        "water",
+        "we",
+        "wear",
+        "weather",
+        "were",
+        "wet",
+        "what",
+        "where"
+      ]
+    }
+  ]
+}

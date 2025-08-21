@@ -1,0 +1,2658 @@
+{
+  "metadata": {
+    "targetLanguage": "en",
+    "nativeLanguage": "all",
+    "cefrLevel": "A1",
+    "totalLevels": 90,
+    "generatedAt": "2025-08-21T01:39:32.905995",
+    "description": "Levels for A1 proficiency in EN"
+  },
+  "levels": [
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 0,
+      "sourceWord": "wschool",
+      "targetWords": [
+        "SCHOOL",
+        "SHOW",
+        "COOL",
+        "SLOW",
+        "HOW",
+        "WHO"
+      ],
+      "hints": {
+        "french": "école | montrer | frais | lent | comment | qui",
+        "german": "Schule | zeigen | kühl | langsam | wie | wer",
+        "spanish": "escuela | mostrar | fresco | lento | cómo | quién",
+        "turkish": "okul | göstermek | serin | yavaş | nasıl | kim",
+        "chinese": "学校 | 显示 | 凉爽 | 慢 | 怎么 | 谁",
+        "hindi": "स्कूल | दिखाना | ठंडा | धीमा | कैसे | कौन"
+      },
+      "validWords": [
+        "cool",
+        "cow",
+        "how",
+        "owl",
+        "school",
+        "show",
+        "slow",
+        "who"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 1,
+      "sourceWord": "tapple",
+      "targetWords": [
+        "APPLE",
+        "PLATE",
+        "LATE",
+        "LET",
+        "EAT",
+        "TEA"
+      ],
+      "hints": {
+        "french": "pomme | assiette | tard | laisser | manger | thé",
+        "german": "Apfel | Teller | spät | lassen | essen | Tee",
+        "spanish": "manzana | plato | tarde | dejar | comer | té",
+        "turkish": "elma | tabak | geç | izin vermek | yemek | çay",
+        "chinese": "苹果 | 盘子 | 晚 | 让 | 吃 | 茶",
+        "hindi": "सेब | प्लेट | देर | देना | खाना | चाय"
+      },
+      "validWords": [
+        "apple",
+        "eat",
+        "lap",
+        "late",
+        "let",
+        "pat",
+        "pet",
+        "plate",
+        "tap",
+        "tea"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 2,
+      "sourceWord": "tbeach",
+      "targetWords": [
+        "BEACH",
+        "TEACH",
+        "BATH",
+        "THE",
+        "CAT",
+        "BAT"
+      ],
+      "hints": {
+        "french": "plage | enseigner | bain | le/la | chat | chauve-souris",
+        "german": "Strand | lehren | Bad | der/die/das | Katze | Fledermaus",
+        "spanish": "playa | enseñar | baño | el/la | gato | murciélago",
+        "turkish": "plaj | öğretmek | banyo | şu/bu | kedi | yarasa",
+        "chinese": "海滩 | 教 | 洗澡 | 这个 | 猫 | 蝙蝠",
+        "hindi": "समुद्र तट | सिखाना | स्नान | यह | बिल्ली | चमगादड़"
+      },
+      "validWords": [
+        "act",
+        "bat",
+        "bath",
+        "beach",
+        "bet",
+        "cat",
+        "eat",
+        "hat",
+        "tea",
+        "teach",
+        "the"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 3,
+      "sourceWord": "bread",
+      "targetWords": [
+        "BREAD",
+        "READ",
+        "BEAR",
+        "ARE",
+        "RED",
+        "BED"
+      ],
+      "hints": {
+        "french": "pain | lire | ours | êtes | rouge | lit",
+        "german": "Brot | lesen | Bär | sind | rot | Bett",
+        "spanish": "pan | leer | oso | eres/son | rojo | cama",
+        "turkish": "ekmek | okumak | ayı | sin/sın | kırmızı | yatak",
+        "chinese": "面包 | 读 | 熊 | 是 | 红色 | 床",
+        "hindi": "रोटी | पढ़ना | भालू | हो | लाल | बिस्तर"
+      },
+      "validWords": [
+        "are",
+        "bad",
+        "bear",
+        "bed",
+        "bread",
+        "ear",
+        "read",
+        "red"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 4,
+      "sourceWord": "chair",
+      "targetWords": [
+        "CHAIR",
+        "HAIR",
+        "RICH",
+        "CAR",
+        "AIR"
+      ],
+      "hints": {
+        "french": "chaise | cheveux | riche | voiture | air",
+        "german": "Stuhl | Haar | reich | Auto | Luft",
+        "spanish": "silla | cabello | rico | coche | aire",
+        "turkish": "sandalye | saç | zengin | araba | hava",
+        "chinese": "椅子 | 头发 | 富有 | 汽车 | 空气",
+        "hindi": "कुर्सी | बाल | अमीर | कार | हवा"
+      },
+      "validWords": [
+        "air",
+        "car",
+        "chair",
+        "hair",
+        "rich"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 5,
+      "sourceWord": "ochild",
+      "targetWords": [
+        "CHILD",
+        "COLD",
+        "OLD",
+        "OIL",
+        "LID"
+      ],
+      "hints": {
+        "french": "enfant | froid | vieux | huile | couvercle",
+        "german": "Kind | kalt | alt | Öl | Deckel",
+        "spanish": "niño | frío | viejo | aceite | tapa",
+        "turkish": "çocuk | soğuk | eski | yağ | kapak",
+        "chinese": "孩子 | 冷 | 老 | 油 | 盖子",
+        "hindi": "बच्चा | ठंडा | पुराना | तेल | ढक्कन"
+      },
+      "validWords": [
+        "child",
+        "cold",
+        "lid",
+        "oil",
+        "old"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 6,
+      "sourceWord": "tclass",
+      "targetWords": [
+        "CLASS",
+        "LAST",
+        "ACT"
+      ],
+      "hints": {
+        "french": "classe | durer | agir",
+        "german": "Klasse | dauern | handeln",
+        "spanish": "clase | durar | actuar",
+        "turkish": "sınıf | son | hareket etmek",
+        "chinese": "班级 | 持续 | 行动",
+        "hindi": "कक्षा | चलना | काम करना"
+      },
+      "validWords": [
+        "act",
+        "cat",
+        "class",
+        "last"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 7,
+      "sourceWord": "dclock",
+      "targetWords": [
+        "CLOCK",
+        "COLD",
+        "OLD"
+      ],
+      "hints": {
+        "french": "horloge | froid | vieux",
+        "german": "Uhr | kalt | alt",
+        "spanish": "reloj | frío | viejo",
+        "turkish": "saat | soğuk | eski",
+        "chinese": "时钟 | 冷 | 老",
+        "hindi": "घड़ी | ठंडा | पुराना"
+      },
+      "validWords": [
+        "clock",
+        "cold",
+        "old"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 8,
+      "sourceWord": "tcloud",
+      "targetWords": [
+        "CLOUD",
+        "CUT",
+        "OUT",
+        "DOT",
+        "LOT"
+      ],
+      "hints": {
+        "french": "nuage | couper | dehors | point | beaucoup",
+        "german": "Wolke | schneiden | aus | Punkt | viel",
+        "spanish": "nube | cortar | fuera | punto | mucho",
+        "turkish": "bulut | kesmek | dışarı | nokta | çok",
+        "chinese": "云 | 切 | 出 | 点 | 很多",
+        "hindi": "बादल | काटना | बाहर | बिंदु | बहुत"
+      },
+      "validWords": [
+        "cloud",
+        "cold",
+        "cut",
+        "dot",
+        "lot",
+        "old",
+        "out"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 9,
+      "sourceWord": "dcolor",
+      "targetWords": [
+        "COLOR",
+        "DOOR",
+        "COOL"
+      ],
+      "hints": {
+        "french": "couleur | porte | frais",
+        "german": "Farbe | Tür | kühl",
+        "spanish": "color | puerta | fresco",
+        "turkish": "renk | kapı | serin",
+        "chinese": "颜色 | 门 | 凉爽",
+        "hindi": "रंग | दरवाजा | ठंडा"
+      },
+      "validWords": [
+        "cold",
+        "color",
+        "cool",
+        "door",
+        "old"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 10,
+      "sourceWord": "dance",
+      "targetWords": [
+        "DANCE",
+        "CAN",
+        "AND",
+        "END"
+      ],
+      "hints": {
+        "french": "danser | pouvoir | et | fin",
+        "german": "tanzen | können | und | Ende",
+        "spanish": "bailar | poder | y | fin",
+        "turkish": "dans | yapabilir | ve | son",
+        "chinese": "跳舞 | 能 | 和 | 结束",
+        "hindi": "नृत्य | सकना | और | अंत"
+      },
+      "validWords": [
+        "and",
+        "can",
+        "dance",
+        "end"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 11,
+      "sourceWord": "drink",
+      "targetWords": [
+        "DRINK",
+        "KIND",
+        "KIND",
+        "KID"
+      ],
+      "hints": {
+        "french": "boire | type | type | enfant",
+        "german": "trinken | Art | Art | Kind",
+        "spanish": "beber | tipo | tipo | niño",
+        "turkish": "içmek | tür | tür | çocuk",
+        "chinese": "喝 | 种类 | 种类 | 孩子",
+        "hindi": "पीना | प्रकार | प्रकार | बच्चा"
+      },
+      "validWords": [
+        "drink",
+        "kid",
+        "kind",
+        "kind"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 12,
+      "sourceWord": "adrive",
+      "targetWords": [
+        "DRIVE",
+        "IDEA",
+        "READ",
+        "EAR",
+        "ARE",
+        "RED"
+      ],
+      "hints": {
+        "french": "conduire | idée | lire | oreille | êtes | rouge",
+        "german": "fahren | Idee | lesen | Ohr | sind | rot",
+        "spanish": "conducir | idea | leer | oreja | eres/son | rojo",
+        "turkish": "sürmek | fikir | okumak | kulak | sin/sın | kırmızı",
+        "chinese": "开车 | 想法 | 读 | 耳朵 | 是 | 红色",
+        "hindi": "चलाना | विचार | पढ़ना | कान | हो | लाल"
+      },
+      "validWords": [
+        "air",
+        "are",
+        "drive",
+        "ear",
+        "idea",
+        "read",
+        "red"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 13,
+      "sourceWord": "early",
+      "targetWords": [
+        "EARLY",
+        "YEAR",
+        "REAL",
+        "LAY",
+        "RAY"
+      ],
+      "hints": {
+        "french": "tôt | année | réel | poser | rayon",
+        "german": "früh | Jahr | echt | legen | Strahl",
+        "spanish": "temprano | año | real | poner | rayo",
+        "turkish": "erken | yıl | gerçek | yatırmak | ışın",
+        "chinese": "早 | 年 | 真实 | 放 | 光线",
+        "hindi": "जल्दी | साल | वास्तविक | रखना | किरण"
+      },
+      "validWords": [
+        "are",
+        "ear",
+        "early",
+        "lay",
+        "ray",
+        "real",
+        "year"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 14,
+      "sourceWord": "earth",
+      "targetWords": [
+        "HEART",
+        "EARTH",
+        "HEAR",
+        "HER",
+        "ART",
+        "RAT"
+      ],
+      "hints": {
+        "french": "cœur | terre | entendre | son/sa | art | rat",
+        "german": "Herz | Erde | hören | ihr | Kunst | Ratte",
+        "spanish": "corazón | tierra | oír | su | arte | rata",
+        "turkish": "kalp | dünya | duymak | onun | sanat | sıçan",
+        "chinese": "心 | 地球 | 听 | 她的 | 艺术 | 老鼠",
+        "hindi": "दिल | पृथ्वी | सुनना | उसका | कला | चूहा"
+      },
+      "validWords": [
+        "are",
+        "art",
+        "ear",
+        "earth",
+        "eat",
+        "hat",
+        "hear",
+        "heart",
+        "her",
+        "rat",
+        "tea",
+        "the"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 15,
+      "sourceWord": "temail",
+      "targetWords": [
+        "EMAIL",
+        "TIME",
+        "LATE",
+        "TIE",
+        "AIM",
+        "LET"
+      ],
+      "hints": {
+        "french": "e-mail | temps | tard | attacher | viser | laisser",
+        "german": "E-Mail | Zeit | spät | binden | zielen | lassen",
+        "spanish": "correo electrónico | tiempo | tarde | atar | apuntar | dejar",
+        "turkish": "e-posta | zaman | geç | bağlamak | nişan almak | izin vermek",
+        "chinese": "电子邮件 | 时间 | 晚 | 系 | 瞄准 | 让",
+        "hindi": "ईमेल | समय | देर | बांधना | निशाना लगाना | देना"
+      },
+      "validWords": [
+        "aim",
+        "eat",
+        "email",
+        "late",
+        "let",
+        "tea",
+        "tie",
+        "time"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 16,
+      "sourceWord": "aevery",
+      "targetWords": [
+        "EVERY",
+        "EYE"
+      ],
+      "hints": {
+        "french": "chaque | œil",
+        "german": "jeder | Auge",
+        "spanish": "cada | ojo",
+        "turkish": "her | göz",
+        "chinese": "每个 | 眼睛",
+        "hindi": "हर | आंख"
+      },
+      "validWords": [
+        "are",
+        "ear",
+        "every",
+        "eye",
+        "ray",
+        "year"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 0,
+      "level": 17,
+      "sourceWord": "nfield",
+      "targetWords": [
+        "FIELD",
+        "LIFE",
+        "LINE",
+        "FIND",
+        "FINE",
+        "END"
+      ],
+      "hints": {
+        "french": "champ | vie | ligne | trouver | bien | fin",
+        "german": "Feld | Leben | Linie | finden | fein | Ende",
+        "spanish": "campo | vida | línea | encontrar | bien | fin",
+        "turkish": "tarla | hayat | çizgi | bulmak | iyi | son",
+        "chinese": "田地 | 生活 | 线 | 找到 | 好 | 结束",
+        "hindi": "खेत | जीवन | रेखा | खोजना | अच्छा | अंत"
+      },
+      "validWords": [
+        "end",
+        "field",
+        "find",
+        "fine",
+        "lid",
+        "life",
+        "line"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 0,
+      "sourceWord": "dfloor",
+      "targetWords": [
+        "FLOOR",
+        "FOOD",
+        "DOOR",
+        "FOR",
+        "OLD"
+      ],
+      "hints": {
+        "french": "sol | nourriture | porte | pour | vieux",
+        "german": "Boden | Essen | Tür | für | alt",
+        "spanish": "suelo | comida | puerta | para | viejo",
+        "turkish": "zemin | yemek | kapı | için | eski",
+        "chinese": "地板 | 食物 | 门 | 为了 | 老",
+        "hindi": "फर्श | खाना | दरवाजा | के लिए | पुराना"
+      },
+      "validWords": [
+        "door",
+        "floor",
+        "food",
+        "for",
+        "old"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 1,
+      "sourceWord": "afruit",
+      "targetWords": [
+        "FRUIT",
+        "FAR",
+        "FAT",
+        "FIT",
+        "ART",
+        "AIR"
+      ],
+      "hints": {
+        "french": "fruit | loin | gros | convenir | art | air",
+        "german": "Obst | weit | dick | passen | Kunst | Luft",
+        "spanish": "fruta | lejos | gordo | encajar | arte | aire",
+        "turkish": "meyve | uzak | şişman | uygun | sanat | hava",
+        "chinese": "水果 | 远 | 胖 | 合适 | 艺术 | 空气",
+        "hindi": "फल | दूर | मोटा | फिट | कला | हवा"
+      },
+      "validWords": [
+        "air",
+        "art",
+        "far",
+        "fat",
+        "fit",
+        "fruit",
+        "rat"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 2,
+      "sourceWord": "eglass",
+      "targetWords": [
+        "GLASS",
+        "SEA",
+        "AGE",
+        "LEG",
+        "AGE",
+        "GAS"
+      ],
+      "hints": {
+        "french": "verre | mer | âge | jambe | âge | gaz",
+        "german": "Glas | Meer | Alter | Bein | Alter | Gas",
+        "spanish": "vaso | mar | edad | pierna | edad | gas",
+        "turkish": "bardak | deniz | yaş | bacak | yaş | gaz",
+        "chinese": "玻璃杯 | 海 | 年龄 | 腿 | 年龄 | 气体",
+        "hindi": "गिलास | समुद्र | उम्र | पैर | उम्र | गैस"
+      },
+      "validWords": [
+        "age",
+        "age",
+        "gas",
+        "glass",
+        "leg",
+        "sea"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 3,
+      "sourceWord": "egrass",
+      "targetWords": [
+        "GRASS",
+        "EAR",
+        "ARE"
+      ],
+      "hints": {
+        "french": "herbe | oreille | êtes",
+        "german": "Gras | Ohr | sind",
+        "spanish": "hierba | oreja | eres/son",
+        "turkish": "çimen | kulak | sin/sın",
+        "chinese": "草 | 耳朵 | 是",
+        "hindi": "घास | कान | हो"
+      },
+      "validWords": [
+        "age",
+        "age",
+        "are",
+        "ear",
+        "gas",
+        "grass",
+        "sea"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 4,
+      "sourceWord": "tgreen",
+      "targetWords": [
+        "GREEN",
+        "TREE",
+        "GET",
+        "TEN",
+        "NET"
+      ],
+      "hints": {
+        "french": "vert | arbre | obtenir | dix | filet",
+        "german": "grün | Baum | bekommen | zehn | Netz",
+        "spanish": "verde | árbol | obtener | diez | red",
+        "turkish": "yeşil | ağaç | almak | on | ağ",
+        "chinese": "绿色 | 树 | 得到 | 十 | 网",
+        "hindi": "हरा | पेड़ | पाना | दस | जाल"
+      },
+      "validWords": [
+        "get",
+        "green",
+        "net",
+        "ten",
+        "tree"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 5,
+      "sourceWord": "shappy",
+      "targetWords": [
+        "HAPPY",
+        "HAS",
+        "SAY",
+        "PAY",
+        "SHY"
+      ],
+      "hints": {
+        "french": "heureux | a | dire | payer | timide",
+        "german": "glücklich | hat | sagen | bezahlen | schüchtern",
+        "spanish": "feliz | tiene | decir | pagar | tímido",
+        "turkish": "mutlu | sahip | söylemek | ödemek | utangaç",
+        "chinese": "快乐 | 有 | 说 | 付钱 | 害羞",
+        "hindi": "खुश | है | कहना | भुगतान | शर्मीला"
+      },
+      "validWords": [
+        "happy",
+        "has",
+        "pay",
+        "say",
+        "shy"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 6,
+      "sourceWord": "heart",
+      "targetWords": [
+        "HEART",
+        "HEAR",
+        "HAT",
+        "HER",
+        "THE",
+        "EAT"
+      ],
+      "hints": {
+        "french": "cœur | entendre | chapeau | son/sa | le/la | manger",
+        "german": "Herz | hören | Hut | ihr | der/die/das | essen",
+        "spanish": "corazón | oír | sombrero | su | el/la | comer",
+        "turkish": "kalp | duymak | şapka | onun | şu/bu | yemek",
+        "chinese": "心 | 听 | 帽子 | 她的 | 这个 | 吃",
+        "hindi": "दिल | सुनना | टोपी | उसका | यह | खाना"
+      },
+      "validWords": [
+        "are",
+        "art",
+        "ear",
+        "earth",
+        "eat",
+        "hat",
+        "hear",
+        "heart",
+        "her",
+        "rat",
+        "tea",
+        "the"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 7,
+      "sourceWord": "sheavy",
+      "targetWords": [
+        "HEAVY",
+        "EASY",
+        "SHE",
+        "SHE",
+        "YES",
+        "SEA"
+      ],
+      "hints": {
+        "french": "lourd | facile | elle | elle | oui | mer",
+        "german": "schwer | einfach | sie | sie | ja | Meer",
+        "spanish": "pesado | fácil | ella | ella | sí | mar",
+        "turkish": "ağır | kolay | o (kadın) | o (kadın) | evet | deniz",
+        "chinese": "重 | 容易 | 她 | 她 | 是 | 海",
+        "hindi": "भारी | आसान | वह | वह | हाँ | समुद्र"
+      },
+      "validWords": [
+        "easy",
+        "has",
+        "heavy",
+        "say",
+        "sea",
+        "she",
+        "she",
+        "shy",
+        "yes"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 8,
+      "sourceWord": "thello",
+      "targetWords": [
+        "HELLO",
+        "HOTEL",
+        "TELL",
+        "HOT",
+        "TOE",
+        "LOT"
+      ],
+      "hints": {
+        "french": "bonjour | hôtel | dire | chaud | orteil | beaucoup",
+        "german": "hallo | Hotel | erzählen | heiß | Zeh | viel",
+        "spanish": "hola | hotel | decir | caliente | dedo del pie | mucho",
+        "turkish": "merhaba | otel | söylemek | sıcak | ayak parmağı | çok",
+        "chinese": "你好 | 酒店 | 告诉 | 热 | 脚趾 | 很多",
+        "hindi": "नमस्ते | होटल | बताना | गर्म | पैर की अंगुली | बहुत"
+      },
+      "validWords": [
+        "hello",
+        "hot",
+        "hotel",
+        "let",
+        "lot",
+        "tell",
+        "the",
+        "toe"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 9,
+      "sourceWord": "horse",
+      "targetWords": [
+        "HORSE",
+        "HER",
+        "SHE",
+        "SHE"
+      ],
+      "hints": {
+        "french": "cheval | son/sa | elle | elle",
+        "german": "Pferd | ihr | sie | sie",
+        "spanish": "caballo | su | ella | ella",
+        "turkish": "at | onun | o (kadın) | o (kadın)",
+        "chinese": "马 | 她的 | 她 | 她",
+        "hindi": "घोड़ा | उसका | वह | वह"
+      },
+      "validWords": [
+        "her",
+        "horse",
+        "she",
+        "she"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 10,
+      "sourceWord": "hotel",
+      "targetWords": [
+        "HOTEL",
+        "HOT",
+        "TOE",
+        "THE",
+        "LET",
+        "LOT"
+      ],
+      "hints": {
+        "french": "hôtel | chaud | orteil | le/la | laisser | beaucoup",
+        "german": "Hotel | heiß | Zeh | der/die/das | lassen | viel",
+        "spanish": "hotel | caliente | dedo del pie | el/la | dejar | mucho",
+        "turkish": "otel | sıcak | ayak parmağı | şu/bu | izin vermek | çok",
+        "chinese": "酒店 | 热 | 脚趾 | 这个 | 让 | 很多",
+        "hindi": "होटल | गर्म | पैर की अंगुली | यह | देना | बहुत"
+      },
+      "validWords": [
+        "hot",
+        "hotel",
+        "let",
+        "lot",
+        "the",
+        "toe"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 11,
+      "sourceWord": "house",
+      "targetWords": [
+        "HOUSE",
+        "USE"
+      ],
+      "hints": {
+        "french": "maison | utiliser",
+        "german": "Haus | benutzen",
+        "spanish": "casa | usar",
+        "turkish": "ev | kullanmak",
+        "chinese": "房子 | 使用",
+        "hindi": "घर | उपयोग"
+      },
+      "validWords": [
+        "house",
+        "she",
+        "she",
+        "use"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 12,
+      "sourceWord": "dhuman",
+      "targetWords": [
+        "HUMAN",
+        "HAND",
+        "HAD",
+        "MAN",
+        "HAM",
+        "MUD"
+      ],
+      "hints": {
+        "french": "humain | main | avait | homme | jambon | boue",
+        "german": "Mensch | Hand | hatte | Mann | Schinken | Schlamm",
+        "spanish": "humano | mano | tenía | hombre | jamón | barro",
+        "turkish": "insan | el | sahipti | adam | jambon | çamur",
+        "chinese": "人类 | 手 | 有 | 男人 | 火腿 | 泥",
+        "hindi": "इंसान | हाथ | था | आदमी | हैम | कीचड़"
+      },
+      "validWords": [
+        "and",
+        "had",
+        "ham",
+        "hand",
+        "human",
+        "man",
+        "mud"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 13,
+      "sourceWord": "image",
+      "targetWords": [
+        "IMAGE",
+        "GAME",
+        "AIM",
+        "AGE",
+        "AGE"
+      ],
+      "hints": {
+        "french": "image | jeu | viser | âge | âge",
+        "german": "Bild | Spiel | zielen | Alter | Alter",
+        "spanish": "imagen | juego | apuntar | edad | edad",
+        "turkish": "resim | oyun | nişan almak | yaş | yaş",
+        "chinese": "图像 | 游戏 | 瞄准 | 年龄 | 年龄",
+        "hindi": "तस्वीर | खेल | निशाना लगाना | उम्र | उम्र"
+      },
+      "validWords": [
+        "age",
+        "age",
+        "aim",
+        "game",
+        "image"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 14,
+      "sourceWord": "tjuice",
+      "targetWords": [
+        "JUICE",
+        "ICE",
+        "TIE",
+        "CUT"
+      ],
+      "hints": {
+        "french": "jus | glace | attacher | couper",
+        "german": "Saft | Eis | binden | schneiden",
+        "spanish": "jugo | hielo | atar | cortar",
+        "turkish": "meyve suyu | buz | bağlamak | kesmek",
+        "chinese": "果汁 | 冰 | 系 | 切",
+        "hindi": "रस | बर्फ | बांधना | काटना"
+      },
+      "validWords": [
+        "cut",
+        "ice",
+        "juice",
+        "tie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 15,
+      "sourceWord": "dknife",
+      "targetWords": [
+        "KNIFE",
+        "FIND",
+        "FINE",
+        "KIND",
+        "KIND",
+        "KID"
+      ],
+      "hints": {
+        "french": "couteau | trouver | bien | type | type | enfant",
+        "german": "Messer | finden | fein | Art | Art | Kind",
+        "spanish": "cuchillo | encontrar | bien | tipo | tipo | niño",
+        "turkish": "bıçak | bulmak | iyi | tür | tür | çocuk",
+        "chinese": "刀 | 找到 | 好 | 种类 | 种类 | 孩子",
+        "hindi": "चाकू | खोजना | अच्छा | प्रकार | प्रकार | बच्चा"
+      },
+      "validWords": [
+        "end",
+        "find",
+        "fine",
+        "kid",
+        "kind",
+        "kind",
+        "knife"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 16,
+      "sourceWord": "elaugh",
+      "targetWords": [
+        "LAUGH",
+        "HUG",
+        "LEG"
+      ],
+      "hints": {
+        "french": "rire | embrasser | jambe",
+        "german": "lachen | umarmen | Bein",
+        "spanish": "reír | abrazar | pierna",
+        "turkish": "gülmek | sarılmak | bacak",
+        "chinese": "笑 | 拥抱 | 腿",
+        "hindi": "हंसना | गले लगाना | पैर"
+      },
+      "validWords": [
+        "age",
+        "age",
+        "hug",
+        "laugh",
+        "leg"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 1,
+      "level": 17,
+      "sourceWord": "learn",
+      "targetWords": [
+        "LEARN",
+        "REAL",
+        "EAR"
+      ],
+      "hints": {
+        "french": "apprendre | réel | oreille",
+        "german": "lernen | echt | Ohr",
+        "spanish": "aprender | real | oreja",
+        "turkish": "öğrenmek | gerçek | kulak",
+        "chinese": "学习 | 真实 | 耳朵",
+        "hindi": "सीखना | वास्तविक | कान"
+      },
+      "validWords": [
+        "are",
+        "ear",
+        "learn",
+        "real"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 0,
+      "sourceWord": "elight",
+      "targetWords": [
+        "LIGHT",
+        "HIT",
+        "GET"
+      ],
+      "hints": {
+        "french": "lumière | frapper | obtenir",
+        "german": "Licht | schlagen | bekommen",
+        "spanish": "luz | golpear | obtener",
+        "turkish": "ışık | vurmak | almak",
+        "chinese": "光 | 打 | 得到",
+        "hindi": "प्रकाश | मारना | पाना"
+      },
+      "validWords": [
+        "get",
+        "hit",
+        "leg",
+        "let",
+        "light",
+        "the",
+        "tie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 1,
+      "sourceWord": "lunchse",
+      "targetWords": [
+        "LUNCH",
+        "SUN",
+        "HEN",
+        "USE"
+      ],
+      "hints": {
+        "french": "déjeuner | soleil | poule | utiliser",
+        "german": "Mittagessen | Sonne | Henne | benutzen",
+        "spanish": "almuerzo | sol | gallina | usar",
+        "turkish": "öğle yemeği | güneş | tavuk | kullanmak",
+        "chinese": "午餐 | 太阳 | 母鸡 | 使用",
+        "hindi": "दोपहर का खाना | सूरज | मुर्गी | उपयोग"
+      },
+      "validWords": [
+        "hen",
+        "lunch",
+        "she",
+        "she",
+        "sun",
+        "use"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 2,
+      "sourceWord": "emagic",
+      "targetWords": [
+        "MAGIC",
+        "GAME",
+        "ICE",
+        "AIM"
+      ],
+      "hints": {
+        "french": "magie | jeu | glace | viser",
+        "german": "Magie | Spiel | Eis | zielen",
+        "spanish": "magia | juego | hielo | apuntar",
+        "turkish": "sihir | oyun | buz | nişan almak",
+        "chinese": "魔法 | 游戏 | 冰 | 瞄准",
+        "hindi": "जादू | खेल | बर्फ | निशाना लगाना"
+      },
+      "validWords": [
+        "age",
+        "age",
+        "aim",
+        "game",
+        "ice",
+        "image",
+        "magic"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 3,
+      "sourceWord": "match",
+      "targetWords": [
+        "MATCH",
+        "CAT",
+        "HAM",
+        "HAT",
+        "ACT"
+      ],
+      "hints": {
+        "french": "allumette | chat | jambon | chapeau | agir",
+        "german": "Streichholz | Katze | Schinken | Hut | handeln",
+        "spanish": "cerilla | gato | jamón | sombrero | actuar",
+        "turkish": "kibrit | kedi | jambon | şapka | hareket etmek",
+        "chinese": "火柴 | 猫 | 火腿 | 帽子 | 行动",
+        "hindi": "माचिस | बिल्ली | हैम | टोपी | काम करना"
+      },
+      "validWords": [
+        "act",
+        "cat",
+        "ham",
+        "hat",
+        "match"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 4,
+      "sourceWord": "tmoney",
+      "targetWords": [
+        "MONEY",
+        "TOY",
+        "ONE",
+        "YET",
+        "TEN",
+        "NET"
+      ],
+      "hints": {
+        "french": "argent | jouet | un | encore | dix | filet",
+        "german": "Geld | Spielzeug | eins | noch | zehn | Netz",
+        "spanish": "dinero | juguete | uno | todavía | diez | red",
+        "turkish": "para | oyuncak | bir | henüz | on | ağ",
+        "chinese": "钱 | 玩具 | 一 | 还 | 十 | 网",
+        "hindi": "पैसा | खिलौना | एक | अभी तक | दस | जाल"
+      },
+      "validWords": [
+        "money",
+        "net",
+        "one",
+        "ten",
+        "toe",
+        "toy",
+        "yet"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 5,
+      "sourceWord": "emonth",
+      "targetWords": [
+        "MONTH",
+        "HOME",
+        "HOT",
+        "TOE"
+      ],
+      "hints": {
+        "french": "mois | maison | chaud | orteil",
+        "german": "Monat | Zuhause | heiß | Zeh",
+        "spanish": "mes | casa | caliente | dedo del pie",
+        "turkish": "ay | ev | sıcak | ayak parmağı",
+        "chinese": "月 | 家 | 热 | 脚趾",
+        "hindi": "महीना | घर | गर्म | पैर की अंगुली"
+      },
+      "validWords": [
+        "hen",
+        "home",
+        "hot",
+        "month",
+        "net",
+        "one",
+        "ten",
+        "the",
+        "toe"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 6,
+      "sourceWord": "tmusic",
+      "targetWords": [
+        "MUSIC",
+        "SIT",
+        "ITS",
+        "SUM",
+        "CUT"
+      ],
+      "hints": {
+        "french": "musique | s\\ | son/sa | somme | couper",
+        "german": "Musik | sitzen | sein | Summe | schneiden",
+        "spanish": "música | sentarse | su | suma | cortar",
+        "turkish": "müzik | oturmak | onun | toplam | kesmek",
+        "chinese": "音乐 | 坐 | 它的 | 总和 | 切",
+        "hindi": "संगीत | बैठना | इसका | योग | काटना"
+      },
+      "validWords": [
+        "cut",
+        "its",
+        "music",
+        "sit",
+        "sum"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 7,
+      "sourceWord": "enight",
+      "targetWords": [
+        "NIGHT",
+        "THING",
+        "HEN",
+        "HIT",
+        "GET",
+        "TIE"
+      ],
+      "hints": {
+        "french": "nuit | chose | poule | frapper | obtenir | attacher",
+        "german": "Nacht | Ding | Henne | schlagen | bekommen | binden",
+        "spanish": "noche | cosa | gallina | golpear | obtener | atar",
+        "turkish": "gece | şey | tavuk | vurmak | almak | bağlamak",
+        "chinese": "夜晚 | 东西 | 母鸡 | 打 | 得到 | 系",
+        "hindi": "रात | चीज | मुर्गी | मारना | पाना | बांधना"
+      },
+      "validWords": [
+        "get",
+        "hen",
+        "hit",
+        "net",
+        "night",
+        "ten",
+        "the",
+        "thing",
+        "tie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 8,
+      "sourceWord": "tnoise",
+      "targetWords": [
+        "NOISE",
+        "STONE",
+        "TIES",
+        "SITE",
+        "SET",
+        "SON"
+      ],
+      "hints": {
+        "french": "bruit | pierre | cravates | site | mettre | fils",
+        "german": "Lärm | Stein | Krawatten | Seite | setzen | Sohn",
+        "spanish": "ruido | piedra | corbatas | sitio | poner | hijo",
+        "turkish": "gürültü | taş | bağlar | site | ayarlamak | oğul",
+        "chinese": "噪音 | 石头 | 领带 | 网站 | 设置 | 儿子",
+        "hindi": "शोर | पत्थर | टाई | साइट | रखना | बेटा"
+      },
+      "validWords": [
+        "its",
+        "net",
+        "noise",
+        "one",
+        "set",
+        "sit",
+        "site",
+        "son",
+        "stone",
+        "ten",
+        "tie",
+        "ties",
+        "toe"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 9,
+      "sourceWord": "enorth",
+      "targetWords": [
+        "NORTH",
+        "OTHER",
+        "ONE",
+        "TEN",
+        "NET"
+      ],
+      "hints": {
+        "french": "nord | autre | un | dix | filet",
+        "german": "Norden | andere | eins | zehn | Netz",
+        "spanish": "norte | otro | uno | diez | red",
+        "turkish": "kuzey | diğer | bir | on | ağ",
+        "chinese": "北 | 其他 | 一 | 十 | 网",
+        "hindi": "उत्तर | दूसरा | एक | दस | जाल"
+      },
+      "validWords": [
+        "hen",
+        "her",
+        "hot",
+        "net",
+        "north",
+        "one",
+        "other",
+        "ten",
+        "the",
+        "toe"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 10,
+      "sourceWord": "nurse",
+      "targetWords": [
+        "NURSE",
+        "SURE",
+        "RUN",
+        "SUN",
+        "USE"
+      ],
+      "hints": {
+        "french": "infirmière | sûr | courir | soleil | utiliser",
+        "german": "Krankenschwester | sicher | laufen | Sonne | benutzen",
+        "spanish": "enfermera | seguro | correr | sol | usar",
+        "turkish": "hemşire | emin | koşmak | güneş | kullanmak",
+        "chinese": "护士 | 确定 | 跑 | 太阳 | 使用",
+        "hindi": "नर्स | निश्चित | दौड़ना | सूरज | उपयोग"
+      },
+      "validWords": [
+        "nurse",
+        "run",
+        "sun",
+        "sure",
+        "use"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 11,
+      "sourceWord": "ocean",
+      "targetWords": [
+        "OCEAN",
+        "ONCE",
+        "CAN"
+      ],
+      "hints": {
+        "french": "océan | une fois | pouvoir",
+        "german": "Ozean | einmal | können",
+        "spanish": "océano | una vez | poder",
+        "turkish": "okyanus | bir kez | yapabilir",
+        "chinese": "海洋 | 一次 | 能",
+        "hindi": "महासागर | एक बार | सकना"
+      },
+      "validWords": [
+        "can",
+        "ocean",
+        "once",
+        "one"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 12,
+      "sourceWord": "other",
+      "targetWords": [
+        "OTHER",
+        "HER",
+        "THE",
+        "HOT",
+        "TOE"
+      ],
+      "hints": {
+        "french": "autre | son/sa | le/la | chaud | orteil",
+        "german": "andere | ihr | der/die/das | heiß | Zeh",
+        "spanish": "otro | su | el/la | caliente | dedo del pie",
+        "turkish": "diğer | onun | şu/bu | sıcak | ayak parmağı",
+        "chinese": "其他 | 她的 | 这个 | 热 | 脚趾",
+        "hindi": "दूसरा | उसका | यह | गर्म | पैर की अंगुली"
+      },
+      "validWords": [
+        "her",
+        "hot",
+        "other",
+        "the",
+        "toe"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 13,
+      "sourceWord": "tpaper",
+      "targetWords": [
+        "PAPER",
+        "PART",
+        "PAT",
+        "TAP",
+        "PET",
+        "TEA"
+      ],
+      "hints": {
+        "french": "papier | partie | caresser | tapoter | animal de compagnie | thé",
+        "german": "Papier | Teil | streicheln | klopfen | Haustier | Tee",
+        "spanish": "papel | parte | acariciar | tocar | mascota | té",
+        "turkish": "kağıt | parça | okşamak | hafifçe vurmak | evcil hayvan | çay",
+        "chinese": "纸 | 部分 | 轻拍 | 轻敲 | 宠物 | 茶",
+        "hindi": "कागज | भाग | थपथपाना | थपथपाना | पालतू जानवर | चाय"
+      },
+      "validWords": [
+        "are",
+        "art",
+        "ear",
+        "eat",
+        "paper",
+        "part",
+        "pat",
+        "pet",
+        "rat",
+        "tap",
+        "tea"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 14,
+      "sourceWord": "party",
+      "targetWords": [
+        "PARTY",
+        "PRAY",
+        "TRY",
+        "PAY",
+        "RAT",
+        "RAY"
+      ],
+      "hints": {
+        "french": "fête | prier | essayer | payer | rat | rayon",
+        "german": "Party | beten | versuchen | bezahlen | Ratte | Strahl",
+        "spanish": "fiesta | rezar | intentar | pagar | rata | rayo",
+        "turkish": "parti | dua etmek | denemek | ödemek | sıçan | ışın",
+        "chinese": "聚会 | 祈祷 | 尝试 | 付钱 | 老鼠 | 光线",
+        "hindi": "पार्टी | प्रार्थना | कोशिश | भुगतान | चूहा | किरण"
+      },
+      "validWords": [
+        "art",
+        "part",
+        "party",
+        "pat",
+        "pay",
+        "pray",
+        "rat",
+        "ray",
+        "tap",
+        "try"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 15,
+      "sourceWord": "phone",
+      "targetWords": [
+        "PHONE",
+        "OPEN",
+        "OPEN",
+        "PEN",
+        "HOP",
+        "ONE"
+      ],
+      "hints": {
+        "french": "téléphone | ouvrir | ouvrir | stylo | sautiller | un",
+        "german": "Telefon | öffnen | öffnen | Stift | hüpfen | eins",
+        "spanish": "teléfono | abrir | abrir | bolígrafo | saltar | uno",
+        "turkish": "telefon | açmak | açmak | kalem | zıplamak | bir",
+        "chinese": "电话 | 打开 | 打开 | 笔 | 跳 | 一",
+        "hindi": "फोन | खोलना | खोलना | कलम | कूदना | एक"
+      },
+      "validWords": [
+        "hen",
+        "hop",
+        "one",
+        "open",
+        "open",
+        "pen",
+        "phone"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 16,
+      "sourceWord": "photo",
+      "targetWords": [
+        "PHOTO",
+        "TOP",
+        "POT"
+      ],
+      "hints": {
+        "french": "photo | haut | pot",
+        "german": "Foto | oben | Topf",
+        "spanish": "foto | arriba | olla",
+        "turkish": "fotoğraf | üst | tencere",
+        "chinese": "照片 | 顶部 | 锅",
+        "hindi": "फोटो | ऊपर | बर्तन"
+      },
+      "validWords": [
+        "hop",
+        "hot",
+        "photo",
+        "pot",
+        "top"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 2,
+      "level": 17,
+      "sourceWord": "tplace",
+      "targetWords": [
+        "PLACE",
+        "PLATE",
+        "LATE",
+        "LAP",
+        "CAT",
+        "EAT"
+      ],
+      "hints": {
+        "french": "lieu | assiette | tard | genoux | chat | manger",
+        "german": "Ort | Teller | spät | Schoß | Katze | essen",
+        "spanish": "lugar | plato | tarde | regazo | gato | comer",
+        "turkish": "yer | tabak | geç | kucak | kedi | yemek",
+        "chinese": "地方 | 盘子 | 晚 | 膝盖 | 猫 | 吃",
+        "hindi": "जगह | प्लेट | देर | गोद | बिल्ली | खाना"
+      },
+      "validWords": [
+        "act",
+        "cat",
+        "eat",
+        "lap",
+        "late",
+        "let",
+        "pat",
+        "pet",
+        "place",
+        "plate",
+        "tap",
+        "tea"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 0,
+      "sourceWord": "plant",
+      "targetWords": [
+        "PLANT",
+        "ANT",
+        "PAN",
+        "PAT",
+        "TAP"
+      ],
+      "hints": {
+        "french": "plante | fourmi | poêle | caresser | tapoter",
+        "german": "Pflanze | Ameise | Pfanne | streicheln | klopfen",
+        "spanish": "planta | hormiga | sartén | acariciar | tocar",
+        "turkish": "bitki | karınca | tava | okşamak | hafifçe vurmak",
+        "chinese": "植物 | 蚂蚁 | 平底锅 | 轻拍 | 轻敲",
+        "hindi": "पौधा | चींटी | तवा | थपथपाना | थपथपाना"
+      },
+      "validWords": [
+        "ant",
+        "lap",
+        "pan",
+        "pat",
+        "plant",
+        "tap"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 1,
+      "sourceWord": "plate",
+      "targetWords": [
+        "PET",
+        "TEA"
+      ],
+      "hints": {
+        "french": "animal de compagnie | thé",
+        "german": "Haustier | Tee",
+        "spanish": "mascota | té",
+        "turkish": "evcil hayvan | çay",
+        "chinese": "宠物 | 茶",
+        "hindi": "पालतू जानवर | चाय"
+      },
+      "validWords": [
+        "eat",
+        "lap",
+        "late",
+        "let",
+        "pat",
+        "pet",
+        "plate",
+        "tap",
+        "tea"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 2,
+      "sourceWord": "aprice",
+      "targetWords": [
+        "PRICE",
+        "PIE",
+        "CAR",
+        "AIR",
+        "ICE"
+      ],
+      "hints": {
+        "french": "prix | tarte | voiture | air | glace",
+        "german": "Preis | Kuchen | Auto | Luft | Eis",
+        "spanish": "precio | pastel | coche | aire | hielo",
+        "turkish": "fiyat | turta | araba | hava | buz",
+        "chinese": "价格 | 馅饼 | 汽车 | 空气 | 冰",
+        "hindi": "कीमत | पाई | कार | हवा | बर्फ"
+      },
+      "validWords": [
+        "air",
+        "are",
+        "car",
+        "ear",
+        "ice",
+        "pie",
+        "price"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 3,
+      "sourceWord": "squeen",
+      "targetWords": [
+        "QUEEN",
+        "SEE",
+        "SUN"
+      ],
+      "hints": {
+        "french": "reine | voir | soleil",
+        "german": "Königin | sehen | Sonne",
+        "spanish": "reina | ver | sol",
+        "turkish": "kraliçe | görmek | güneş",
+        "chinese": "女王 | 看 | 太阳",
+        "hindi": "रानी | देखना | सूरज"
+      },
+      "validWords": [
+        "queen",
+        "see",
+        "sun",
+        "use"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 4,
+      "sourceWord": "quickse",
+      "targetWords": [
+        "QUICK",
+        "ICE",
+        "USE"
+      ],
+      "hints": {
+        "french": "rapide | glace | utiliser",
+        "german": "schnell | Eis | benutzen",
+        "spanish": "rápido | hielo | usar",
+        "turkish": "hızlı | buz | kullanmak",
+        "chinese": "快 | 冰 | 使用",
+        "hindi": "तेज़ | बर्फ | उपयोग"
+      },
+      "validWords": [
+        "ice",
+        "quick",
+        "use"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 5,
+      "sourceWord": "squiet",
+      "targetWords": [
+        "QUIET",
+        "TIES",
+        "SITE",
+        "SET",
+        "SIT",
+        "ITS"
+      ],
+      "hints": {
+        "french": "silencieux | cravates | site | mettre | s\\ | son/sa",
+        "german": "ruhig | Krawatten | Seite | setzen | sitzen | sein",
+        "spanish": "silencioso | corbatas | sitio | poner | sentarse | su",
+        "turkish": "sessiz | bağlar | site | ayarlamak | oturmak | onun",
+        "chinese": "安静 | 领带 | 网站 | 设置 | 坐 | 它的",
+        "hindi": "शांत | टाई | साइट | रखना | बैठना | इसका"
+      },
+      "validWords": [
+        "its",
+        "quiet",
+        "set",
+        "sit",
+        "site",
+        "tie",
+        "ties",
+        "use"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 6,
+      "sourceWord": "eradio",
+      "targetWords": [
+        "RADIO",
+        "ROAD",
+        "IDEA",
+        "READ",
+        "RED"
+      ],
+      "hints": {
+        "french": "radio | route | idée | lire | rouge",
+        "german": "Radio | Straße | Idee | lesen | rot",
+        "spanish": "radio | carretera | idea | leer | rojo",
+        "turkish": "radyo | yol | fikir | okumak | kırmızı",
+        "chinese": "收音机 | 路 | 想法 | 读 | 红色",
+        "hindi": "रेडियो | सड़क | विचार | पढ़ना | लाल"
+      },
+      "validWords": [
+        "air",
+        "are",
+        "ear",
+        "idea",
+        "radio",
+        "read",
+        "red",
+        "road"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 7,
+      "sourceWord": "aright",
+      "targetWords": [
+        "RIGHT",
+        "HAIR",
+        "TAG",
+        "ART",
+        "RAT",
+        "HAT"
+      ],
+      "hints": {
+        "french": "droite | cheveux | étiquette | art | rat | chapeau",
+        "german": "rechts | Haar | Etikett | Kunst | Ratte | Hut",
+        "spanish": "derecha | cabello | etiqueta | arte | rata | sombrero",
+        "turkish": "sağ | saç | etiket | sanat | sıçan | şapka",
+        "chinese": "右 | 头发 | 标签 | 艺术 | 老鼠 | 帽子",
+        "hindi": "दाएं | बाल | टैग | कला | चूहा | टोपी"
+      },
+      "validWords": [
+        "air",
+        "art",
+        "hair",
+        "hat",
+        "hit",
+        "rat",
+        "right",
+        "tag"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 8,
+      "sourceWord": "ariver",
+      "targetWords": [
+        "RIVER",
+        "ARE",
+        "AIR",
+        "EAR"
+      ],
+      "hints": {
+        "french": "rivière | êtes | air | oreille",
+        "german": "Fluss | sind | Luft | Ohr",
+        "spanish": "río | eres/son | aire | oreja",
+        "turkish": "nehir | sin/sın | hava | kulak",
+        "chinese": "河 | 是 | 空气 | 耳朵",
+        "hindi": "नदी | हो | हवा | कान"
+      },
+      "validWords": [
+        "air",
+        "are",
+        "ear",
+        "river"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 9,
+      "sourceWord": "wsalad",
+      "targetWords": [
+        "SALAD",
+        "WAS",
+        "LAW",
+        "SAD",
+        "SAW"
+      ],
+      "hints": {
+        "french": "salade | était | loi | triste | scie",
+        "german": "Salat | war | Gesetz | traurig | Säge",
+        "spanish": "ensalada | era | ley | triste | sierra",
+        "turkish": "salata | idi | kanun | üzgün | testere",
+        "chinese": "沙拉 | 是 | 法律 | 悲伤 | 锯",
+        "hindi": "सलाद | था | कानून | उदास | आरी"
+      },
+      "validWords": [
+        "law",
+        "sad",
+        "salad",
+        "saw",
+        "was"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 10,
+      "sourceWord": "sheep",
+      "targetWords": [
+        "SHEEP",
+        "SEE"
+      ],
+      "hints": {
+        "french": "mouton | voir",
+        "german": "Schaf | sehen",
+        "spanish": "oveja | ver",
+        "turkish": "koyun | görmek",
+        "chinese": "羊 | 看",
+        "hindi": "भेड़ | देखना"
+      },
+      "validWords": [
+        "see",
+        "she",
+        "she",
+        "sheep"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 11,
+      "sourceWord": "shirt",
+      "targetWords": [
+        "SHIRT",
+        "HIS",
+        "SIR",
+        "SIT",
+        "ITS",
+        "HIT"
+      ],
+      "hints": {
+        "french": "chemise | son | monsieur | s\\ | son/sa | frapper",
+        "german": "Hemd | sein | Herr | sitzen | sein | schlagen",
+        "spanish": "camisa | su | señor | sentarse | su | golpear",
+        "turkish": "gömlek | onun | efendi | oturmak | onun | vurmak",
+        "chinese": "衬衫 | 他的 | 先生 | 坐 | 它的 | 打",
+        "hindi": "कमीज | उसका | सर | बैठना | इसका | मारना"
+      },
+      "validWords": [
+        "his",
+        "hit",
+        "its",
+        "shirt",
+        "sir",
+        "sit"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 12,
+      "sourceWord": "tshoes",
+      "targetWords": [
+        "SHOES",
+        "SET"
+      ],
+      "hints": {
+        "french": "chaussures | mettre",
+        "german": "Schuhe | setzen",
+        "spanish": "zapatos | poner",
+        "turkish": "ayakkabı | ayarlamak",
+        "chinese": "鞋子 | 设置",
+        "hindi": "जूते | रखना"
+      },
+      "validWords": [
+        "hot",
+        "set",
+        "she",
+        "she",
+        "shoes",
+        "the",
+        "toe"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 13,
+      "sourceWord": "eshort",
+      "targetWords": [
+        "SHORT",
+        "REST"
+      ],
+      "hints": {
+        "french": "court | se reposer",
+        "german": "kurz | ruhen",
+        "spanish": "corto | descansar",
+        "turkish": "kısa | dinlenmek",
+        "chinese": "短 | 休息",
+        "hindi": "छोटा | आराम"
+      },
+      "validWords": [
+        "her",
+        "horse",
+        "hot",
+        "other",
+        "rest",
+        "set",
+        "she",
+        "she",
+        "short",
+        "the",
+        "toe"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 14,
+      "sourceWord": "hsleep",
+      "targetWords": [
+        "SLEEP",
+        "HELP"
+      ],
+      "hints": {
+        "french": "dormir | aider",
+        "german": "schlafen | helfen",
+        "spanish": "dormir | ayudar",
+        "turkish": "uyumak | yardım etmek",
+        "chinese": "睡觉 | 帮助",
+        "hindi": "सोना | मदद करना"
+      },
+      "validWords": [
+        "help",
+        "see",
+        "she",
+        "she",
+        "sheep",
+        "sleep"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 15,
+      "sourceWord": "wsmall",
+      "targetWords": [
+        "SMALL",
+        "ALL"
+      ],
+      "hints": {
+        "french": "petit | tout",
+        "german": "klein | alle",
+        "spanish": "pequeño | todo",
+        "turkish": "küçük | hepsi",
+        "chinese": "小 | 全部",
+        "hindi": "छोटा | सब"
+      },
+      "validWords": [
+        "all",
+        "law",
+        "saw",
+        "small",
+        "was"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 16,
+      "sourceWord": "tsmile",
+      "targetWords": [
+        "SMILE",
+        "TIME",
+        "TIES",
+        "SITE"
+      ],
+      "hints": {
+        "french": "sourire | temps | cravates | site",
+        "german": "lächeln | Zeit | Krawatten | Seite",
+        "spanish": "sonrisa | tiempo | corbatas | sitio",
+        "turkish": "gülümseme | zaman | bağlar | site",
+        "chinese": "微笑 | 时间 | 领带 | 网站",
+        "hindi": "मुस्कान | समय | टाई | साइट"
+      },
+      "validWords": [
+        "its",
+        "let",
+        "set",
+        "sit",
+        "site",
+        "smile",
+        "tie",
+        "ties",
+        "time"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 3,
+      "level": 17,
+      "sourceWord": "sound",
+      "targetWords": [
+        "SOUND",
+        "NOD",
+        "SON"
+      ],
+      "hints": {
+        "french": "son | hocher la tête | fils",
+        "german": "Geräusch | nicken | Sohn",
+        "spanish": "sonido | asentir | hijo",
+        "turkish": "ses | başını sallamak | oğul",
+        "chinese": "声音 | 点头 | 儿子",
+        "hindi": "आवाज | सिर हिलाना | बेटा"
+      },
+      "validWords": [
+        "nod",
+        "son",
+        "sound",
+        "sun"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 0,
+      "sourceWord": "esouth",
+      "targetWords": [
+        "SOUTH",
+        "OUT"
+      ],
+      "hints": {
+        "french": "sud | dehors",
+        "german": "Süden | aus",
+        "spanish": "sur | fuera",
+        "turkish": "güney | dışarı",
+        "chinese": "南 | 出",
+        "hindi": "दक्षिण | बाहर"
+      },
+      "validWords": [
+        "hot",
+        "house",
+        "out",
+        "set",
+        "she",
+        "she",
+        "south",
+        "the",
+        "toe",
+        "use"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 1,
+      "sourceWord": "tspace",
+      "targetWords": [
+        "SPACE",
+        "EAST",
+        "SEA",
+        "PAT",
+        "TAP",
+        "ACT"
+      ],
+      "hints": {
+        "french": "espace | est | mer | caresser | tapoter | agir",
+        "german": "Raum | Osten | Meer | streicheln | klopfen | handeln",
+        "spanish": "espacio | este | mar | acariciar | tocar | actuar",
+        "turkish": "uzay | doğu | deniz | okşamak | hafifçe vurmak | hareket etmek",
+        "chinese": "空间 | 东 | 海 | 轻拍 | 轻敲 | 行动",
+        "hindi": "स्थान | पूर्व | समुद्र | थपथपाना | थपथपाना | काम करना"
+      },
+      "validWords": [
+        "act",
+        "cat",
+        "east",
+        "eat",
+        "pat",
+        "pet",
+        "sea",
+        "set",
+        "space",
+        "tap",
+        "tea"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 2,
+      "sourceWord": "tspeak",
+      "targetWords": [
+        "SPEAK",
+        "TAKE",
+        "ASK",
+        "PET"
+      ],
+      "hints": {
+        "french": "parler | prendre | demander | animal de compagnie",
+        "german": "sprechen | nehmen | fragen | Haustier",
+        "spanish": "hablar | tomar | preguntar | mascota",
+        "turkish": "konuşmak | almak | sormak | evcil hayvan",
+        "chinese": "说话 | 拿 | 问 | 宠物",
+        "hindi": "बोलना | लेना | पूछना | पालतू जानवर"
+      },
+      "validWords": [
+        "ask",
+        "east",
+        "eat",
+        "pat",
+        "pet",
+        "sea",
+        "set",
+        "speak",
+        "take",
+        "tap",
+        "tea"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 3,
+      "sourceWord": "asport",
+      "targetWords": [
+        "SPORT",
+        "STAR",
+        "SOAP",
+        "PART",
+        "TOP",
+        "POT"
+      ],
+      "hints": {
+        "french": "sport | étoile | savon | partie | haut | pot",
+        "german": "Sport | Stern | Seife | Teil | oben | Topf",
+        "spanish": "deporte | estrella | jabón | parte | arriba | olla",
+        "turkish": "spor | yıldız | sabun | parça | üst | tencere",
+        "chinese": "运动 | 星星 | 肥皂 | 部分 | 顶部 | 锅",
+        "hindi": "खेल | तारा | साबुन | भाग | ऊपर | बर्तन"
+      },
+      "validWords": [
+        "art",
+        "part",
+        "pat",
+        "pot",
+        "rat",
+        "soap",
+        "sport",
+        "star",
+        "tap",
+        "top"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 4,
+      "sourceWord": "start",
+      "targetWords": [
+        "START",
+        "STAR"
+      ],
+      "hints": {
+        "french": "commencer | étoile",
+        "german": "beginnen | Stern",
+        "spanish": "empezar | estrella",
+        "turkish": "başlamak | yıldız",
+        "chinese": "开始 | 星星",
+        "hindi": "शुरू करना | तारा"
+      },
+      "validWords": [
+        "art",
+        "rat",
+        "star",
+        "start"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 5,
+      "sourceWord": "stone",
+      "targetWords": [
+        "STONE",
+        "SON"
+      ],
+      "hints": {
+        "french": "pierre | fils",
+        "german": "Stein | Sohn",
+        "spanish": "piedra | hijo",
+        "turkish": "taş | oğul",
+        "chinese": "石头 | 儿子",
+        "hindi": "पत्थर | बेटा"
+      },
+      "validWords": [
+        "net",
+        "one",
+        "set",
+        "son",
+        "stone",
+        "ten",
+        "toe"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 6,
+      "sourceWord": "astory",
+      "targetWords": [
+        "STORY",
+        "STAY",
+        "TOY",
+        "SAY",
+        "TRY",
+        "RAY"
+      ],
+      "hints": {
+        "french": "histoire | rester | jouet | dire | essayer | rayon",
+        "german": "Geschichte | bleiben | Spielzeug | sagen | versuchen | Strahl",
+        "spanish": "historia | quedarse | juguete | decir | intentar | rayo",
+        "turkish": "hikaye | kalmak | oyuncak | söylemek | denemek | ışın",
+        "chinese": "故事 | 留 | 玩具 | 说 | 尝试 | 光线",
+        "hindi": "कहानी | रहना | खिलौना | कहना | कोशिश | किरण"
+      },
+      "validWords": [
+        "art",
+        "rat",
+        "ray",
+        "say",
+        "star",
+        "stay",
+        "story",
+        "toy",
+        "try"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 7,
+      "sourceWord": "esugar",
+      "targetWords": [
+        "SUGAR",
+        "SURE",
+        "RUG",
+        "GAS"
+      ],
+      "hints": {
+        "french": "sucre | sûr | tapis | gaz",
+        "german": "Zucker | sicher | Teppich | Gas",
+        "spanish": "azúcar | seguro | alfombra | gas",
+        "turkish": "şeker | emin | halı | gaz",
+        "chinese": "糖 | 确定 | 地毯 | 气体",
+        "hindi": "चीनी | निश्चित | गलीचा | गैस"
+      },
+      "validWords": [
+        "age",
+        "age",
+        "are",
+        "ear",
+        "gas",
+        "rug",
+        "sea",
+        "sugar",
+        "sure",
+        "use"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 8,
+      "sourceWord": "table",
+      "targetWords": [
+        "TABLE",
+        "ABLE",
+        "BET",
+        "BAT"
+      ],
+      "hints": {
+        "french": "table | capable | parier | chauve-souris",
+        "german": "Tisch | fähig | wetten | Fledermaus",
+        "spanish": "mesa | capaz | apostar | murciélago",
+        "turkish": "masa | yetenekli | bahis yapmak | yarasa",
+        "chinese": "桌子 | 能够 | 打赌 | 蝙蝠",
+        "hindi": "मेज | सक्षम | शर्त लगाना | चमगादड़"
+      },
+      "validWords": [
+        "able",
+        "bat",
+        "bet",
+        "eat",
+        "late",
+        "let",
+        "table",
+        "tea"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 9,
+      "sourceWord": "teach",
+      "targetWords": [
+        "TEACH",
+        "CAT",
+        "EAT",
+        "TEA",
+        "HAT",
+        "ACT"
+      ],
+      "hints": {
+        "french": "enseigner | chat | manger | thé | chapeau | agir",
+        "german": "lehren | Katze | essen | Tee | Hut | handeln",
+        "spanish": "enseñar | gato | comer | té | sombrero | actuar",
+        "turkish": "öğretmek | kedi | yemek | çay | şapka | hareket etmek",
+        "chinese": "教 | 猫 | 吃 | 茶 | 帽子 | 行动",
+        "hindi": "सिखाना | बिल्ली | खाना | चाय | टोपी | काम करना"
+      },
+      "validWords": [
+        "act",
+        "cat",
+        "eat",
+        "hat",
+        "tea",
+        "teach",
+        "the"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 10,
+      "sourceWord": "steeth",
+      "targetWords": [
+        "TEETH",
+        "TEST",
+        "SEE"
+      ],
+      "hints": {
+        "french": "dents | test | voir",
+        "german": "Zähne | Test | sehen",
+        "spanish": "dientes | prueba | ver",
+        "turkish": "dişler | test | görmek",
+        "chinese": "牙齿 | 测试 | 看",
+        "hindi": "दांत | परीक्षा | देखना"
+      },
+      "validWords": [
+        "see",
+        "set",
+        "she",
+        "she",
+        "teeth",
+        "test",
+        "the"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 11,
+      "sourceWord": "ethank",
+      "targetWords": [
+        "THANK",
+        "TAKE",
+        "ANT",
+        "HEN"
+      ],
+      "hints": {
+        "french": "remercier | prendre | fourmi | poule",
+        "german": "danken | nehmen | Ameise | Henne",
+        "spanish": "agradecer | tomar | hormiga | gallina",
+        "turkish": "teşekkür etmek | almak | karınca | tavuk",
+        "chinese": "感谢 | 拿 | 蚂蚁 | 母鸡",
+        "hindi": "धन्यवाद | लेना | चींटी | मुर्गी"
+      },
+      "validWords": [
+        "ant",
+        "eat",
+        "hat",
+        "hen",
+        "net",
+        "take",
+        "tea",
+        "ten",
+        "thank",
+        "the"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 12,
+      "sourceWord": "ething",
+      "targetWords": [
+        "THING",
+        "GET",
+        "TIE",
+        "TEN",
+        "HEN",
+        "HIT"
+      ],
+      "hints": {
+        "french": "chose | obtenir | attacher | dix | poule | frapper",
+        "german": "Ding | bekommen | binden | zehn | Henne | schlagen",
+        "spanish": "cosa | obtener | atar | diez | gallina | golpear",
+        "turkish": "şey | almak | bağlamak | on | tavuk | vurmak",
+        "chinese": "东西 | 得到 | 系 | 十 | 母鸡 | 打",
+        "hindi": "चीज | पाना | बांधना | दस | मुर्गी | मारना"
+      },
+      "validWords": [
+        "get",
+        "hen",
+        "hit",
+        "net",
+        "night",
+        "ten",
+        "the",
+        "thing",
+        "tie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 13,
+      "sourceWord": "ethink",
+      "targetWords": [
+        "THINK",
+        "NET",
+        "THE",
+        "TIE",
+        "TEN",
+        "HEN"
+      ],
+      "hints": {
+        "french": "penser | filet | le/la | attacher | dix | poule",
+        "german": "denken | Netz | der/die/das | binden | zehn | Henne",
+        "spanish": "pensar | red | el/la | atar | diez | gallina",
+        "turkish": "düşünmek | ağ | şu/bu | bağlamak | on | tavuk",
+        "chinese": "想 | 网 | 这个 | 系 | 十 | 母鸡",
+        "hindi": "सोचना | जाल | यह | बांधना | दस | मुर्गी"
+      },
+      "validWords": [
+        "hen",
+        "hit",
+        "net",
+        "ten",
+        "the",
+        "think",
+        "tie"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 14,
+      "sourceWord": "today",
+      "targetWords": [
+        "TODAY",
+        "DAY",
+        "DOT",
+        "TOY"
+      ],
+      "hints": {
+        "french": "aujourd\\ | jour | point | jouet",
+        "german": "heute | Tag | Punkt | Spielzeug",
+        "spanish": "hoy | día | punto | juguete",
+        "turkish": "bugün | gün | nokta | oyuncak",
+        "chinese": "今天 | 天 | 点 | 玩具",
+        "hindi": "आज | दिन | बिंदु | खिलौना"
+      },
+      "validWords": [
+        "day",
+        "dot",
+        "today",
+        "toy"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 15,
+      "sourceWord": "ptooth",
+      "targetWords": [
+        "TOOTH",
+        "HOP",
+        "TOP",
+        "POT"
+      ],
+      "hints": {
+        "french": "dent | sautiller | haut | pot",
+        "german": "Zahn | hüpfen | oben | Topf",
+        "spanish": "diente | saltar | arriba | olla",
+        "turkish": "diş | zıplamak | üst | tencere",
+        "chinese": "牙齿 | 跳 | 顶部 | 锅",
+        "hindi": "दांत | कूदना | ऊपर | बर्तन"
+      },
+      "validWords": [
+        "hop",
+        "hot",
+        "photo",
+        "pot",
+        "tooth",
+        "top"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 16,
+      "sourceWord": "train",
+      "targetWords": [
+        "TRAIN",
+        "ANT"
+      ],
+      "hints": {
+        "french": "train | fourmi",
+        "german": "Zug | Ameise",
+        "spanish": "tren | hormiga",
+        "turkish": "tren | karınca",
+        "chinese": "火车 | 蚂蚁",
+        "hindi": "ट्रेन | चींटी"
+      },
+      "validWords": [
+        "air",
+        "ant",
+        "art",
+        "rat",
+        "train"
+      ]
+    },
+    {
+      "world": 0,
+      "subWorld": 4,
+      "level": 17,
+      "sourceWord": "atruck",
+      "targetWords": [
+        "TRUCK",
+        "CAR"
+      ],
+      "hints": {
+        "french": "camion | voiture",
+        "german": "Lastwagen | Auto",
+        "spanish": "camión | coche",
+        "turkish": "kamyon | araba",
+        "chinese": "卡车 | 汽车",
+        "hindi": "ट्रक | कार"
+      },
+      "validWords": [
+        "act",
+        "art",
+        "car",
+        "cat",
+        "cut",
+        "rat",
+        "truck"
+      ]
+    }
+  ]
+}

@@ -3,3 +3,39 @@ There is a problem with the hint system. When all letters of a word is revealed,
 English → German: isnt really working. When the user selects English → German, the app just uses fallback generation but the words are English and the texts are in Turkish
 
 Level database should not be 100s of json files for each language. We need to either combine the files for a certain language into a few files or have all the languages for the same level in the same json.
+
+
+
+
+--
+Make sure the game loads the levels from the json files in assets/levels. The script generates duplicate target words, this shouldn't happen.
+
+
+
+
+
+Create word database files for each language and each CEFR level and have the translations to all other languages here. For example english_a1_words file should have 500-750 A1 level English words and their translations to Turkish, German, Spanish etc. If the user chooses English as the language they want to learn, we should use the english_a1_words (and other English database files like english_a2_words, english_b1_words etc.) file to create source and target words and we should display the hints in the chosen native language, getting the translation from this file. 
+
+
+Prompt:
+Create word database files for each language and each CEFR level and have the translations to all other languages here. For example english_a1_words file should have 500-750 A1 level English words and their translations to Turkish, German, Spanish etc. If the user chooses English as the language they want to learn, we should use the english_a1_words (and other English database files like english_a2_words, english_b1_words etc.) file to create source and target words and we should display the hints in the chosen native language, getting the translation from this file.  Start with german, turkish and english. Make sure the user can choose any of them as their native language and any other as the language they want to learn, and the app behaves correctly in each case
+
+
+
+
+
+
+
+
+
+Im not sure what the universal_word_data file is doing. We created seperate files for CEFR levels for each language (we still need to add the remaining CEFR levels, you don't have to add them now). But I'm not sure what use the  universal_word_data  file has in this structure. 
+
+
+
+Here is a summary of my goal:
+
+
+
+
+
+ I want to make the game universal. The user should be able to select their native language and the language that they want to learn and the app should adjust accordingly. For example; if the user speaks Spanish and wants to learn German, the texts and hints in the game should be in Spanish and the words that they are trying to find should be in German. But they should be able to choose any other language they want as the lannguage that they want to learn (Turkish, English French etc.) and the words they are searching for should adjust to their target language. Lets implement a universal system with no clutter (the level generator should not create 100s of level files for each language pair). Lets start with implementing support for English, German and Turkish. So the user should be able to choose any of these as their native language and another one as the language they want to learn. Do not make test or dummy data as this complicates things much more. Try to accomplish the goal for these 3 languages in a few steps. If you need to re-write the app from scratch, you can do that.
