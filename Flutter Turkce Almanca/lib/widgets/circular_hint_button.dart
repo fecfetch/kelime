@@ -10,7 +10,7 @@ class CircularHintButton extends StatefulWidget {
   final int world;
   final int subWorld;
   final int level;
-  final VoidCallback? onHintRevealed;
+  final Function(int)? onHintRevealed;
   
   const CircularHintButton({
     super.key,
@@ -188,7 +188,7 @@ class _CircularHintButtonState extends State<CircularHintButton> {
       timerProvider.useTranslation();
       
       // Notify parent widget that a hint was revealed
-      widget.onHintRevealed?.call();
+      widget.onHintRevealed?.call(randomIndex);
     }
   }
 

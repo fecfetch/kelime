@@ -27,9 +27,9 @@ class TranslationHintsWidget extends StatefulWidget {
 }
 
 class _TranslationHintsWidgetState extends State<TranslationHintsWidget> {
+  List<int> _orderedRevealedHints = [];
   Set<int> _revealedHints = {};
   bool _showExtensionOptions = false;
-  int? _lastRevealedHintIndex;
 
   @override
   void initState() {
@@ -65,16 +65,15 @@ class _TranslationHintsWidgetState extends State<TranslationHintsWidget> {
     final timerProvider = context.read<FeatureTimerProvider>();
     _revealedHints = timerProvider.getRevealedHints(
         widget.world, widget.subWorld, widget.level);
+    _orderedRevealedHints = timerProvider.getOrderedRevealedHints(
+        widget.world, widget.subWorld, widget.level);
 
-    // Set the last revealed hint index to the highest index from saved hints
-    // This is a reasonable approximation for existing saved data
-    if (_revealedHints.isNotEmpty) {
-      final sortedIndices = _revealedHints.toList()..sort();
-      _lastRevealedHintIndex = sortedIndices.last;
-    }
+    // No need to track last revealed hint index anymore
+    // We'll just display the same hint as the last one in the top section
 
     setState(() {});
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -86,8 +85,13 @@ class _TranslationHintsWidgetState extends State<TranslationHintsWidget> {
         final currentRevealedHints = timerProvider.getRevealedHints(
             widget.world, widget.subWorld, widget.level);
         if (currentRevealedHints.length != _revealedHints.length) {
+          // Update revealed hints in a post-frame callback
           WidgetsBinding.instance.addPostFrameCallback((_) {
-            _loadRevealedHints();
+            setState(() {
+              _revealedHints = currentRevealedHints;
+              _orderedRevealedHints = timerProvider.getOrderedRevealedHints(
+                  widget.world, widget.subWorld, widget.level);
+            });
           });
         }
 
@@ -152,11 +156,10 @@ class _TranslationHintsWidgetState extends State<TranslationHintsWidget> {
 
   Widget _buildRevealedHintsList(
       List<String> hintsList, GameStateProvider gameState) {
-    final sortedIndices = _revealedHints.toList()..sort();
     final hintWidgets = <Widget>[];
 
-    for (int i = 0; i < sortedIndices.length; i++) {
-      final index = sortedIndices[i];
+    for (int i = 0; i < _orderedRevealedHints.length; i++) {
+      final index = _orderedRevealedHints[i];
       if (index < hintsList.length && index < widget.targetWords.length) {
         final hint = hintsList[index];
         final targetWord = widget.targetWords[index];
@@ -221,50 +224,20 @@ class _TranslationHintsWidgetState extends State<TranslationHintsWidget> {
 
   Widget _buildLastRevealedHint(
       List<String> hintsList, GameStateProvider gameState) {
-    if (_revealedHints.isEmpty) {
+    if (_orderedRevealedHints.isEmpty) {
       return const SizedBox.shrink();
     }
 
-    // Find the most recently revealed hint that's still relevant
-    // If we have a tracked last revealed hint, use it; otherwise find the best one
-    int? bestIndex = _lastRevealedHintIndex;
+    // Get the last revealed hint from the ordered list
+    final lastIndex = _orderedRevealedHints.last;
 
-    // If the tracked hint is for a found word, find a better one
-    if (bestIndex != null && bestIndex < widget.targetWords.length) {
-      final targetWord = widget.targetWords[bestIndex];
-      if (gameState.isWordFound(targetWord)) {
-        bestIndex = null; // Reset and find a better one
-      }
-    }
-
-    // If we don't have a good tracked hint, find the best available one
-    if (bestIndex == null) {
-      final sortedIndices = _revealedHints.toList()
-        ..sort(((a, b) => b.compareTo(a))); // Reverse sort to get highest first
-      for (final index in sortedIndices) {
-        if (index < widget.targetWords.length) {
-          final targetWord = widget.targetWords[index];
-          if (!gameState.isWordFound(targetWord)) {
-            bestIndex = index;
-            break;
-          }
-        }
-      }
-
-      // If no unfound word hints, just use the most recent one
-      if (bestIndex == null && sortedIndices.isNotEmpty) {
-        bestIndex = sortedIndices.first;
-      }
-    }
-
-    if (bestIndex == null ||
-        bestIndex >= hintsList.length ||
-        bestIndex >= widget.targetWords.length) {
+    // Validate the index is within bounds
+    if (lastIndex >= hintsList.length || lastIndex >= widget.targetWords.length) {
       return const SizedBox.shrink();
     }
 
-    final hint = hintsList[bestIndex];
-    final targetWord = widget.targetWords[bestIndex];
+    final hint = hintsList[lastIndex];
+    final targetWord = widget.targetWords[lastIndex];
     final isWordFound = gameState.isWordFound(targetWord);
 
     return Container(

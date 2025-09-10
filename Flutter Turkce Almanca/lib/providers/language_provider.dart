@@ -18,6 +18,11 @@ enum SupportedLanguage {
   
   static SupportedLanguage fromCode(String code) {
     try {
+      // Special handling for Spanish to debug the issue
+      if (code == 'es') {
+        return SupportedLanguage.spanish;
+      }
+      
       return SupportedLanguage.values.firstWhere(
         (lang) => lang.code == code,
         orElse: () => SupportedLanguage.english,
@@ -35,14 +40,39 @@ class LanguageProvider extends ChangeNotifier {
   Locale _appLocale = const Locale('en');
   
   // Getters
-  SupportedLanguage get nativeLanguage => _nativeLanguage;
-  SupportedLanguage get targetLanguage => _targetLanguage;
-  Locale get appLocale => _appLocale;
+  SupportedLanguage get nativeLanguage {
+    try {
+      // Special handling for Spanish to debug the issue
+      if (_nativeLanguage.code == 'es') {
+        return SupportedLanguage.spanish;
+      }
+      return _nativeLanguage;
+    } catch (e) {
+      return SupportedLanguage.english;
+    }
+  }
+  
+  SupportedLanguage get targetLanguage {
+    try {
+      return _targetLanguage;
+    } catch (e) {
+      return SupportedLanguage.english;
+    }
+  }
+  
+  Locale get appLocale {
+    try {
+      return _appLocale;
+    } catch (e) {
+      return const Locale('en');
+    }
+  }
   
   // Available languages for learning (can be expanded)
   List<SupportedLanguage> get availableNativeLanguages {
     try {
-      return [
+      // Special handling for Spanish to debug the issue
+      final languages = [
         SupportedLanguage.english,
         SupportedLanguage.german,
         SupportedLanguage.french,
@@ -51,6 +81,13 @@ class LanguageProvider extends ChangeNotifier {
         SupportedLanguage.chinese,
         SupportedLanguage.hindi,
       ];
+      
+      // Ensure Spanish is in the list
+      if (!languages.contains(SupportedLanguage.spanish)) {
+        languages.add(SupportedLanguage.spanish);
+      }
+      
+      return languages;
     } catch (e) {
       // If there's an error, return a default list
       return [SupportedLanguage.english];
@@ -59,7 +96,8 @@ class LanguageProvider extends ChangeNotifier {
   
   List<SupportedLanguage> get availableTargetLanguages {
     try {
-      return [
+      // Special handling for Spanish to debug the issue
+      final languages = [
         SupportedLanguage.english,
         SupportedLanguage.german,
         SupportedLanguage.french,
@@ -68,6 +106,13 @@ class LanguageProvider extends ChangeNotifier {
         SupportedLanguage.chinese,
         SupportedLanguage.hindi,
       ];
+      
+      // Ensure Spanish is in the list
+      if (!languages.contains(SupportedLanguage.spanish)) {
+        languages.add(SupportedLanguage.spanish);
+      }
+      
+      return languages;
     } catch (e) {
       // If there's an error, return a default list
       return [SupportedLanguage.english];
@@ -86,7 +131,12 @@ class LanguageProvider extends ChangeNotifier {
       _targetLanguage = SupportedLanguage.fromCode(targetLanguageCode);
       
       try {
-        _appLocale = Locale(_nativeLanguage.code);
+        // Special handling for Spanish to debug the issue
+        if (_nativeLanguage.code == 'es') {
+          _appLocale = const Locale('es');
+        } else {
+          _appLocale = Locale(_nativeLanguage.code);
+        }
       } catch (e) {
         // If there's an error creating the locale, use the default
         _appLocale = const Locale('en');
@@ -120,7 +170,12 @@ class LanguageProvider extends ChangeNotifier {
       if (_nativeLanguage != language) {
         _nativeLanguage = language;
         try {
-          _appLocale = Locale(language.code);
+          // Special handling for Spanish to debug the issue
+          if (language.code == 'es') {
+            _appLocale = const Locale('es');
+          } else {
+            _appLocale = Locale(language.code);
+          }
         } catch (e) {
           // If there's an error creating the locale, use the default
           _appLocale = const Locale('en');
@@ -159,7 +214,12 @@ class LanguageProvider extends ChangeNotifier {
       if (_nativeLanguage != nativeLanguage) {
         _nativeLanguage = nativeLanguage;
         try {
-          _appLocale = Locale(nativeLanguage.code);
+          // Special handling for Spanish to debug the issue
+          if (nativeLanguage.code == 'es') {
+            _appLocale = const Locale('es');
+          } else {
+            _appLocale = Locale(nativeLanguage.code);
+          }
         } catch (e) {
           // If there's an error creating the locale, use the default
           _appLocale = const Locale('en');

@@ -10,6 +10,8 @@ class FeatureTimerProvider extends ChangeNotifier {
   
   // Per-level hint tracking
   final Map<String, Set<int>> _levelHints = {};
+  // Per-level ordered hint tracking (to preserve reveal order)
+  final Map<String, List<int>> _levelOrderedHints = {};
   
   FeatureTimerManager get timerManager => _timerManager;
   
@@ -153,6 +155,15 @@ class FeatureTimerProvider extends ChangeNotifier {
           });
         }
         
+        // Load ordered hint tracking data
+        if (timersData['levelOrderedHints'] != null) {
+          final orderedHintsData = timersData['levelOrderedHints'] as Map<String, dynamic>;
+          _levelOrderedHints.clear();
+          orderedHintsData.forEach((key, value) {
+            _levelOrderedHints[key] = List<int>.from(value as List);
+          });
+        }
+        
         notifyListeners();
       } catch (e) {
         debugPrint('Error loading feature timers: $e');
@@ -166,6 +177,7 @@ class FeatureTimerProvider extends ChangeNotifier {
     
     // Add hint tracking data
     data['levelHints'] = _levelHints.map((key, value) => MapEntry(key, value.toList()));
+    data['levelOrderedHints'] = _levelOrderedHints.map((key, value) => MapEntry(key, value));
     
     final timersJson = jsonEncode(data);
     await prefs.setString('feature_timers', timersJson);
@@ -181,10 +193,20 @@ class FeatureTimerProvider extends ChangeNotifier {
     return _levelHints[key] ?? {};
   }
   
+  List<int> getOrderedRevealedHints(int world, int subWorld, int level) {
+    final key = _getLevelKey(world, subWorld, level);
+    return _levelOrderedHints[key] ?? [];
+  }
+  
   void addRevealedHint(int world, int subWorld, int level, int hintIndex) {
     final key = _getLevelKey(world, subWorld, level);
     _levelHints[key] ??= {};
     _levelHints[key]!.add(hintIndex);
+    
+    // Also track the order of revealed hints
+    _levelOrderedHints[key] ??= [];
+    _levelOrderedHints[key]!.add(hintIndex);
+    
     _saveTimers();
     notifyListeners();
   }
@@ -200,6 +222,11 @@ class FeatureTimerProvider extends ChangeNotifier {
       // Only add if not already revealed
       if (!_levelHints[key]!.contains(wordIndex)) {
         _levelHints[key]!.add(wordIndex);
+        
+        // Also track the order of revealed hints
+        _levelOrderedHints[key] ??= [];
+        _levelOrderedHints[key]!.add(wordIndex);
+        
         _saveTimers();
         notifyListeners();
       }

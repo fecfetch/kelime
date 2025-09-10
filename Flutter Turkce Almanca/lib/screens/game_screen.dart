@@ -273,7 +273,7 @@ class _GameScreenState extends State<GameScreen> {
                                           world: widget.world,
                                           subWorld: widget.subWorld,
                                           level: widget.level,
-                                          onHintRevealed: () {
+                                          onHintRevealed: (hintIndex) {
                                             // Trigger a rebuild of the translation hints widget
                                             setState(() {});
                                           },

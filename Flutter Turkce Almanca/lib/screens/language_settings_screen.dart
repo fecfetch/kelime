@@ -110,12 +110,24 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> {
                           border: OutlineInputBorder(),
                           contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                         ),
-                        items: languageProvider.availableNativeLanguages
-                            .map((language) => DropdownMenuItem(
-                                  value: language,
-                                  child: Text(language.nativeName),
-                                ))
-                            .toList(),
+                        items: () {
+                          try {
+                            return languageProvider.availableNativeLanguages
+                                .map((language) => DropdownMenuItem(
+                                      value: language,
+                                      child: Text(language.nativeName),
+                                    ))
+                                .toList();
+                          } catch (e) {
+                            // If there's an error, return a default list
+                            return [SupportedLanguage.english]
+                                .map((language) => DropdownMenuItem(
+                                      value: language,
+                                      child: Text(language.nativeName),
+                                    ))
+                                .toList();
+                          }
+                        }(),
                         onChanged: (value) {
                           if (value != null) {
                             setState(() {
@@ -153,12 +165,24 @@ class _LanguageSettingsScreenState extends State<LanguageSettingsScreen> {
                           border: OutlineInputBorder(),
                           contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                         ),
-                        items: languageProvider.availableTargetLanguages
-                            .map((language) => DropdownMenuItem(
-                                  value: language,
-                                  child: Text(language.nativeName),
-                                ))
-                            .toList(),
+                        items: () {
+                          try {
+                            return languageProvider.availableTargetLanguages
+                                .map((language) => DropdownMenuItem(
+                                      value: language,
+                                      child: Text(language.nativeName),
+                                    ))
+                                .toList();
+                          } catch (e) {
+                            // If there's an error, return a default list
+                            return [SupportedLanguage.english]
+                                .map((language) => DropdownMenuItem(
+                                      value: language,
+                                      child: Text(language.nativeName),
+                                    ))
+                                .toList();
+                          }
+                        }(),
                         onChanged: (value) {
                           if (value != null) {
                             setState(() {
