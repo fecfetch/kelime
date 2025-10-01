@@ -1,12 +1,25 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'game_level.g.dart';
+
+@JsonSerializable()
 class GameLevel {
   final dynamic hints; // Can be String (old format) or Map<String, String> (new multilingual format)
   final String sourceWord; // Letters to use (word)
   final List<String> targetWords; // Words to find (answers)
   final List<String> validWords; // All valid words including bonus
   
+  @JsonKey(defaultValue: 0)
   final int world;
+
+  @JsonKey(defaultValue: 0)
   final int subWorld;
+
+  @JsonKey(defaultValue: 0)
   final int level;
+  
+  @JsonKey(defaultValue: 3)
+  final int rubyReward;
   
   GameLevel({
     required this.hints,
@@ -16,28 +29,12 @@ class GameLevel {
     this.world = 0,
     this.subWorld = 0,
     this.level = 0,
+    required this.rubyReward,
   });
   
-  factory GameLevel.fromJson(Map<String, dynamic> json) {
-    return GameLevel(
-      hints: json['hints'] ?? '',
-      sourceWord: json['sourceWord'] ?? '',
-      targetWords: List<String>.from(json['targetWords'] ?? []),
-      validWords: List<String>.from(json['validWords'] ?? []),
-      world: json['world'] ?? 0,
-      subWorld: json['subWorld'] ?? 0,
-      level: json['level'] ?? 0,
-    );
-  }
+  factory GameLevel.fromJson(Map<String, dynamic> json) => _$GameLevelFromJson(json);
   
-  Map<String, dynamic> toJson() {
-    return {
-      'hints': hints,
-      'sourceWord': sourceWord,
-      'targetWords': targetWords,
-      'validWords': validWords,
-    };
-  }
+  Map<String, dynamic> toJson() => _$GameLevelToJson(this);
   
   // Get hints for a specific language (backward compatible)
   String getHintsForLanguage(String languageCode) {
@@ -81,8 +78,8 @@ class WorldData {
   static int getNumLevels(int world, int subWorld) {
     // Level counts per world/subworld
     const numLevels = [
-      [12, 18, 18, 18, 18], // World 0
-      [18, 19, 18, 18, 18], // World 1
+      [18, 18, 18, 18, 18], // World 0
+      [18, 18, 18, 18, 18], // World 1
       [18, 18, 18, 18, 18], // World 2
       [18, 18, 18, 18, 18], // World 3
       [18, 18, 18, 18, 18], // World 4

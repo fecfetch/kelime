@@ -3,6 +3,9 @@ import 'package:provider/provider.dart';
 import '../providers/progress_provider.dart';
 import '../providers/game_state_provider.dart';
 import '../providers/feature_timer_provider.dart';
+import '../providers/ad_provider.dart';
+import '../services/audio_service.dart';
+import '../l10n/app_localizations.dart';
 
 class CircularLetterHintButton extends StatefulWidget {
   final VoidCallback? onLetterRevealed;
@@ -18,64 +21,72 @@ class CircularLetterHintButton extends StatefulWidget {
 }
 
 class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
+  late AudioService _audioService;
+
+  @override
+  void initState() {
+    super.initState();
+    // Get the singleton instance of AudioService
+    _audioService = AudioService();
+  }
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Consumer3<FeatureTimerProvider, ProgressProvider, GameStateProvider>(
       builder: (context, timerProvider, progressProvider, gameState, child) {
-        return Container(
-          padding: const EdgeInsets.all(8),
-          decoration: BoxDecoration(
-            color: Colors.grey.withValues(alpha: 0.2),
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.grey.withValues(alpha: 0.3)),
-          ),
-          child: Column(
+        return LayoutBuilder(builder: (context, constraints) {
+          final size = (constraints.maxHeight / 2).clamp(27.0, 60.0);
+
+          return Column(
             mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Circular letter hint button
               GestureDetector(
-                onTap: () => _attemptRevealLetter(timerProvider, gameState),
+                onTap: () =>
+                    _attemptRevealLetter(timerProvider, gameState, l10n),
                 child: Container(
-                  width: 80,
-                  height: 80,
+                  width: size,
+                  height: size,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: timerProvider.canUseLetter() 
-                        ? Colors.orange 
+                    color: timerProvider.canUseLetter()
+                        ? Colors.orange
                         : Colors.grey,
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.3),
-                        blurRadius: 8,
-                        offset: const Offset(0, 4),
+                        color: Colors.black.withOpacity(0.3),
+                        blurRadius: size * 0.1,
+                        offset: Offset(0, size * 0.05),
                       ),
                     ],
                   ),
                   child: Icon(
                     Icons.lightbulb_outline,
-                    size: 36,
+                    size: size * 0.6,
                     color: timerProvider.canUseLetter()
                         ? Colors.white
-                        : Colors.white.withValues(alpha: 0.5),
+                        : Colors.white.withOpacity(0.5),
                   ),
                 ),
               ),
 
-              const SizedBox(height: 8),
+              SizedBox(height: size * 0.1),
 
               // Timer display under button
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                padding: EdgeInsets.symmetric(
+                    horizontal: size * 0.2, vertical: size * 0.1),
                 decoration: BoxDecoration(
                   color: timerProvider.canUseLetter()
-                      ? Colors.orange.withValues(alpha: 0.2)
-                      : Colors.grey.withValues(alpha: 0.2),
-                  borderRadius: BorderRadius.circular(16),
+                      ? Colors.orange.withOpacity(0.2)
+                      : Colors.grey.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(size * 0.3),
                   border: Border.all(
                     color: timerProvider.canUseLetter()
-                        ? Colors.orange.withValues(alpha: 0.5)
-                        : Colors.grey.withValues(alpha: 0.5),
+                        ? Colors.orange.withOpacity(0.5)
+                        : Colors.grey.withOpacity(0.5),
                   ),
                 ),
                 child: Row(
@@ -83,60 +94,61 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
                   children: [
                     Icon(
                       Icons.access_time,
-                      size: 16,
-                      color: timerProvider.canUseLetter() 
-                          ? Colors.orange 
+                      size: size * 0.25,
+                      color: timerProvider.canUseLetter()
+                          ? Colors.orange
                           : Colors.grey,
                     ),
-                    const SizedBox(width: 4),
+                    SizedBox(width: size * 0.05),
                     Text(
                       timerProvider.getLetterTimerDisplay(),
                       style: TextStyle(
-                        fontSize: 14,
+                        fontSize: size * 0.2,
                         fontWeight: FontWeight.bold,
-                        color: timerProvider.canUseLetter() 
-                            ? Colors.orange 
+                        color: timerProvider.canUseLetter()
+                            ? Colors.orange
                             : Colors.grey,
                       ),
                     ),
                   ],
                 ),
               ),
-
-
             ],
-          ),
-        );
+          );
+        });
       },
     );
   }
 
-  void _attemptRevealLetter(FeatureTimerProvider timerProvider, GameStateProvider gameState) {
+  void _attemptRevealLetter(FeatureTimerProvider timerProvider, GameStateProvider gameState, AppLocalizations l10n) {
     if (timerProvider.canUseLetter()) {
-      _useLetter(timerProvider, gameState);
+      _useLetter(timerProvider, gameState, l10n);
     } else {
-      _showGetMoreLetterHintsDialog(context);
+      _showGetMoreLetterHintsDialog(context, l10n);
     }
   }
 
-  void _useLetter(FeatureTimerProvider timerProvider, GameStateProvider gameState) {
+  void _useLetter(FeatureTimerProvider timerProvider, GameStateProvider gameState, AppLocalizations l10n) {
     timerProvider.useLetter();
     gameState.useHint();
+    
+    // Play button sound effect
+    _audioService.playSoundEffect(AudioService.buttonSound);
     
     widget.onLetterRevealed?.call();
     
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Bir harf açıldı!'),
+        SnackBar(
+          content: Text(l10n.letterRevealed),
           backgroundColor: Colors.orange,
-          duration: Duration(seconds: 1),
+          duration: const Duration(seconds: 1),
         ),
       );
     }
   }
 
-  void _showGetMoreLetterHintsDialog(BuildContext context) {
+  void _showGetMoreLetterHintsDialog(BuildContext context, AppLocalizations l10n) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -147,21 +159,26 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
                 children: [
                   Icon(Icons.lightbulb_outline, color: Colors.orange, size: 28),
                   const SizedBox(width: 8),
-                  const Text('Need More Letter Hints?'),
+                  Expanded(
+                    child: Text(
+                      l10n.needMoreHints,
+                      softWrap: true,
+                    ),
+                  ),
                 ],
               ),
               content: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text(
-                    'You\'re out of letter hints!',
-                    style: TextStyle(fontSize: 16),
+                  Text(
+                    l10n.outOfLetterHints,
+                    style: const TextStyle(fontSize: 16),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 16),
-                  const Text(
-                    'Choose an option to get more letter hints:',
-                    style: TextStyle(fontSize: 14, color: Colors.grey),
+                  Text(
+                    l10n.chooseOptionToGetMoreLetterHints,
+                    style: const TextStyle(fontSize: 14, color: Colors.grey),
                     textAlign: TextAlign.center,
                   ),
                 ],
@@ -173,10 +190,10 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
                   child: ElevatedButton.icon(
                     onPressed: () {
                       Navigator.of(context).pop();
-                      _watchAdForLetters(timerProvider);
+                      _watchAdForLetters(timerProvider, l10n);
                     },
                     icon: const Icon(Icons.play_circle_outline),
-                    label: const Text('Watch Ad (+4 letter hints)'),
+                    label: Text(l10n.watchAdForLetterHints),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white,
@@ -191,14 +208,14 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
                   children: [
                     Expanded(
                       child: ElevatedButton(
-                        onPressed: progressProvider.rubies >= 5
+                        onPressed: progressProvider.rubies >= progressProvider.letterHintCost
                             ? () {
                                 Navigator.of(context).pop();
-                                _buyLetters(timerProvider, progressProvider);
+                                _buyLetters(timerProvider, progressProvider, l10n);
                               }
                             : null,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: progressProvider.rubies >= 5
+                          backgroundColor: progressProvider.rubies >= progressProvider.letterHintCost
                               ? Colors.purple
                               : Colors.grey,
                           foregroundColor: Colors.white,
@@ -211,9 +228,9 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Text(
-                              '6 letter hints',
-                              style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
+                            Text(
+                              l10n.letterHints,
+                              style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
                               textAlign: TextAlign.center,
                             ),
                             const SizedBox(height: 4),
@@ -222,27 +239,27 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
                               children: [
                                 const Icon(Icons.diamond, size: 16),
                                 const SizedBox(width: 4),
-                                const Text('5', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: ElevatedButton(
-                        onPressed: progressProvider.rubies >= 100
-                            ? () {
+                                Text(progressProvider.letterHintCost.toString(), style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                             ],
+                           ),
+                         ],
+                       ),
+                     ),
+                   ),
+                   const SizedBox(width: 8),
+                   Expanded(
+                     child: ElevatedButton(
+                       onPressed: progressProvider.rubies >= progressProvider.unlimitedLetterHintCost
+                           ? () {
                                 Navigator.of(context).pop();
-                                _buyUnlimitedLetters(timerProvider, progressProvider);
+                                _buyUnlimitedLetters(timerProvider, progressProvider, l10n);
                               }
-                            : null,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: progressProvider.rubies >= 100
-                              ? Colors.blue
-                              : Colors.grey,
-                          foregroundColor: Colors.white,
+                           : null,
+                       style: ElevatedButton.styleFrom(
+                         backgroundColor: progressProvider.rubies >= progressProvider.unlimitedLetterHintCost
+                             ? Colors.blue
+                             : Colors.grey,
+                         foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
                           minimumSize: const Size(0, 60),
                           shape: RoundedRectangleBorder(
@@ -252,9 +269,9 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Text(
-                              'Unlimited letter hints for 1 hour',
-                              style: TextStyle(fontSize: 10, fontWeight: FontWeight.w500),
+                            Text(
+                              l10n.unlimitedHintsForHour,
+                              style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w500),
                               textAlign: TextAlign.center,
                               maxLines: 2,
                             ),
@@ -264,7 +281,7 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
                               children: [
                                 const Icon(Icons.diamond, size: 16),
                                 const SizedBox(width: 4),
-                                const Text('100', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                                Text(progressProvider.unlimitedLetterHintCost.toString(), style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
                               ],
                             ),
                           ],
@@ -278,7 +295,7 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
                 // Cancel button
                 TextButton(
                   onPressed: () => Navigator.of(context).pop(),
-                  child: const Text('Cancel'),
+                  child: Text(l10n.cancel),
                 ),
               ],
             );
@@ -288,40 +305,40 @@ class _CircularLetterHintButtonState extends State<CircularLetterHintButton> {
     );
   }
 
-  void _watchAdForLetters(FeatureTimerProvider timerProvider) {
-    // TODO: Integrate with actual ad system
-    timerProvider.addLetterHints(4);
-    
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Ad watched! +4 letter hints'),
-        backgroundColor: Colors.green,
-      ),
-    );
+  void _watchAdForLetters(FeatureTimerProvider timerProvider, AppLocalizations l10n) {
+    context.read<AdProvider>().adService.showLetterHintAd(() {
+      timerProvider.addLetterHints(4);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.adWatchedForLetterHints),
+          backgroundColor: Colors.green,
+        ),
+      );
+    });
   }
 
-  void _buyLetters(FeatureTimerProvider timerProvider, ProgressProvider progressProvider) {
-    if (progressProvider.rubies >= 5) {
-      progressProvider.spendRubies(5);
+  void _buyLetters(FeatureTimerProvider timerProvider, ProgressProvider progressProvider, AppLocalizations l10n) {
+    if (progressProvider.rubies >= progressProvider.letterHintCost) {
+      progressProvider.spendRubies(progressProvider.letterHintCost);
       timerProvider.addLetterHints(6);
       
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Purchased! +6 letter hints'),
+        SnackBar(
+          content: Text(l10n.purchasedLetterHints),
           backgroundColor: Colors.purple,
         ),
       );
     }
   }
 
-  void _buyUnlimitedLetters(FeatureTimerProvider timerProvider, ProgressProvider progressProvider) {
-    if (progressProvider.rubies >= 100) {
-      progressProvider.spendRubies(100);
+  void _buyUnlimitedLetters(FeatureTimerProvider timerProvider, ProgressProvider progressProvider, AppLocalizations l10n) {
+    if (progressProvider.rubies >= progressProvider.unlimitedLetterHintCost) {
+      progressProvider.spendRubies(progressProvider.unlimitedLetterHintCost);
       timerProvider.setUnlimitedLetter(const Duration(hours: 1));
       
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Unlimited letter hints for 1 hour!'),
+        SnackBar(
+          content: Text(l10n.unlimitedLetterHints),
           backgroundColor: Colors.blue,
         ),
       );

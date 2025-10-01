@@ -1,841 +1,2297 @@
-// German B1 level words with English translations (for English native speakers learning German)
-final List<Map<String, dynamic>> wordBankGermanB1 = [
-  // More complex verbs and grammar structures
-  {'word': 'bedeuten', 'translation': 'to mean'},
-  {'word': 'entwickeln', 'translation': 'to develop'},
-  {'word': 'entscheiden', 'translation': 'to decide'},
-  {'word': 'erreichen', 'translation': 'to reach'},
-  {'word': 'erwarten', 'translation': 'to expect'},
-  {'word': 'erhalten', 'translation': 'to receive'},
-  {'word': 'entstehen', 'translation': 'to arise'},
-  {'word': 'erfinden', 'translation': 'to invent'},
-  {'word': 'erfüllen', 'translation': 'to fulfill'},
-  {'word': 'erkennen', 'translation': 'to recognize'},
-  {'word': 'erleben', 'translation': 'to experience'},
-  {'word': 'ermöglichen', 'translation': 'to enable'},
-  {'word': 'erscheinen', 'translation': 'to appear'},
-  {'word': 'erzählen', 'translation': 'to tell'},
-  {'word': 'gehören', 'translation': 'to belong'},
-  {'word': 'geschehen', 'translation': 'to happen'},
-  {'word': 'gelingen', 'translation': 'to succeed'},
-  {'word': 'genießen', 'translation': 'to enjoy'},
-  {'word': 'gewöhnen', 'translation': 'to get used to'},
-  {'word': 'handeln', 'translation': 'to act'},
-  {'word': 'herstellen', 'translation': 'to produce'},
-  {'word': 'hinweisen', 'translation': 'to point out'},
-  {'word': 'interessieren', 'translation': 'to interest'},
-  {'word': 'kontrollieren', 'translation': 'to control'},
-  {'word': 'konzentrieren', 'translation': 'to concentrate'},
-  {'word': 'kritisieren', 'translation': 'to criticize'},
-  {'word': 'leisten', 'translation': 'to achieve'},
-  {'word': 'lösen', 'translation': 'to solve'},
-  {'word': 'meinen', 'translation': 'to think/mean'},
-  {'word': 'organisieren', 'translation': 'to organize'},
-  {'word': 'planen', 'translation': 'to plan'},
-  {'word': 'produzieren', 'translation': 'to produce'},
-  {'word': 'reagieren', 'translation': 'to react'},
-  {'word': 'realisieren', 'translation': 'to realize'},
-  {'word': 'reduzieren', 'translation': 'to reduce'},
-  {'word': 'reparieren', 'translation': 'to repair'},
-  {'word': 'respektieren', 'translation': 'to respect'},
-  {'word': 'schauen', 'translation': 'to look'},
-  {'word': 'schützen', 'translation': 'to protect'},
-  {'word': 'sparen', 'translation': 'to save'},
-  {'word': 'speichern', 'translation': 'to store'},
-  {'word': 'studieren', 'translation': 'to study'},
-  {'word': 'teilnehmen', 'translation': 'to participate'},
-  {'word': 'überlegen', 'translation': 'to consider'},
-  {'word': 'überraschen', 'translation': 'to surprise'},
-  {'word': 'überzeugen', 'translation': 'to convince'},
-  {'word': 'umgehen', 'translation': 'to deal with'},
-  {'word': 'unterhalten', 'translation': 'to entertain'},
-  {'word': 'unterstützen', 'translation': 'to support'},
-  {'word': 'untersuchen', 'translation': 'to examine'},
-  {'word': 'verändern', 'translation': 'to change'},
-  {'word': 'verbessern', 'translation': 'to improve'},
-  {'word': 'verbinden', 'translation': 'to connect'},
-  {'word': 'verbrauchen', 'translation': 'to consume'},
-  {'word': 'verdienen', 'translation': 'to earn'},
-  {'word': 'vergleichen', 'translation': 'to compare'},
-  {'word': 'verhalten', 'translation': 'to behave'},
-  {'word': 'verhindern', 'translation': 'to prevent'},
-  {'word': 'verkaufen', 'translation': 'to sell'},
-  {'word': 'verlangen', 'translation': 'to demand'},
-  {'word': 'verletzen', 'translation': 'to injure'},
-  {'word': 'vermeiden', 'translation': 'to avoid'},
-  {'word': 'vermuten', 'translation': 'to suspect'},
-  {'word': 'veröffentlichen', 'translation': 'to publish'},
-  {'word': 'versprechen', 'translation': 'to promise'},
-  {'word': 'verstecken', 'translation': 'to hide'},
-  {'word': 'versuchen', 'translation': 'to try'},
-  {'word': 'vertrauen', 'translation': 'to trust'},
-  {'word': 'verwenden', 'translation': 'to use'},
-  {'word': 'verzichten', 'translation': 'to renounce'},
-  {'word': 'vorstellen', 'translation': 'to introduce'},
-  {'word': 'wählen', 'translation': 'to choose'},
-  {'word': 'warnen', 'translation': 'to warn'},
-  {'word': 'wechseln', 'translation': 'to change'},
-  {'word': 'wiederholen', 'translation': 'to repeat'},
-  {'word': 'wünschen', 'translation': 'to wish'},
-  {'word': 'zerstören', 'translation': 'to destroy'},
-  {'word': 'ziehen', 'translation': 'to pull'},
-  {'word': 'zuhören', 'translation': 'to listen'},
-  {'word': 'zurückkehren', 'translation': 'to return'},
-  {'word': 'zusammenarbeiten', 'translation': 'to cooperate'},
-  {'word': 'zustimmen', 'translation': 'to agree'},
-  
-  // More complex nouns
-  {'word': 'abenteuer', 'translation': 'adventure'},
-  {'word': 'absicht', 'translation': 'intention'},
-  {'word': 'abteilung', 'translation': 'department'},
-  {'word': 'angebot', 'translation': 'offer'},
-  {'word': 'angriff', 'translation': 'attack'},
-  {'word': 'ankunft', 'translation': 'arrival'},
-  {'word': 'anlass', 'translation': 'occasion'},
-  {'word': 'anmeldung', 'translation': 'registration'},
-  {'word': 'antwort', 'translation': 'answer'},
-  {'word': 'anwendung', 'translation': 'application'},
-  {'word': 'anzeige', 'translation': 'advertisement'},
-  {'word': 'aufgabe', 'translation': 'task'},
-  {'word': 'aufmerksamkeit', 'translation': 'attention'},
-  {'word': 'auftrag', 'translation': 'order'},
-  {'word': 'ausdruck', 'translation': 'expression'},
-  {'word': 'ausgang', 'translation': 'exit'},
-  {'word': 'auskunft', 'translation': 'information'},
-  {'word': 'ausland', 'translation': 'foreign country'},
-  {'word': 'ausnahme', 'translation': 'exception'},
-  {'word': 'ausrüstung', 'translation': 'equipment'},
-  {'word': 'aussage', 'translation': 'statement'},
-  {'word': 'aussehen', 'translation': 'appearance'},
-  {'word': 'ausstellung', 'translation': 'exhibition'},
-  {'word': 'auswahl', 'translation': 'selection'},
-  {'word': 'ausweis', 'translation': 'ID card'},
-  {'word': 'bedingung', 'translation': 'condition'},
-  {'word': 'bedürfnis', 'translation': 'need'},
-  {'word': 'befehl', 'translation': 'command'},
-  {'word': 'beginn', 'translation': 'beginning'},
-  {'word': 'behandlung', 'translation': 'treatment'},
-  {'word': 'beispiel', 'translation': 'example'},
-  {'word': 'beitrag', 'translation': 'contribution'},
-  {'word': 'bekanntschaft', 'translation': 'acquaintance'},
-  {'word': 'belohnung', 'translation': 'reward'},
-  {'word': 'bemerkung', 'translation': 'remark'},
-  {'word': 'benutzung', 'translation': 'use'},
-  {'word': 'beratung', 'translation': 'consultation'},
-  {'word': 'bereich', 'translation': 'area'},
-  {'word': 'bericht', 'translation': 'report'},
-  {'word': 'beruf', 'translation': 'profession'},
-  {'word': 'beschäftigung', 'translation': 'occupation'},
-  {'word': 'beschreibung', 'translation': 'description'},
-  {'word': 'beschwerde', 'translation': 'complaint'},
-  {'word': 'besitz', 'translation': 'possession'},
-  {'word': 'besonderheit', 'translation': 'specialty'},
-  {'word': 'bestellung', 'translation': 'order'},
-  {'word': 'bestimmung', 'translation': 'determination'},
-  {'word': 'besuch', 'translation': 'visit'},
-  {'word': 'betrag', 'translation': 'amount'},
-  {'word': 'betrieb', 'translation': 'company'},
-  {'word': 'bewegung', 'translation': 'movement'},
-  {'word': 'bewerbung', 'translation': 'application'},
-  {'word': 'bewertung', 'translation': 'evaluation'},
-  {'word': 'bewusstsein', 'translation': 'consciousness'},
-  {'word': 'beziehung', 'translation': 'relationship'},
-  {'word': 'bildung', 'translation': 'education'},
-  {'word': 'bitte', 'translation': 'request'},
-  {'word': 'blick', 'translation': 'glance'},
-  {'word': 'boden', 'translation': 'floor/ground'},
-  {'word': 'botschaft', 'translation': 'message'},
-  {'word': 'branche', 'translation': 'industry'},
-  {'word': 'chance', 'translation': 'chance'},
-  {'word': 'charakter', 'translation': 'character'},
-  {'word': 'chef', 'translation': 'boss'},
-  {'word': 'dach', 'translation': 'roof'},
-  {'word': 'dank', 'translation': 'thanks'},
-  {'word': 'darstellung', 'translation': 'presentation'},
-  {'word': 'dauer', 'translation': 'duration'},
-  {'word': 'decke', 'translation': 'ceiling/blanket'},
-  {'word': 'demokratie', 'translation': 'democracy'},
-  {'word': 'detail', 'translation': 'detail'},
-  {'word': 'dienst', 'translation': 'service'},
-  {'word': 'ding', 'translation': 'thing'},
-  {'word': 'diskussion', 'translation': 'discussion'},
-  {'word': 'dokument', 'translation': 'document'},
-  {'word': 'druck', 'translation': 'pressure'},
-  {'word': 'durchschnitt', 'translation': 'average'},
-  {'word': 'ebene', 'translation': 'level'},
-  {'word': 'ecke', 'translation': 'corner'},
-  {'word': 'effekt', 'translation': 'effect'},
-  {'word': 'eigenschaft', 'translation': 'property'},
-  {'word': 'eindruck', 'translation': 'impression'},
-  {'word': 'einfluss', 'translation': 'influence'},
-  {'word': 'eingang', 'translation': 'entrance'},
-  {'word': 'einheit', 'translation': 'unit'},
-  {'word': 'einladung', 'translation': 'invitation'},
-  {'word': 'einrichtung', 'translation': 'facility'},
-  {'word': 'einsatz', 'translation': 'use/deployment'},
-  {'word': 'einstellung', 'translation': 'attitude'},
-  {'word': 'einzelheit', 'translation': 'detail'},
-  {'word': 'empfehlung', 'translation': 'recommendation'},
-  {'word': 'empfindung', 'translation': 'sensation'},
-  {'word': 'ende', 'translation': 'end'},
-  {'word': 'energie', 'translation': 'energy'},
-  {'word': 'entfernung', 'translation': 'distance'},
-  {'word': 'entscheidung', 'translation': 'decision'},
-  {'word': 'entschuldigung', 'translation': 'excuse'},
-  {'word': 'entwicklung', 'translation': 'development'},
-  {'word': 'ereignis', 'translation': 'event'},
-  {'word': 'erfahrung', 'translation': 'experience'},
-  {'word': 'erfolg', 'translation': 'success'},
-  {'word': 'ergebnis', 'translation': 'result'},
-  {'word': 'erhöhung', 'translation': 'increase'},
-  {'word': 'erinnerung', 'translation': 'memory'},
-  {'word': 'erkältung', 'translation': 'cold'},
-  {'word': 'erklärung', 'translation': 'explanation'},
-  {'word': 'erlaubnis', 'translation': 'permission'},
-  {'word': 'ermäßigung', 'translation': 'discount'},
-  {'word': 'ernährung', 'translation': 'nutrition'},
-  {'word': 'eröffnung', 'translation': 'opening'},
-  {'word': 'ersatz', 'translation': 'replacement'},
-  {'word': 'erscheinung', 'translation': 'appearance'},
-  {'word': 'erwachsene', 'translation': 'adult'},
-  {'word': 'erwartung', 'translation': 'expectation'},
-  {'word': 'erzählung', 'translation': 'story'},
-  {'word': 'existenz', 'translation': 'existence'},
-  {'word': 'experte', 'translation': 'expert'},
-  {'word': 'fabrik', 'translation': 'factory'},
-  {'word': 'fähigkeit', 'translation': 'ability'},
-  {'word': 'fahrkarte', 'translation': 'ticket'},
-  {'word': 'fahrt', 'translation': 'trip'},
-  {'word': 'fall', 'translation': 'case'},
-  {'word': 'farbe', 'translation': 'color'},
-  {'word': 'fassung', 'translation': 'version'},
-  {'word': 'fehler', 'translation': 'mistake'},
-  {'word': 'feier', 'translation': 'celebration'},
-  {'word': 'feld', 'translation': 'field'},
-  {'word': 'fenster', 'translation': 'window'},
-  {'word': 'ferne', 'translation': 'distance'},
-  {'word': 'fernsehen', 'translation': 'television'},
-  {'word': 'fest', 'translation': 'festival'},
-  {'word': 'feuer', 'translation': 'fire'},
-  {'word': 'figur', 'translation': 'figure'},
-  {'word': 'firma', 'translation': 'company'},
-  {'word': 'fläche', 'translation': 'surface'},
-  {'word': 'fleisch', 'translation': 'meat'},
-  {'word': 'flug', 'translation': 'flight'},
-  {'word': 'flugzeug', 'translation': 'airplane'},
-  {'word': 'folge', 'translation': 'consequence'},
-  {'word': 'form', 'translation': 'form'},
-  {'word': 'fortschritt', 'translation': 'progress'},
-  {'word': 'frage', 'translation': 'question'},
-  {'word': 'freiheit', 'translation': 'freedom'},
-  {'word': 'freude', 'translation': 'joy'},
-  {'word': 'freundschaft', 'translation': 'friendship'},
-  {'word': 'frieden', 'translation': 'peace'},
-  {'word': 'friseur', 'translation': 'hairdresser'},
-  {'word': 'frist', 'translation': 'deadline'},
-  {'word': 'führung', 'translation': 'leadership'},
-  {'word': 'funktion', 'translation': 'function'},
-  {'word': 'fußgänger', 'translation': 'pedestrian'},
-  {'word': 'garten', 'translation': 'garden'},
-  {'word': 'gebäude', 'translation': 'building'},
-  {'word': 'gebiet', 'translation': 'area'},
-  {'word': 'gebrauch', 'translation': 'use'},
-  {'word': 'geburt', 'translation': 'birth'},
-  {'word': 'gedächtnis', 'translation': 'memory'},
-  {'word': 'gedanke', 'translation': 'thought'},
-  {'word': 'geduld', 'translation': 'patience'},
-  {'word': 'gefahr', 'translation': 'danger'},
-  {'word': 'gefühl', 'translation': 'feeling'},
-  {'word': 'gegend', 'translation': 'area'},
-  {'word': 'gegensatz', 'translation': 'contrast'},
-  {'word': 'gegenstand', 'translation': 'object'},
-  {'word': 'gegenteil', 'translation': 'opposite'},
-  {'word': 'gegenwart', 'translation': 'present'},
-  {'word': 'geheimnis', 'translation': 'secret'},
-  {'word': 'gehirn', 'translation': 'brain'},
-  {'word': 'gehör', 'translation': 'hearing'},
-  {'word': 'geist', 'translation': 'spirit'},
-  {'word': 'gelegenheit', 'translation': 'opportunity'},
-  {'word': 'gemeinde', 'translation': 'community'},
-  {'word': 'gemeinschaft', 'translation': 'community'},
-  {'word': 'gemüse', 'translation': 'vegetables'},
-  {'word': 'generation', 'translation': 'generation'},
-  {'word': 'genuss', 'translation': 'enjoyment'},
-  {'word': 'gepäck', 'translation': 'luggage'},
-  {'word': 'gericht', 'translation': 'court/dish'},
-  {'word': 'geruch', 'translation': 'smell'},
-  {'word': 'gerät', 'translation': 'device'},
-  {'word': 'geschäft', 'translation': 'business'},
-  {'word': 'geschenk', 'translation': 'gift'},
-  {'word': 'geschichte', 'translation': 'story/history'},
-  {'word': 'geschmack', 'translation': 'taste'},
-  {'word': 'geschwindigkeit', 'translation': 'speed'},
-  {'word': 'gesetz', 'translation': 'law'},
-  {'word': 'gesicht', 'translation': 'face'},
-  {'word': 'gespräch', 'translation': 'conversation'},
-  {'word': 'gestalt', 'translation': 'form'},
-  {'word': 'gesundheit', 'translation': 'health'},
-  {'word': 'gewicht', 'translation': 'weight'},
-  {'word': 'gewinn', 'translation': 'profit'},
-  {'word': 'gewissen', 'translation': 'conscience'},
-  {'word': 'gewohnheit', 'translation': 'habit'},
-  {'word': 'glaube', 'translation': 'belief'},
-  {'word': 'glück', 'translation': 'luck/happiness'},
-  {'word': 'grad', 'translation': 'degree'},
-  {'word': 'grenze', 'translation': 'border'},
-  {'word': 'größe', 'translation': 'size'},
-  {'word': 'grund', 'translation': 'reason'},
-  {'word': 'gruppe', 'translation': 'group'},
-  {'word': 'gruß', 'translation': 'greeting'},
-  {'word': 'gültigkeit', 'translation': 'validity'},
-  {'word': 'gunst', 'translation': 'favor'},
-  {'word': 'haar', 'translation': 'hair'},
-  {'word': 'hälfte', 'translation': 'half'},
-  {'word': 'haltung', 'translation': 'attitude'},
-  {'word': 'handel', 'translation': 'trade'},
-  {'word': 'handlung', 'translation': 'action'},
-  {'word': 'handwerk', 'translation': 'craft'},
-  {'word': 'harmonie', 'translation': 'harmony'},
-  {'word': 'hauptsache', 'translation': 'main thing'},
-  {'word': 'haushalt', 'translation': 'household'},
-  {'word': 'haut', 'translation': 'skin'},
-  {'word': 'heft', 'translation': 'notebook'},
-  {'word': 'heimat', 'translation': 'homeland'},
-  {'word': 'heirat', 'translation': 'marriage'},
-  {'word': 'heizung', 'translation': 'heating'},
-  {'word': 'held', 'translation': 'hero'},
-  {'word': 'hilfe', 'translation': 'help'},
-  {'word': 'himmel', 'translation': 'sky'},
-  {'word': 'hinweis', 'translation': 'hint'},
-  {'word': 'hoffnung', 'translation': 'hope'},
-  {'word': 'höhe', 'translation': 'height'},
-  {'word': 'hof', 'translation': 'yard'},
-  {'word': 'humor', 'translation': 'humor'},
-  {'word': 'hunger', 'translation': 'hunger'},
-  {'word': 'hut', 'translation': 'hat'},
-  {'word': 'idee', 'translation': 'idea'},
-  {'word': 'industrie', 'translation': 'industry'},
-  {'word': 'information', 'translation': 'information'},
-  {'word': 'inhalt', 'translation': 'content'},
-  {'word': 'insel', 'translation': 'island'},
-  {'word': 'instrument', 'translation': 'instrument'},
-  {'word': 'interesse', 'translation': 'interest'},
-  {'word': 'irrtum', 'translation': 'error'},
-  {'word': 'jagd', 'translation': 'hunt'},
-  {'word': 'jahrhundert', 'translation': 'century'},
-  {'word': 'jahreszeit', 'translation': 'season'},
-  {'word': 'jugend', 'translation': 'youth'},
-  {'word': 'kammer', 'translation': 'chamber'},
-  {'word': 'kampf', 'translation': 'fight'},
-  {'word': 'kanal', 'translation': 'channel'},
-  {'word': 'kapitel', 'translation': 'chapter'},
-  {'word': 'karte', 'translation': 'card/map'},
-  {'word': 'kasse', 'translation': 'cash register'},
-  {'word': 'kategorie', 'translation': 'category'},
-  {'word': 'kaufhaus', 'translation': 'department store'},
-  {'word': 'kenntnis', 'translation': 'knowledge'},
-  {'word': 'kern', 'translation': 'core'},
-  {'word': 'kette', 'translation': 'chain'},
-  {'word': 'kind', 'translation': 'child'},
-  {'word': 'kindheit', 'translation': 'childhood'},
-  {'word': 'kirche', 'translation': 'church'},
-  {'word': 'klage', 'translation': 'complaint'},
-  {'word': 'klang', 'translation': 'sound'},
-  {'word': 'klasse', 'translation': 'class'},
-  {'word': 'kleid', 'translation': 'dress'},
-  {'word': 'kleidung', 'translation': 'clothing'},
-  {'word': 'klima', 'translation': 'climate'},
-  {'word': 'klinik', 'translation': 'clinic'},
-  {'word': 'knie', 'translation': 'knee'},
-  {'word': 'koch', 'translation': 'cook'},
-  {'word': 'koffer', 'translation': 'suitcase'},
-  {'word': 'kollege', 'translation': 'colleague'},
-  {'word': 'komfort', 'translation': 'comfort'},
-  {'word': 'kommission', 'translation': 'commission'},
-  {'word': 'kommunikation', 'translation': 'communication'},
-  {'word': 'kompromiss', 'translation': 'compromise'},
-  {'word': 'kondition', 'translation': 'condition'},
-  {'word': 'konflikt', 'translation': 'conflict'},
-  {'word': 'konkurrenz', 'translation': 'competition'},
-  {'word': 'können', 'translation': 'ability'},
-  {'word': 'konsument', 'translation': 'consumer'},
-  {'word': 'kontakt', 'translation': 'contact'},
-  {'word': 'konto', 'translation': 'account'},
-  {'word': 'kontrolle', 'translation': 'control'},
-  {'word': 'konzept', 'translation': 'concept'},
-  {'word': 'konzert', 'translation': 'concert'},
-  {'word': 'kopf', 'translation': 'head'},
-  {'word': 'körper', 'translation': 'body'},
-  {'word': 'kosten', 'translation': 'costs'},
-  {'word': 'kraft', 'translation': 'strength'},
-  {'word': 'krankheit', 'translation': 'illness'},
-  {'word': 'kredit', 'translation': 'credit'},
-  {'word': 'kreis', 'translation': 'circle'},
-  {'word': 'kreuz', 'translation': 'cross'},
-  {'word': 'krieg', 'translation': 'war'},
-  {'word': 'krise', 'translation': 'crisis'},
-  {'word': 'kritik', 'translation': 'criticism'},
-  {'word': 'küche', 'translation': 'kitchen'},
-  {'word': 'kunde', 'translation': 'customer'},
-  {'word': 'kunst', 'translation': 'art'},
-  {'word': 'kurs', 'translation': 'course'},
-  {'word': 'kurve', 'translation': 'curve'},
-  {'word': 'küste', 'translation': 'coast'},
-  {'word': 'lachen', 'translation': 'laughter'},
-  {'word': 'laden', 'translation': 'shop'},
-  {'word': 'lage', 'translation': 'situation'},
-  {'word': 'land', 'translation': 'country'},
-  {'word': 'landschaft', 'translation': 'landscape'},
-  {'word': 'länge', 'translation': 'length'},
-  {'word': 'lärm', 'translation': 'noise'},
-  {'word': 'last', 'translation': 'load'},
-  {'word': 'laune', 'translation': 'mood'},
-  {'word': 'leben', 'translation': 'life'},
-  {'word': 'lebensmittel', 'translation': 'food'},
-  {'word': 'leder', 'translation': 'leather'},
-  {'word': 'lehre', 'translation': 'teaching'},
-  {'word': 'lehrer', 'translation': 'teacher'},
-  {'word': 'leistung', 'translation': 'performance'},
-  {'word': 'leitung', 'translation': 'management'},
-  {'word': 'licht', 'translation': 'light'},
-  {'word': 'liebe', 'translation': 'love'},
-  {'word': 'lied', 'translation': 'song'},
-  {'word': 'linie', 'translation': 'line'},
-  {'word': 'liste', 'translation': 'list'},
-  {'word': 'loch', 'translation': 'hole'},
-  {'word': 'lohn', 'translation': 'wage'},
-  {'word': 'lokal', 'translation': 'local'},
-  {'word': 'lösung', 'translation': 'solution'},
-  {'word': 'luft', 'translation': 'air'},
-  {'word': 'lust', 'translation': 'desire'},
-  {'word': 'macht', 'translation': 'power'},
-  {'word': 'mädchen', 'translation': 'girl'},
-  {'word': 'magen', 'translation': 'stomach'},
-  {'word': 'mahlzeit', 'translation': 'meal'},
-  {'word': 'mal', 'translation': 'time'},
-  {'word': 'manager', 'translation': 'manager'},
-  {'word': 'mangel', 'translation': 'lack'},
-  {'word': 'mann', 'translation': 'man'},
-  {'word': 'mannschaft', 'translation': 'team'},
-  {'word': 'marke', 'translation': 'brand'},
-  {'word': 'markt', 'translation': 'market'},
-  {'word': 'maschine', 'translation': 'machine'},
-  {'word': 'maß', 'translation': 'measure'},
-  {'word': 'masse', 'translation': 'mass'},
-  {'word': 'material', 'translation': 'material'},
-  {'word': 'mauer', 'translation': 'wall'},
-  {'word': 'mechanismus', 'translation': 'mechanism'},
-  {'word': 'medien', 'translation': 'media'},
-  {'word': 'medizin', 'translation': 'medicine'},
-  {'word': 'meer', 'translation': 'sea'},
-  {'word': 'meinung', 'translation': 'opinion'},
-  {'word': 'menge', 'translation': 'amount'},
-  {'word': 'mensch', 'translation': 'human'},
-  {'word': 'merkmal', 'translation': 'feature'},
-  {'word': 'messer', 'translation': 'knife'},
-  {'word': 'methode', 'translation': 'method'},
-  {'word': 'miete', 'translation': 'rent'},
-  {'word': 'milch', 'translation': 'milk'},
-  {'word': 'minute', 'translation': 'minute'},
-  {'word': 'mischung', 'translation': 'mixture'},
-  {'word': 'missverständnis', 'translation': 'misunderstanding'},
-  {'word': 'mitarbeiter', 'translation': 'employee'},
-  {'word': 'mitglied', 'translation': 'member'},
-  {'word': 'mitte', 'translation': 'middle'},
-  {'word': 'mittel', 'translation': 'means'},
-  {'word': 'mitteilung', 'translation': 'message'},
-  {'word': 'mode', 'translation': 'fashion'},
-  {'word': 'modell', 'translation': 'model'},
-  {'word': 'moment', 'translation': 'moment'},
-  {'word': 'monat', 'translation': 'month'},
-  {'word': 'moral', 'translation': 'morals'},
-  {'word': 'mord', 'translation': 'murder'},
-  {'word': 'motiv', 'translation': 'motive'},
-  {'word': 'motor', 'translation': 'engine'},
-  {'word': 'mühe', 'translation': 'effort'},
-  {'word': 'mund', 'translation': 'mouth'},
-  {'word': 'museum', 'translation': 'museum'},
-  {'word': 'musik', 'translation': 'music'},
-  {'word': 'muster', 'translation': 'pattern'},
-  {'word': 'mut', 'translation': 'courage'},
-  {'word': 'mutter', 'translation': 'mother'},
-  {'word': 'nachbar', 'translation': 'neighbor'},
-  {'word': 'nachfrage', 'translation': 'demand'},
-  {'word': 'nachricht', 'translation': 'message'},
-  {'word': 'nacht', 'translation': 'night'},
-  {'word': 'nachteil', 'translation': 'disadvantage'},
-  {'word': 'nähe', 'translation': 'proximity'},
-  {'word': 'name', 'translation': 'name'},
-  {'word': 'nase', 'translation': 'nose'},
-  {'word': 'nation', 'translation': 'nation'},
-  {'word': 'natur', 'translation': 'nature'},
-  {'word': 'nebel', 'translation': 'fog'},
-  {'word': 'neigung', 'translation': 'inclination'},
-  {'word': 'nerv', 'translation': 'nerve'},
-  {'word': 'netz', 'translation': 'network'},
-  {'word': 'niveau', 'translation': 'level'},
-  {'word': 'norden', 'translation': 'north'},
-  {'word': 'notfall', 'translation': 'emergency'},
-  {'word': 'nummer', 'translation': 'number'},
-  {'word': 'nutzen', 'translation': 'benefit'},
-  {'word': 'objekt', 'translation': 'object'},
-  {'word': 'öffentlichkeit', 'translation': 'public'},
-  {'word': 'öl', 'translation': 'oil'},
-  {'word': 'oper', 'translation': 'opera'},
-  {'word': 'operation', 'translation': 'operation'},
-  {'word': 'opfer', 'translation': 'victim'},
-  {'word': 'ordnung', 'translation': 'order'},
-  {'word': 'organisation', 'translation': 'organization'},
-  {'word': 'orient', 'translation': 'orient'},
-  {'word': 'ort', 'translation': 'place'},
-  {'word': 'osten', 'translation': 'east'},
-  {'word': 'paar', 'translation': 'pair'},
-  {'word': 'paket', 'translation': 'package'},
-  {'word': 'papier', 'translation': 'paper'},
-  {'word': 'park', 'translation': 'park'},
-  {'word': 'partei', 'translation': 'party'},
-  {'word': 'partner', 'translation': 'partner'},
-  {'word': 'pass', 'translation': 'passport'},
-  {'word': 'patient', 'translation': 'patient'},
-  {'word': 'pause', 'translation': 'break'},
-  {'word': 'person', 'translation': 'person'},
-  {'word': 'persönlichkeit', 'translation': 'personality'},
-  {'word': 'pfad', 'translation': 'path'},
-  {'word': 'pflanze', 'translation': 'plant'},
-  {'word': 'pflicht', 'translation': 'duty'},
-  {'word': 'phase', 'translation': 'phase'},
-  {'word': 'philosophie', 'translation': 'philosophy'},
-  {'word': 'physik', 'translation': 'physics'},
-  {'word': 'plan', 'translation': 'plan'},
-  {'word': 'platz', 'translation': 'place'},
-  {'word': 'politik', 'translation': 'politics'},
-  {'word': 'polizei', 'translation': 'police'},
-  {'word': 'position', 'translation': 'position'},
-  {'word': 'post', 'translation': 'mail'},
-  {'word': 'praxis', 'translation': 'practice'},
-  {'word': 'preis', 'translation': 'price'},
-  {'word': 'presse', 'translation': 'press'},
-  {'word': 'prinzip', 'translation': 'principle'},
-  {'word': 'problem', 'translation': 'problem'},
-  {'word': 'produkt', 'translation': 'product'},
-  {'word': 'produktion', 'translation': 'production'},
-  {'word': 'professor', 'translation': 'professor'},
-  {'word': 'programm', 'translation': 'program'},
-  {'word': 'projekt', 'translation': 'project'},
-  {'word': 'prozent', 'translation': 'percent'},
-  {'word': 'prozess', 'translation': 'process'},
-  {'word': 'prüfung', 'translation': 'exam'},
-  {'word': 'psychologie', 'translation': 'psychology'},
-  {'word': 'publikum', 'translation': 'audience'},
-  {'word': 'punkt', 'translation': 'point'},
-  {'word': 'qualität', 'translation': 'quality'},
-  {'word': 'quantität', 'translation': 'quantity'},
-  {'word': 'quelle', 'translation': 'source'},
-  {'word': 'radio', 'translation': 'radio'},
-  {'word': 'rahmen', 'translation': 'frame'},
-  {'word': 'rand', 'translation': 'edge'},
-  {'word': 'rang', 'translation': 'rank'},
-  {'word': 'rat', 'translation': 'advice'},
-  {'word': 'raum', 'translation': 'room/space'},
-  {'word': 'reaktion', 'translation': 'reaction'},
-  {'word': 'realität', 'translation': 'reality'},
-  {'word': 'rechnung', 'translation': 'bill'},
-  {'word': 'recht', 'translation': 'right'},
-  {'word': 'rede', 'translation': 'speech'},
-  {'word': 'regel', 'translation': 'rule'},
-  {'word': 'regierung', 'translation': 'government'},
-  {'word': 'region', 'translation': 'region'},
-  {'word': 'reihe', 'translation': 'row'},
-  {'word': 'reise', 'translation': 'trip'},
-  {'word': 'religion', 'translation': 'religion'},
-  {'word': 'reparatur', 'translation': 'repair'},
-  {'word': 'respekt', 'translation': 'respect'},
-  {'word': 'restaurant', 'translation': 'restaurant'},
-  {'word': 'resultat', 'translation': 'result'},
-  {'word': 'revolution', 'translation': 'revolution'},
-  {'word': 'rhythmus', 'translation': 'rhythm'},
-  {'word': 'richtung', 'translation': 'direction'},
-  {'word': 'ring', 'translation': 'ring'},
-  {'word': 'risiko', 'translation': 'risk'},
-  {'word': 'rolle', 'translation': 'role'},
-  {'word': 'roman', 'translation': 'novel'},
-  {'word': 'routine', 'translation': 'routine'},
-  {'word': 'rücken', 'translation': 'back'},
-  {'word': 'rückfahrt', 'translation': 'return trip'},
-  {'word': 'ruf', 'translation': 'reputation'},
-  {'word': 'ruhe', 'translation': 'rest'},
-  {'word': 'runde', 'translation': 'round'},
-  {'word': 'sache', 'translation': 'thing'},
-  {'word': 'saft', 'translation': 'juice'},
-  {'word': 'sammlung', 'translation': 'collection'},
-  {'word': 'satz', 'translation': 'sentence'},
-  {'word': 'schaden', 'translation': 'damage'},
-  {'word': 'schatten', 'translation': 'shadow'},
-  {'word': 'schatz', 'translation': 'treasure'},
-  {'word': 'schein', 'translation': 'appearance'},
-  {'word': 'scherz', 'translation': 'joke'},
-  {'word': 'schicht', 'translation': 'layer'},
-  {'word': 'schicksal', 'translation': 'fate'},
-  {'word': 'schiff', 'translation': 'ship'},
-  {'word': 'schlaf', 'translation': 'sleep'},
-  {'word': 'schlag', 'translation': 'blow'},
-  {'word': 'schloss', 'translation': 'castle'},
-  {'word': 'schluss', 'translation': 'conclusion'},
-  {'word': 'schlüssel', 'translation': 'key'},
-  {'word': 'schmerz', 'translation': 'pain'},
-  {'word': 'schnee', 'translation': 'snow'},
-  {'word': 'schritt', 'translation': 'step'},
-  {'word': 'schuld', 'translation': 'guilt'},
-  {'word': 'schule', 'translation': 'school'},
-  {'word': 'schutz', 'translation': 'protection'},
-  {'word': 'schwäche', 'translation': 'weakness'},
-  {'word': 'schweigen', 'translation': 'silence'},
-  {'word': 'schwierigkeit', 'translation': 'difficulty'},
-  {'word': 'seele', 'translation': 'soul'},
-  {'word': 'segen', 'translation': 'blessing'},
-  {'word': 'seite', 'translation': 'page/side'},
-  {'word': 'sekunde', 'translation': 'second'},
-  {'word': 'selbst', 'translation': 'self'},
-  {'word': 'semester', 'translation': 'semester'},
-  {'word': 'sendung', 'translation': 'broadcast'},
-  {'word': 'serie', 'translation': 'series'},
-  {'word': 'service', 'translation': 'service'},
-  {'word': 'sicherheit', 'translation': 'security'},
-  {'word': 'sieg', 'translation': 'victory'},
-  {'word': 'signal', 'translation': 'signal'},
-  {'word': 'sinn', 'translation': 'sense'},
-  {'word': 'situation', 'translation': 'situation'},
-  {'word': 'sitz', 'translation': 'seat'},
-  {'word': 'skala', 'translation': 'scale'},
-  {'word': 'skandal', 'translation': 'scandal'},
-  {'word': 'sorge', 'translation': 'worry'},
-  {'word': 'sozial', 'translation': 'social'},
-  {'word': 'spannung', 'translation': 'tension'},
-  {'word': 'spaß', 'translation': 'fun'},
-  {'word': 'speicher', 'translation': 'storage'},
-  {'word': 'spiel', 'translation': 'game'},
-  {'word': 'sport', 'translation': 'sport'},
-  {'word': 'sprache', 'translation': 'language'},
-  {'word': 'staat', 'translation': 'state'},
-  {'word': 'stadt', 'translation': 'city'},
-  {'word': 'stamm', 'translation': 'tribe'},
-  {'word': 'stand', 'translation': 'status'},
-  {'word': 'start', 'translation': 'start'},
-  {'word': 'station', 'translation': 'station'},
-  {'word': 'statistik', 'translation': 'statistics'},
-  {'word': 'stelle', 'translation': 'position'},
-  {'word': 'stellung', 'translation': 'position'},
-  {'word': 'stern', 'translation': 'star'},
-  {'word': 'steuer', 'translation': 'tax'},
-  {'word': 'stil', 'translation': 'style'},
-  {'word': 'stimme', 'translation': 'voice'},
-  {'word': 'stimmung', 'translation': 'mood'},
-  {'word': 'stock', 'translation': 'floor'},
-  {'word': 'stoff', 'translation': 'material'},
-  {'word': 'stolz', 'translation': 'pride'},
-  {'word': 'störung', 'translation': 'disturbance'},
-  {'word': 'stoß', 'translation': 'push'},
-  {'word': 'strafe', 'translation': 'punishment'},
-  {'word': 'strand', 'translation': 'beach'},
-  {'word': 'straße', 'translation': 'street'},
-  {'word': 'streit', 'translation': 'argument'},
-  {'word': 'strom', 'translation': 'electricity'},
-  {'word': 'struktur', 'translation': 'structure'},
-  {'word': 'stück', 'translation': 'piece'},
-  {'word': 'student', 'translation': 'student'},
-  {'word': 'studie', 'translation': 'study'},
-  {'word': 'stufe', 'translation': 'step'},
-  {'word': 'stunde', 'translation': 'hour'},
-  {'word': 'sturm', 'translation': 'storm'},
-  {'word': 'suche', 'translation': 'search'},
-  {'word': 'süden', 'translation': 'south'},
-  {'word': 'summe', 'translation': 'sum'},
-  {'word': 'symbol', 'translation': 'symbol'},
-  {'word': 'sympathie', 'translation': 'sympathy'},
-  {'word': 'system', 'translation': 'system'},
-  {'word': 'szene', 'translation': 'scene'},
-  {'word': 'tabelle', 'translation': 'table'},
-  {'word': 'tag', 'translation': 'day'},
-  {'word': 'talent', 'translation': 'talent'},
-  {'word': 'tanz', 'translation': 'dance'},
-  {'word': 'tasche', 'translation': 'bag'},
-  {'word': 'tat', 'translation': 'deed'},
-  {'word': 'tätigkeit', 'translation': 'activity'},
-  {'word': 'tatsache', 'translation': 'fact'},
-  {'word': 'technik', 'translation': 'technology'},
-  {'word': 'teil', 'translation': 'part'},
-  {'word': 'teilnahme', 'translation': 'participation'},
-  {'word': 'telefon', 'translation': 'telephone'},
-  {'word': 'temperatur', 'translation': 'temperature'},
-  {'word': 'tempo', 'translation': 'pace'},
-  {'word': 'tendenz', 'translation': 'tendency'},
-  {'word': 'termin', 'translation': 'appointment'},
-  {'word': 'test', 'translation': 'test'},
-  {'word': 'text', 'translation': 'text'},
-  {'word': 'theater', 'translation': 'theater'},
-  {'word': 'thema', 'translation': 'topic'},
-  {'word': 'theorie', 'translation': 'theory'},
-  {'word': 'tier', 'translation': 'animal'},
-  {'word': 'tisch', 'translation': 'table'},
-  {'word': 'titel', 'translation': 'title'},
-  {'word': 'tod', 'translation': 'death'},
-  {'word': 'ton', 'translation': 'sound'},
-  {'word': 'tor', 'translation': 'gate'},
-  {'word': 'tradition', 'translation': 'tradition'},
-  {'word': 'transport', 'translation': 'transport'},
-  {'word': 'traum', 'translation': 'dream'},
-  {'word': 'treppe', 'translation': 'stairs'},
-  {'word': 'trick', 'translation': 'trick'},
-  {'word': 'tropfen', 'translation': 'drop'},
-  {'word': 'tür', 'translation': 'door'},
-  {'word': 'turm', 'translation': 'tower'},
-  {'word': 'typ', 'translation': 'type'},
-  {'word': 'übergang', 'translation': 'transition'},
-  {'word': 'überlegung', 'translation': 'consideration'},
-  {'word': 'übernachtung', 'translation': 'overnight stay'},
-  {'word': 'überraschung', 'translation': 'surprise'},
-  {'word': 'übersetzung', 'translation': 'translation'},
-  {'word': 'übung', 'translation': 'exercise'},
-  {'word': 'ufer', 'translation': 'shore'},
-  {'word': 'uhr', 'translation': 'clock'},
-  {'word': 'umfang', 'translation': 'scope'},
-  {'word': 'umgebung', 'translation': 'environment'},
-  {'word': 'umstand', 'translation': 'circumstance'},
-  {'word': 'umwelt', 'translation': 'environment'},
-  {'word': 'unfall', 'translation': 'accident'},
-  {'word': 'universität', 'translation': 'university'},
-  {'word': 'unrecht', 'translation': 'injustice'},
-  {'word': 'unterschied', 'translation': 'difference'},
-  {'word': 'unterschrift', 'translation': 'signature'},
-  {'word': 'unterstützung', 'translation': 'support'},
-  {'word': 'untersuchung', 'translation': 'investigation'},
-  {'word': 'unterricht', 'translation': 'lesson'},
-  {'word': 'ursache', 'translation': 'cause'},
-  {'word': 'urteil', 'translation': 'judgment'},
-  {'word': 'urlaub', 'translation': 'vacation'},
-  {'word': 'variation', 'translation': 'variation'},
-  {'word': 'vater', 'translation': 'father'},
-  {'word': 'verband', 'translation': 'association'},
-  {'word': 'verbindung', 'translation': 'connection'},
-  {'word': 'verbrechen', 'translation': 'crime'},
-  {'word': 'verdacht', 'translation': 'suspicion'},
-  {'word': 'verein', 'translation': 'club'},
-  {'word': 'verfahren', 'translation': 'procedure'},
-  {'word': 'verfügung', 'translation': 'disposal'},
-  {'word': 'vergangenheit', 'translation': 'past'},
-  {'word': 'vergleich', 'translation': 'comparison'},
-  {'word': 'vergnügen', 'translation': 'pleasure'},
-  {'word': 'verhalten', 'translation': 'behavior'},
-  {'word': 'verhältnis', 'translation': 'relationship'},
-  {'word': 'verkauf', 'translation': 'sale'},
-  {'word': 'verkehr', 'translation': 'traffic'},
-  {'word': 'verlauf', 'translation': 'course'},
-  {'word': 'verlust', 'translation': 'loss'},
-  {'word': 'vermögen', 'translation': 'wealth'},
-  {'word': 'vernunft', 'translation': 'reason'},
-  {'word': 'versicherung', 'translation': 'insurance'},
-  {'word': 'version', 'translation': 'version'},
-  {'word': 'versprechen', 'translation': 'promise'},
-  {'word': 'verstand', 'translation': 'mind'},
-  {'word': 'verständnis', 'translation': 'understanding'},
-  {'word': 'versuch', 'translation': 'attempt'},
-  {'word': 'vertrag', 'translation': 'contract'},
-  {'word': 'vertrauen', 'translation': 'trust'},
-  {'word': 'verwaltung', 'translation': 'administration'},
-  {'word': 'verwendung', 'translation': 'use'},
-  {'word': 'verzögerung', 'translation': 'delay'},
-  {'word': 'video', 'translation': 'video'},
-  {'word': 'vieh', 'translation': 'livestock'},
-  {'word': 'volk', 'translation': 'people'},
-  {'word': 'vollendung', 'translation': 'completion'},
-  {'word': 'voraussetzung', 'translation': 'prerequisite'},
-  {'word': 'vorbereitung', 'translation': 'preparation'},
-  {'word': 'vorfall', 'translation': 'incident'},
-  {'word': 'vorgang', 'translation': 'process'},
-  {'word': 'vorhaben', 'translation': 'plan'},
-  {'word': 'vorschlag', 'translation': 'suggestion'},
-  {'word': 'vorschrift', 'translation': 'regulation'},
-  {'word': 'vorsicht', 'translation': 'caution'},
-  {'word': 'vorstellung', 'translation': 'imagination'},
-  {'word': 'vorteil', 'translation': 'advantage'},
-  {'word': 'vortrag', 'translation': 'lecture'},
-  {'word': 'wahl', 'translation': 'choice'},
-  {'word': 'wahrheit', 'translation': 'truth'},
-  {'word': 'wahrscheinlichkeit', 'translation': 'probability'},
-  {'word': 'wald', 'translation': 'forest'},
-  {'word': 'wand', 'translation': 'wall'},
-  {'word': 'wandel', 'translation': 'change'},
-  {'word': 'ware', 'translation': 'goods'},
-  {'word': 'wärme', 'translation': 'warmth'},
-  {'word': 'warnung', 'translation': 'warning'},
-  {'word': 'wasser', 'translation': 'water'},
-  {'word': 'wechsel', 'translation': 'change'},
-  {'word': 'weg', 'translation': 'way'},
-  {'word': 'wehe', 'translation': 'woe'},
-  {'word': 'wein', 'translation': 'wine'},
-  {'word': 'weise', 'translation': 'way'},
-  {'word': 'welt', 'translation': 'world'},
-  {'word': 'wendung', 'translation': 'turn'},
-  {'word': 'werbung', 'translation': 'advertising'},
-  {'word': 'werk', 'translation': 'work'},
-  {'word': 'werkstatt', 'translation': 'workshop'},
-  {'word': 'werkzeug', 'translation': 'tool'},
-  {'word': 'wert', 'translation': 'value'},
-  {'word': 'wesen', 'translation': 'being'},
-  {'word': 'westen', 'translation': 'west'},
-  {'word': 'wetter', 'translation': 'weather'},
-  {'word': 'wettbewerb', 'translation': 'competition'},
-  {'word': 'wichtigkeit', 'translation': 'importance'},
-  {'word': 'widerstand', 'translation': 'resistance'},
-  {'word': 'wiederholung', 'translation': 'repetition'},
-  {'word': 'wille', 'translation': 'will'},
-  {'word': 'wind', 'translation': 'wind'},
-  {'word': 'winkel', 'translation': 'angle'},
-  {'word': 'winter', 'translation': 'winter'},
-  {'word': 'wirklichkeit', 'translation': 'reality'},
-  {'word': 'wirkung', 'translation': 'effect'},
-  {'word': 'wirtschaft', 'translation': 'economy'},
-  {'word': 'wissen', 'translation': 'knowledge'},
-  {'word': 'wissenschaft', 'translation': 'science'},
-  {'word': 'witz', 'translation': 'joke'},
-  {'word': 'woche', 'translation': 'week'},
-  {'word': 'wohl', 'translation': 'well-being'},
-  {'word': 'wohnung', 'translation': 'apartment'},
-  {'word': 'wolke', 'translation': 'cloud'},
-  {'word': 'wort', 'translation': 'word'},
-  {'word': 'wunde', 'translation': 'wound'},
-  {'word': 'wunder', 'translation': 'miracle'},
-  {'word': 'wunsch', 'translation': 'wish'},
-  {'word': 'wurzel', 'translation': 'root'},
-  {'word': 'wut', 'translation': 'anger'},
-  {'word': 'zahl', 'translation': 'number'},
-  {'word': 'zahlung', 'translation': 'payment'},
-  {'word': 'zahn', 'translation': 'tooth'},
-  {'word': 'zeichen', 'translation': 'sign'},
-  {'word': 'zeichnung', 'translation': 'drawing'},
-  {'word': 'zeit', 'translation': 'time'},
-  {'word': 'zeitpunkt', 'translation': 'point in time'},
-  {'word': 'zeitschrift', 'translation': 'magazine'},
-  {'word': 'zeitung', 'translation': 'newspaper'},
-  {'word': 'zentrum', 'translation': 'center'},
-  {'word': 'zerstörung', 'translation': 'destruction'},
-  {'word': 'zeug', 'translation': 'stuff'},
-  {'word': 'zeugnis', 'translation': 'certificate'},
-  {'word': 'ziel', 'translation': 'goal'},
-  {'word': 'zimmer', 'translation': 'room'},
-  {'word': 'zins', 'translation': 'interest'},
-  {'word': 'zitat', 'translation': 'quote'},
-  {'word': 'zone', 'translation': 'zone'},
-  {'word': 'zufall', 'translation': 'coincidence'},
-  {'word': 'zufriedenheit', 'translation': 'satisfaction'},
-  {'word': 'zug', 'translation': 'train'},
-  {'word': 'zugang', 'translation': 'access'},
-  {'word': 'zukunft', 'translation': 'future'},
-  {'word': 'zunge', 'translation': 'tongue'},
-  {'word': 'zusammenhang', 'translation': 'connection'},
-  {'word': 'zustand', 'translation': 'condition'},
-  {'word': 'zustimmung', 'translation': 'approval'},
-  {'word': 'zweck', 'translation': 'purpose'},
-  {'word': 'zweifel', 'translation': 'doubt'},
-  {'word': 'zweig', 'translation': 'branch'},
-];
+// German B1 Level Word Bank - B1 German vocabulary with multilingual translations
+// Structure matches word_bank_german_a1.dart
+const List<Map<String, dynamic>> wordBankGermanB1 = [
+
+	// 1-20
+	{
+		'word': 'abschätzen',
+		'translations': {
+			'turkish': 'tahmin etmek',
+			'english': 'to estimate',
+			'spanish': 'estimar',
+			'chinese': '估计',
+			'hindi': 'अनुमान लगाना',
+			'french': 'estimer'
+		}
+	},
+	{
+		'word': 'absichtlich',
+		'translations': {
+			'turkish': 'kasıtlı',
+			'english': 'intentional',
+			'spanish': 'intencionado',
+			'chinese': '故意的',
+			'hindi': 'जानबूझकर',
+			'french': 'intentionnel'
+		}
+	},
+	{
+		'word': 'abhängig',
+		'translations': {
+			'turkish': 'bağımlı',
+			'english': 'dependent',
+			'spanish': 'dependiente',
+			'chinese': '依赖的',
+			'hindi': 'निर्भर',
+			'french': 'dépendant'
+		}
+	},
+	{
+		'word': 'abwesend',
+		'translations': {
+			'turkish': 'mevcut değil',
+			'english': 'absent',
+			'spanish': 'ausente',
+			'chinese': '缺席的',
+			'hindi': 'अनुपस्थित',
+			'french': 'absent'
+		}
+	},
+	{
+		'word': 'aktivieren',
+		'translations': {
+			'turkish': 'etkinleştirmek',
+			'english': 'to activate',
+			'spanish': 'activar',
+			'chinese': '激活',
+			'hindi': 'सक्रिय करना',
+			'french': 'activer'
+		}
+	},
+	{
+		'word': 'agieren',
+		'translations': {
+			'turkish': 'harekete geçmek',
+			'english': 'to act/behave',
+			'spanish': 'actuar',
+			'chinese': '行动',
+			'hindi': 'क्रियाशील होना',
+			'french': 'agir'
+		}
+	},
+	{
+		'word': 'analysieren',
+		'translations': {
+			'turkish': 'analiz etmek',
+			'english': 'to analyze',
+			'spanish': 'analizar',
+			'chinese': '分析',
+			'hindi': 'विश्लेषण करना',
+			'french': 'analyser'
+		}
+	},
+	{
+		'word': 'anspruchsvoll',
+		'translations': {
+			'turkish': 'zorlayıcı',
+			'english': 'demanding',
+			'spanish': 'exigente',
+			'chinese': '苛刻的',
+			'hindi': 'मांगलायक',
+			'french': 'exigeant'
+		}
+	},
+	{
+		'word': 'anpassen',
+		'translations': {
+			'turkish': 'uyarlamak',
+			'english': 'to adapt',
+			'spanish': 'adaptar',
+			'chinese': '适应/调整',
+			'hindi': 'अनुकूलित करना',
+			'french': 'adapter'
+		}
+	},
+	{
+		'word': 'anregend',
+		'translations': {
+			'turkish': 'canlandırıcı',
+			'english': 'stimulating',
+			'spanish': 'estimulante',
+			'chinese': '刺激的',
+			'hindi': 'प्रेरक',
+			'french': 'stimulant'
+		}
+	},
+	{
+		'word': 'ansehen',
+		'translations': {
+			'turkish': 'bakmak/göz atmak',
+			'english': 'to look at/consider',
+			'spanish': 'mirar/considerar',
+			'chinese': '看/考虑',
+			'hindi': 'देखना/विचार करना',
+			'french': 'regarder'
+		}
+	},
+	{
+		'word': 'anspielung',
+		'translations': {
+			'turkish': 'ima',
+			'english': 'allusion/reference',
+			'spanish': 'alicación/ referencia',
+			'chinese': '暗示/提及',
+			'hindi': 'संकेत/सन्दर्भ',
+			'french': 'allusion'
+		}
+	},
+	{
+		'word': 'anstrengend',
+		'translations': {
+			'turkish': 'yorucu',
+			'english': 'exhausting/strenuous',
+			'spanish': 'agotador',
+			'chinese': '费力的',
+			'hindi': 'थकाने वाला',
+			'french': 'épuisant'
+		}
+	},
+	{
+		'word': 'aufwendig',
+		'translations': {
+			'turkish': 'pahalı/zahmetli',
+			'english': 'elaborate/costly',
+			'spanish': 'costoso/elaborado',
+			'chinese': '耗费的',
+			'hindi': 'महंगा/जटिल',
+			'french': 'coûteux'
+		}
+	},
+	{
+		'word': 'ausdrücklich',
+		'translations': {
+			'turkish': 'açıkça',
+			'english': 'explicit/express',
+			'spanish': 'expreso',
+			'chinese': '明确的',
+			'hindi': 'स्पष्ट रूप से',
+			'french': 'explicite'
+		}
+	},
+	{
+		'word': 'ausreichend',
+		'translations': {
+			'turkish': 'yeterli',
+			'english': 'sufficient',
+			'spanish': 'suficiente',
+			'chinese': '足够的',
+			'hindi': 'पर्याप्त',
+			'french': 'suffisant'
+		}
+	},
+	{
+		'word': 'beabsichtigen',
+		'translations': {
+			'turkish': 'niyet etmek',
+			'english': 'to intend',
+			'spanish': 'intentar/planear',
+			'chinese': '打算',
+			'hindi': 'इरादा रखना',
+			'french': "avoir l'intention"
+		}
+	},
+	{
+		'word': 'beeinträchtigen',
+		'translations': {
+			'turkish': 'zarar vermek/etkilemek',
+			'english': 'to impair/affect negatively',
+			'spanish': 'perjudicar',
+			'chinese': '损害/影响',
+			'hindi': 'प्रभावित/हानि पहुँचाना',
+			'french': 'nuire'
+		}
+	},
+	{
+		'word': 'berechnen',
+		'translations': {
+			'turkish': 'hesaplamak',
+			'english': 'to calculate/charge',
+			'spanish': 'calcular/cobrar',
+			'chinese': '计算/收费',
+			'hindi': 'गणना करना/शुल्क लगाना',
+			'french': 'calculer'
+		}
+	},
+
+	// 21-40
+	{
+		'word': 'berechtigt',
+		'translations': {
+			'turkish': 'yetkili/haklı',
+			'english': 'entitled/justified',
+			'spanish': 'con derecho',
+			'chinese': '有权的',
+			'hindi': 'अधिकारप्राप्त',
+			'french': 'autorisé'
+		}
+	},
+	{
+		'word': 'berufen',
+		'translations': {
+			'turkish': 'atanmak/görevlendirmek',
+			'english': 'to appoint/call',
+			'spanish': 'nombrar',
+			'chinese': '任命',
+			'hindi': 'नियुक्त करना',
+			'french': 'nommer'
+		}
+	},
+	{
+		'word': 'bescheinigen',
+		'translations': {
+			'turkish': 'doğrulamak/sertifika vermek',
+			'english': 'to certify',
+			'spanish': 'certificar',
+			'chinese': '证明',
+			'hindi': 'प्रमाणित करना',
+			'french': 'certifier'
+		}
+	},
+	{
+		'word': 'beständig',
+		'translations': {
+			'turkish': 'sürekli/istikrarlı',
+			'english': 'constant/steady',
+			'spanish': 'constante',
+			'chinese': '持续的',
+			'hindi': 'स्थायी',
+			'french': 'constant'
+		}
+	},
+	{
+		'word': 'bestellen',
+		'translations': {
+			'turkish': 'sipariş vermek',
+			'english': 'to order',
+			'spanish': 'pedir',
+			'chinese': '订购',
+			'hindi': 'आदेश देना',
+			'french': 'commander'
+		}
+	},
+	{
+		'word': 'bewahren',
+		'translations': {
+			'turkish': 'korumak/saklamak',
+			'english': 'to preserve/keep',
+			'spanish': 'conservar',
+			'chinese': '保存',
+			'hindi': 'संरक्षित रखना',
+			'french': 'conserver'
+		}
+	},
+	{
+		'word': 'bewältigen',
+		'translations': {
+			'turkish': 'üstesinden gelmek',
+			'english': 'to manage/cope with',
+			'spanish': 'superar',
+			'chinese': '处理/克服',
+			'hindi': 'निपटना',
+			'french': 'surmonter'
+		}
+	},
+	{
+		'word': 'bezeichnen',
+		'translations': {
+			'turkish': 'tanımlamak/adlandırmak',
+			'english': 'to denote/describe',
+			'spanish': 'denominar',
+			'chinese': '称为/描述',
+			'hindi': 'बताना/नामकरण करना',
+			'french': 'désigner'
+		}
+	},
+	{
+		'word': 'deutlich',
+		'translations': {
+			'turkish': 'belirgin/açık',
+			'english': 'clear/distinct',
+			'spanish': 'claro',
+			'chinese': '清晰的',
+			'hindi': 'स्पष्ट',
+			'french': 'clair'
+		}
+	},
+	{
+		'word': 'dynamisch',
+		'translations': {
+			'turkish': 'dinamik',
+			'english': 'dynamic',
+			'spanish': 'dinámico',
+			'chinese': '动态的',
+			'hindi': 'गतिशील',
+			'french': 'dynamique'
+		}
+	},
+
+	// 41-60
+	{
+		'word': 'eindringen',
+		'translations': {
+			'turkish': 'sızmak/girmek',
+			'english': 'to penetrate/invade',
+			'spanish': 'penetrar',
+			'chinese': '渗透/侵入',
+			'hindi': 'प्रवेश करना',
+			'french': 'pénétrer'
+		}
+	},
+	{
+		'word': 'eindrucksvoll',
+		'translations': {
+			'turkish': 'etkileyici',
+			'english': 'impressive',
+			'spanish': 'impresionante',
+			'chinese': '令人印象深刻的',
+			'hindi': 'प्रभावशाली',
+			'french': 'impressionnant'
+		}
+	},
+	{
+		'word': 'einleiten',
+		'translations': {
+			'turkish': 'başlatmak',
+			'english': 'to initiate',
+			'spanish': 'iniciar',
+			'chinese': '启动/引导',
+			'hindi': 'शुरू करना',
+			'french': 'initier'
+		}
+	},
+	{
+		'word': 'einmalig',
+		'translations': {
+			'turkish': 'eşsiz/tek seferlik',
+			'english': 'unique/one-time',
+			'spanish': 'único/una vez',
+			'chinese': '独特的/一次性的',
+			'hindi': 'अद्वितीय/एक बार',
+			'french': 'unique'
+		}
+	},
+	{
+		'word': 'einverstanden',
+		'translations': {
+			'turkish': 'kabul etmek/razı',
+			'english': 'agreed/okay',
+			'spanish': 'de acuerdo',
+			'chinese': '同意',
+			'hindi': 'सहमत',
+			'french': "d'accord"
+		}
+	},
+	{
+		'word': 'entfalten',
+		'translations': {
+			'turkish': 'geliştirmek/açmak',
+			'english': 'to unfold/develop',
+			'spanish': 'desplegar/desarrollar',
+			'chinese': '展开/发展',
+			'hindi': 'खुलना/विकसित करना',
+			'french': 'déployer'
+		}
+	},
+	{
+		'word': 'entkommen',
+		'translations': {
+			'turkish': 'kaçmak',
+			'english': 'to escape',
+			'spanish': 'escapar',
+			'chinese': '逃脱',
+			'hindi': 'भागना',
+			'french': "s'échapper"
+		}
+	},
+	{
+		'word': 'entwickeln',
+		'translations': {
+			'turkish': 'geliştirmek',
+			'english': 'to develop',
+			'spanish': 'desarrollar',
+			'chinese': '发展/开发',
+			'hindi': 'विकसित करना',
+			'french': 'développer'
+		}
+	},
+	{
+		'word': 'erachten',
+		'translations': {
+			'turkish': 'saymak/hesaplamak',
+			'english': 'to consider/regard',
+			'spanish': 'considerar',
+			'chinese': '认为',
+			'hindi': 'माना जाना',
+			'french': 'considérer'
+		}
+	},
+	{
+		'word': 'erfreuen',
+		'translations': {
+			'turkish': 'sevinmek',
+			'english': 'to delight/please',
+			'spanish': 'deleitar',
+			'chinese': '使高兴',
+			'hindi': 'खुशी देना',
+			'french': 'enchanter'
+		}
+	},
+
+	// 61-80
+	{
+		'word': 'erhalten',
+		'translations': {
+			'turkish': 'almak/korumak',
+			'english': 'to receive/obtain',
+			'spanish': 'recibir',
+			'chinese': '获得/保持',
+			'hindi': 'प्राप्त करना',
+			'french': 'recevoir'
+		}
+	},
+	{
+		'word': 'erkennen',
+		'translations': {
+			'turkish': 'anlamak/tanımak',
+			'english': 'to recognize',
+			'spanish': 'reconocer',
+			'chinese': '识别',
+			'hindi': 'पहचानना',
+			'french': 'reconnaître'
+		}
+	},
+	{
+		'word': 'erläutern',
+		'translations': {
+			'turkish': 'açıklamak',
+			'english': 'to elucidate/explain',
+			'spanish': 'explicar',
+			'chinese': '阐明',
+			'hindi': 'विवरण देना',
+			'french': 'élucider'
+		}
+	},
+	{
+		'word': 'erläutern',
+		'translations': {
+			'turkish': 'açıklamak',
+			'english': 'to clarify/explain',
+			'spanish': 'aclarar',
+			'chinese': '澄清',
+			'hindi': 'स्पष्ट करना',
+			'french': 'clarifier'
+		}
+	},
+	{
+		'word': 'erreichen',
+		'translations': {
+			'turkish': 'ulaşmak/erişmek',
+			'english': 'to reach/achieve',
+			'spanish': 'alcanzar',
+			'chinese': '达到',
+			'hindi': 'पहुंचना',
+			'french': 'atteindre'
+		}
+	},
+	{
+		'word': 'erstatten',
+		'translations': {
+			'turkish': 'geri ödemek/bildirmek',
+			'english': 'to reimburse/report',
+			'spanish': 'reembolsar',
+			'chinese': '报销/报告',
+			'hindi': 'वापसी करना/रिपोर्ट करना',
+			'french': 'rembourser'
+		}
+	},
+	{
+		'word': 'erwägen',
+		'translations': {
+			'turkish': 'düşünmek/hesaba katmak',
+			'english': 'to consider/ponder',
+			'spanish': 'considerar',
+			'chinese': '考虑',
+			'hindi': 'विचार करना',
+			'french': 'envisager'
+		}
+	},
+	{
+		'word': 'erwähnen',
+		'translations': {
+			'turkish': 'bahsetmek',
+			'english': 'to mention',
+			'spanish': 'mencionar',
+			'chinese': '提到',
+			'hindi': 'ज़िक्र करना',
+			'french': 'mentionner'
+		}
+	},
+	{
+		'word': 'existenz',
+		'translations': {
+			'turkish': 'varlık',
+			'english': 'existence',
+			'spanish': 'existencia',
+			'chinese': '存在',
+			'hindi': 'अस्तित्व',
+			'french': 'existence'
+		}
+	},
+	{
+		'word': 'fährig',
+		'translations': {
+			'turkish': 'yetenekli',
+			'english': 'capable',
+			'spanish': 'capaz',
+			'chinese': '有能力的',
+			'hindi': 'कुशल',
+			'french': 'capable'
+		}
+	},
+
+	// 81-100
+	{
+		'word': 'favorisieren',
+		'translations': {
+			'turkish': 'kayırmak',
+			'english': 'to favor',
+			'spanish': 'favorecer',
+			'chinese': '偏爱',
+			'hindi': 'अनुकूल बनाना',
+			'french': 'favoriser'
+		}
+	},
+	{
+		'word': 'finanzieren',
+		'translations': {
+			'turkish': 'finanse etmek',
+			'english': 'to finance',
+			'spanish': 'financiar',
+			'chinese': '资助/融资',
+			'hindi': 'वित्तपोषण करना',
+			'french': 'financer'
+		}
+	},
+	{
+		'word': 'finden',
+		'translations': {
+			'turkish': 'bulmak',
+			'english': 'to find',
+			'spanish': 'encontrar',
+			'chinese': '找到',
+			'hindi': 'खोजना',
+			'french': 'trouver'
+		}
+	},
+	{
+		'word': 'fixieren',
+		'translations': {
+			'turkish': 'sabitlemek',
+			'english': 'to fix/secure',
+			'spanish': 'fijar',
+			'chinese': '固定',
+			'hindi': 'स्थिर करना',
+			'french': 'fixer'
+		}
+	},
+	{
+		'word': 'flankieren',
+		'translations': {
+			'turkish': 'yanında olmak',
+			'english': 'to flank',
+			'spanish': 'flanquear',
+			'chinese': '侧翼保护/侧卫',
+			'hindi': 'सहयोग करना',
+			'french': 'flanquer'
+		}
+	},
+	{
+		'word': 'folgern',
+		'translations': {
+			'turkish': 'sonuç çıkarmak',
+			'english': 'to infer',
+			'spanish': 'inferir',
+			'chinese': '推断',
+			'hindi': 'निष्कर्ष निकालना',
+			'french': 'déduire'
+		}
+	},
+	{
+		'word': 'fordern',
+		'translations': {
+			'turkish': 'talep etmek',
+			'english': 'to demand',
+			'spanish': 'exigir',
+			'chinese': '要求',
+			'hindi': 'मांग करना',
+			'french': 'exiger'
+		}
+	},
+	{
+		'word': 'formell',
+		'translations': {
+			'turkish': 'resmi',
+			'english': 'formal',
+			'spanish': 'formal',
+			'chinese': '正式的',
+			'hindi': 'औपचारिक',
+			'french': 'formel'
+		}
+	},
+	{
+		'word': 'fragen',
+		'translations': {
+			'turkish': 'sormak',
+			'english': 'to ask',
+			'spanish': 'preguntar',
+			'chinese': '问',
+			'hindi': 'पूछना',
+			'french': 'demander'
+		}
+	},
+	{
+		'word': 'freisetzen',
+		'translations': {
+			'turkish': 'serbest bırakmak',
+			'english': 'to release',
+			'spanish': 'liberar',
+			'chinese': '释放',
+			'hindi': 'रिहा करना',
+			'french': 'libérer'
+		}
+	},
+
+	// 101-120
+	{
+		'word': 'funktional',
+		'translations': {
+			'turkish': 'işlevsel',
+			'english': 'functional',
+			'spanish': 'funcional',
+			'chinese': '功能性的',
+			'hindi': 'कार्यात्मक',
+			'french': 'fonctionnel'
+		}
+	},
+	{
+		'word': 'gefährden',
+		'translations': {
+			'turkish': 'tehlikeye atmak',
+			'english': 'to jeopardize/endanger',
+			'spanish': 'poner en peligro',
+			'chinese': '危及',
+			'hindi': 'खतरे में डालना',
+			'french': 'mettre en danger'
+		}
+	},
+	{
+		'word': 'geheimnis',
+		'translations': {
+			'turkish': 'sır',
+			'english': 'secret',
+			'spanish': 'secreto',
+			'chinese': '秘密',
+			'hindi': 'रहस्य',
+			'french': 'secret'
+		}
+	},
+	{
+		'word': 'genehmigen',
+		'translations': {
+			'turkish': 'izin vermek/onaylamak',
+			'english': 'to approve/authorize',
+			'spanish': 'aprobar',
+			'chinese': '批准/授权',
+			'hindi': 'अनुमोदित करना',
+			'french': 'approuver'
+		}
+	},
+	{
+		'word': 'geringfügig',
+		'translations': {
+			'turkish': 'önemsiz/az',
+			'english': 'slight/minor',
+			'spanish': 'insignificante',
+			'chinese': '轻微的',
+			'hindi': 'छोटा',
+			'french': 'minime'
+		}
+	},
+	{
+		'word': 'gesichert',
+		'translations': {
+			'turkish': 'güvence altına alınmış',
+			'english': 'secured',
+			'spanish': 'asegurado',
+			'chinese': '安全的/有保障的',
+			'hindi': 'सुरक्षित',
+			'french': 'sécurisé'
+		}
+	},
+	{
+		'word': 'gestalten',
+		'translations': {
+			'turkish': 'tasarlamak/şekillendirmek',
+			'english': 'to shape/design',
+			'spanish': 'diseñar',
+			'chinese': '设计/塑造',
+			'hindi': 'रचना',
+			'french': 'façonner'
+		}
+	},
+	{
+		'word': 'gewährleisten',
+		'translations': {
+			'turkish': 'garanti etmek',
+			'english': 'to guarantee/ensure',
+			'spanish': 'garantizar',
+			'chinese': '保证',
+			'hindi': 'सुनिश्चित करना',
+			'french': 'garantir'
+		}
+	},
+	{
+		'word': 'gültig',
+		'translations': {
+			'turkish': 'geçerli',
+			'english': 'valid',
+			'spanish': 'válido',
+			'chinese': '有效的',
+			'hindi': 'मान्य',
+			'french': 'valide'
+		}
+	},
+	{
+		'word': 'handhaben',
+		'translations': {
+			'turkish': 'kullanmak/işlemek',
+			'english': 'to handle/manage',
+			'spanish': 'manejar',
+			'chinese': '处理/操作',
+			'hindi': 'सँभालना',
+			'french': 'gérer'
+		}
+	},
+
+	// 121-140
+	{
+		'word': 'hinterfragen',
+		'translations': {
+			'turkish': 'sorgulamak',
+			'english': 'to question/critically examine',
+			'spanish': 'cuestionar',
+			'chinese': '质疑/深入探讨',
+			'hindi': 'प्रश्न उठाना',
+			'french': 'remettre en question'
+		}
+	},
+	{
+		'word': 'implementieren',
+		'translations': {
+			'turkish': 'uygulamak',
+			'english': 'to implement',
+			'spanish': 'implementar',
+			'chinese': '实现/实施',
+			'hindi': 'लागू करना',
+			'french': 'implémenter'
+		}
+	},
+	{
+		'word': 'indikativ',
+		'translations': {
+			'turkish': 'gösterge/indikatif',
+			'english': 'indicative',
+			'spanish': 'indicativo',
+			'chinese': '表明的',
+			'hindi': 'सूचक',
+			'french': 'indicatif'
+		}
+	},
+	{
+		'word': 'initial',
+		'translations': {
+			'turkish': 'başlangıç',
+			'english': 'initial',
+			'spanish': 'inicial',
+			'chinese': '初始的',
+			'hindi': 'प्रारंभिक',
+			'french': 'initial'
+		}
+	},
+	{
+		'word': 'insistieren',
+		'translations': {
+			'turkish': 'ısrar etmek',
+			'english': 'to insist',
+			'spanish': 'insistir',
+			'chinese': '坚持',
+			'hindi': 'दबाव बनाये रखना',
+			'french': 'insister'
+		}
+	},
+	{
+		'word': 'integrieren',
+		'translations': {
+			'turkish': 'bütünleştirmek',
+			'english': 'to integrate',
+			'spanish': 'integrar',
+			'chinese': '整合',
+			'hindi': 'एकीकृत करना',
+			'french': 'intégrer'
+		}
+	},
+	{
+		'word': 'interpretieren',
+		'translations': {
+			'turkish': 'yorumlamak',
+			'english': 'to interpret',
+			'spanish': 'interpretar',
+			'chinese': '解释/翻译',
+			'hindi': 'व्याख्या करना',
+			'french': 'interpréter'
+		}
+	},
+	{
+		'word': 'irradiieren',
+		'translations': {
+			'turkish': 'ışınlamak',
+			'english': 'to irradiate',
+			'spanish': 'irradiar',
+			'chinese': '照射',
+			'hindi': 'किरणित करना',
+			'french': 'irradié'
+		}
+	},
+	{
+		'word': 'isolieren',
+		'translations': {
+			'turkish': 'izole etmek',
+			'english': 'to isolate',
+			'spanish': 'aislar',
+			'chinese': '隔离',
+			'hindi': 'अलग करना',
+			'french': 'isoler'
+		}
+	},
+	{
+		'word': 'journalistisch',
+		'translations': {
+			'turkish': 'gazetecilikle ilgili',
+			'english': 'journalistic',
+			'spanish': 'periodístico',
+			'chinese': '新闻的/记者的',
+			'hindi': 'पत्रकारीय',
+			'french': 'journalistique'
+		}
+	},
+
+	// 141-160
+	{
+		'word': 'komplementär',
+		'translations': {
+			'turkish': 'tamamlayıcı',
+			'english': 'complementary',
+			'spanish': 'complementario',
+			'chinese': '互补的',
+			'hindi': 'पूरक',
+			'french': 'complémentaire'
+		}
+	},
+	{
+		'word': 'kompensieren',
+		'translations': {
+			'turkish': 'telafi etmek',
+			'english': 'to compensate',
+			'spanish': 'compensar',
+			'chinese': '补偿',
+			'hindi': 'क्षतिपूर्ति करना',
+			'french': 'compenser'
+		}
+	},
+	{
+		'word': 'komplexität',
+		'translations': {
+			'turkish': 'karmaşıklık',
+			'english': 'complexity',
+			'spanish': 'complejidad',
+			'chinese': '复杂性',
+			'hindi': 'जटिलता',
+			'french': 'complexité'
+		}
+	},
+	{
+		'word': 'kontext',
+		'translations': {
+			'turkish': 'bağlam',
+			'english': 'context',
+			'spanish': 'contexto',
+			'chinese': '语境/上下文',
+			'hindi': 'संदर्भ',
+			'french': 'contexte'
+		}
+	},
+	{
+		'word': 'konträr',
+		'translations': {
+			'turkish': 'zıt',
+			'english': 'contrary',
+			'spanish': 'contrario',
+			'chinese': '相反的',
+			'hindi': 'विपरीत',
+			'french': 'contraire'
+		}
+	},
+	{
+		'word': 'kooperieren',
+		'translations': {
+			'turkish': 'işbirliği yapmak',
+			'english': 'to cooperate',
+			'spanish': 'cooperar',
+			'chinese': '合作',
+			'hindi': 'सहयोग करना',
+			'french': 'coopérer'
+		}
+	},
+	{
+		'word': 'korrespondieren',
+		'translations': {
+			'turkish': 'yazışmak/uyuşmak',
+			'english': 'to correspond',
+			'spanish': 'corresponder',
+			'chinese': '通信/对应',
+			'hindi': 'अनुरूप होना/पत्राचार करना',
+			'french': 'correspondre'
+		}
+	},
+	{
+		'word': 'kurativ',
+		'translations': {
+			'turkish': 'tedavi edici',
+			'english': 'curative',
+			'spanish': 'curativo',
+			'chinese': '治疗的',
+			'hindi': 'उपचारात्मक',
+			'french': 'curatif'
+		}
+	},
+	{
+		'word': 'lagebericht',
+		'translations': {
+			'turkish': 'durum raporu',
+			'english': 'situation report',
+			'spanish': 'informe de situación',
+			'chinese': '情况报告',
+			'hindi': 'स्थिति रिपोर्ट',
+			'french': 'rapport de situation'
+		}
+	},
+	{
+		'word': 'lehrreich',
+		'translations': {
+			'turkish': 'öğretici',
+			'english': 'instructive',
+			'spanish': 'instructivo',
+			'chinese': '有教育意义的',
+			'hindi': 'शिक्षाप्रद',
+			'french': 'instructif'
+		}
+	},
+
+	// 161-180
+	{
+		'word': 'leiten',
+		'translations': {
+			'turkish': 'yönetmek',
+			'english': 'to lead',
+			'spanish': 'dirigir',
+			'chinese': '领导',
+			'hindi': 'नेतृत्व करना',
+			'french': 'diriger'
+		}
+	},
+	{
+		'word': 'lokal',
+		'translations': {
+			'turkish': 'yerel',
+			'english': 'local',
+			'spanish': 'local',
+			'chinese': '本地的',
+			'hindi': 'स्थानीय',
+			'french': 'local'
+		}
+	},
+	{
+		'word': 'löschen',
+		'translations': {
+			'turkish': 'silmek',
+			'english': 'to delete/extinguish',
+			'spanish': 'borrar/extinguir',
+			'chinese': '删除/扑灭',
+			'hindi': 'हटाना/बुझाना',
+			'french': 'supprimer/éteindre'
+		}
+	},
+	{
+		'word': 'lucrativ',
+		'translations': {
+			'turkish': 'karlı',
+			'english': 'lucrative',
+			'spanish': 'lucrativo',
+			'chinese': '有利可图的',
+			'hindi': 'लाभकारी',
+			'french': 'lucratif'
+		}
+	},
+	{
+		'word': 'managen',
+		'translations': {
+			'turkish': 'yönetmek',
+			'english': 'to manage',
+			'spanish': 'gestionar',
+			'chinese': '管理',
+			'hindi': 'प्रबंध करना',
+			'french': 'gérer'
+		}
+	},
+		{
+			'word': 'maßgeblich',
+			'translations': {
+				'turkish': 'belirleyici/etkili',
+				'english': 'authoritative/decisive',
+				'spanish': 'decisivo',
+				'chinese': '重要的/决定性的',
+				'hindi': 'निरधारक',
+				'french': 'déterminant'
+			}
+		},
+		{
+			'word': 'meistens',
+			'translations': {
+				'turkish': 'çoğunlukla',
+				'english': 'mostly/usually',
+				'spanish': 'generalmente',
+				'chinese': '大多数情况下',
+				'hindi': 'अधिकतर',
+				'french': 'la plupart du temps'
+			}
+		},
+		{
+			'word': 'melden',
+			'translations': {
+				'turkish': 'bildirmek',
+				'english': 'to report/announce',
+				'spanish': 'informar',
+				'chinese': '报告',
+				'hindi': 'सूचित करना',
+				'french': 'annoncer'
+			}
+		},
+		{
+			'word': 'merklich',
+			'translations': {
+				'turkish': 'dikkat çekici',
+				'english': 'noticeable',
+				'spanish': 'notable',
+				'chinese': '明显的',
+				'hindi': 'महत्वपूर्ण',
+				'french': 'remarquable'
+			}
+		},
+		{
+			'word': 'miterleben',
+			'translations': {
+				'turkish': 'beraber tecrübe etmek',
+				'english': 'to experience (together)',
+				'spanish': 'experimentar',
+				'chinese': '共同经历',
+				'hindi': 'साथ अनुभव करना',
+				'french': 'vivre (ensemble)'
+			}
+		},
+		{
+			'word': 'moderat',
+			'translations': {
+				'turkish': 'ılımlı',
+				'english': 'moderate',
+				'spanish': 'moderado',
+				'chinese': '适度的',
+				'hindi': 'मध्यम',
+				'french': 'modéré'
+			}
+		},
+		{
+			'word': 'motivieren',
+			'translations': {
+				'turkish': 'motivate etmek',
+				'english': 'to motivate',
+				'spanish': 'motivar',
+				'chinese': '激励',
+				'hindi': 'प्रेरित करना',
+				'french': 'motiver'
+			}
+		},
+		{
+			'word': 'nachvollziehen',
+			'translations': {
+				'turkish': 'anlayabilmek/takip etmek',
+				'english': 'to comprehend/trace',
+				'spanish': 'comprender',
+				'chinese': '理解/追溯',
+				'hindi': 'समझना',
+				'french': 'comprendre'
+			}
+		},
+		{
+			'word': 'nachhaltig',
+			'translations': {
+				'turkish': 'sürdürülebilir',
+				'english': 'sustainable',
+				'spanish': 'sostenible',
+				'chinese': '可持续的',
+				'hindi': 'स्थायी',
+				'french': 'durable'
+			}
+		},
+		{
+			'word': 'nennen',
+			'translations': {
+				'turkish': 'adlandırmak/söylemek',
+				'english': 'to name/call',
+				'spanish': 'nombrar',
+				'chinese': '称呼/说出',
+				'hindi': 'नाम बताना',
+				'french': 'nommer'
+			}
+		},
+		{
+			'word': 'neutral',
+			'translations': {
+				'turkish': 'tarafsız',
+				'english': 'neutral',
+				'spanish': 'neutral',
+				'chinese': '中立的',
+				'hindi': 'तटस्थ',
+				'french': 'neutre'
+			}
+		},
+		{
+			'word': 'netzwerk',
+			'translations': {
+				'turkish': 'ağ',
+				'english': 'network',
+				'spanish': 'red',
+				'chinese': '网络',
+				'hindi': 'नेटवर्क',
+				'french': 'réseau'
+			}
+		},
+		{
+			'word': 'objectiv',
+			'translations': {
+				'turkish': 'nesnel/amaç',
+				'english': 'objective',
+				'spanish': 'objetivo',
+				'chinese': '客观/目标',
+				'hindi': 'उद्देश्य',
+				'french': 'objectif'
+			}
+		},
+		{
+			'word': 'operieren',
+			'translations': {
+				'turkish': 'ameliyat etmek/operasyon yapmak',
+				'english': 'to operate',
+				'spanish': 'operar',
+				'chinese': '操作/手术',
+				'hindi': 'ऑपरेशन करना',
+				'french': 'opérer'
+			}
+		},
+		{
+			'word': 'ordnen',
+			'translations': {
+				'turkish': 'düzenlemek/sıralamak',
+				'english': 'to arrange/order',
+				'spanish': 'ordenar',
+				'chinese': '整理/排序',
+				'hindi': 'व्यवस्थित करना',
+				'french': 'ordonner'
+			}
+		},
+		{
+			'word': 'originell',
+			'translations': {
+				'turkish': 'özgün',
+				'english': 'original/creative',
+				'spanish': 'original',
+				'chinese': '独创的',
+				'hindi': 'मूल',
+				'french': 'original'
+			}
+		},
+		{
+			'word': 'paradox',
+			'translations': {
+				'turkish': 'paradoks/çelişki',
+				'english': 'paradox',
+				'spanish': 'paradoja',
+				'chinese': '矛盾/悖论',
+				'hindi': 'विरोधाभास',
+				'french': 'paradoxe'
+			}
+		},
+		{
+			'word': 'parlament',
+			'translations': {
+				'turkish': 'parlamento',
+				'english': 'parliament',
+				'spanish': 'parlamento',
+				'chinese': '议会',
+				'hindi': 'संसद',
+				'french': 'parlement'
+			}
+		},
+		{
+			'word': 'parteiisch',
+			'translations': {
+				'turkish': 'taraflı',
+				'english': 'biased/partial',
+				'spanish': 'parcial',
+				'chinese': '有偏见的',
+				'hindi': 'पक्षपाती',
+				'french': 'partial'
+			}
+		},
+
+		// 201-220
+		{
+			'word': 'patent',
+			'translations': {
+				'turkish': 'patent',
+				'english': 'patent',
+				'spanish': 'patente',
+				'chinese': '专利',
+				'hindi': 'पेटेंट',
+				'french': 'brevet'
+			}
+		},
+		{
+			'word': 'praktisch',
+			'translations': {
+				'turkish': 'pratik',
+				'english': 'practical',
+				'spanish': 'práctico',
+				'chinese': '实用的',
+				'hindi': 'व्यावहारिक',
+				'french': 'pratique'
+			}
+		},
+		{
+			'word': 'prägnant',
+			'translations': {
+				'turkish': 'özlü',
+				'english': 'succinct',
+				'spanish': 'conciso',
+				'chinese': '简洁的',
+				'hindi': 'संक्षेप में',
+				'french': 'concis'
+			}
+		},
+		{
+			'word': 'präzise',
+			'translations': {
+				'turkish': 'kesin/özenli',
+				'english': 'precise',
+				'spanish': 'preciso',
+				'chinese': '精确的',
+				'hindi': 'सटीक',
+				'french': 'précis'
+			}
+		},
+		{
+			'word': 'problematisch',
+			'translations': {
+				'turkish': 'sorunlu',
+				'english': 'problematic',
+				'spanish': 'problemático',
+				'chinese': '有问题的',
+				'hindi': 'समस्यात्मक',
+				'french': 'problématique'
+			}
+		},
+		{
+			'word': 'produktiv',
+			'translations': {
+				'turkish': 'verimli',
+				'english': 'productive',
+				'spanish': 'productivo',
+				'chinese': '高产的',
+				'hindi': 'उत्पादक',
+				'french': 'productif'
+			}
+		},
+		{
+			'word': 'programmieren',
+			'translations': {
+				'turkish': 'programlamak',
+				'english': 'to program',
+				'spanish': 'programar',
+				'chinese': '编程',
+				'hindi': 'प्रोग्राम करना',
+				'french': 'programmer'
+			}
+		},
+		{
+			'word': 'prognose',
+			'translations': {
+				'turkish': 'tahmin/öngörü',
+				'english': 'forecast/prognosis',
+				'spanish': 'pronóstico',
+				'chinese': '预测',
+				'hindi': 'पूर्वानुमान',
+				'french': 'prévision'
+			}
+		},
+		{
+			'word': 'protokoll',
+			'translations': {
+				'turkish': 'tutanak',
+				'english': 'protocol/minutes',
+				'spanish': 'protocolo',
+				'chinese': '议事录/协议',
+				'hindi': 'प्रोटोकॉल',
+				'french': 'protocole'
+			}
+		},
+		{
+			'word': 'publizieren',
+			'translations': {
+				'turkish': 'yayınlamak',
+				'english': 'to publish',
+				'spanish': 'publicar',
+				'chinese': '发表/出版',
+				'hindi': 'प्रकाशित करना',
+				'french': 'publier'
+			}
+		},
+
+		// 221-240
+		{
+			'word': 'qualifizieren',
+			'translations': {
+				'turkish': 'nitelendirmek/vasıflandırmak',
+				'english': 'to qualify',
+				'spanish': 'calificar',
+				'chinese': '使有资格',
+				'hindi': 'योग्य ठहराना',
+				'french': 'qualifier'
+			}
+		},
+		{
+			'word': 'quantitativ',
+			'translations': {
+				'turkish': 'nicel',
+				'english': 'quantitative',
+				'spanish': 'cuantitativo',
+				'chinese': '定量的',
+				'hindi': 'मात्रात्मक',
+				'french': 'quantitatif'
+			}
+		},
+		{
+			'word': 'querdenken',
+			'translations': {
+				'turkish': 'farklı düşünmek',
+				'english': 'to think laterally',
+				'spanish': 'pensar de forma diferente',
+				'chinese': '横向思考',
+				'hindi': 'विपरीत सोचना',
+				'french': 'penser différemment'
+			}
+		},
+		{
+			'word': 'rational',
+			'translations': {
+				'turkish': 'akla uygun',
+				'english': 'rational',
+				'spanish': 'racional',
+				'chinese': '理性的',
+				'hindi': 'तर्कसंगत',
+				'french': 'rationnel'
+			}
+		},
+		{
+			'word': 'reagieren',
+			'translations': {
+				'turkish': 'tepki vermek',
+				'english': 'to react/respond',
+				'spanish': 'reaccionar',
+				'chinese': '反应',
+				'hindi': 'प्रतिक्रिया देना',
+				'french': 'réagir'
+			}
+		},
+		{
+			'word': 'realistisch',
+			'translations': {
+				'turkish': 'gerçekçi',
+				'english': 'realistic',
+				'spanish': 'realista',
+				'chinese': '现实的',
+				'hindi': 'वास्तविक',
+				'french': 'réaliste'
+			}
+		},
+		{
+			'word': 'reflektieren',
+			'translations': {
+				'turkish': 'yansıtmak/düşünmek',
+				'english': 'to reflect',
+				'spanish': 'reflejar',
+				'chinese': '反思/反射',
+				'hindi': 'प्रतिबिंबित करना',
+				'french': 'réfléchir'
+			}
+		},
+		{
+			'word': 'regulieren',
+			'translations': {
+				'turkish': 'düzenlemek/kontrol etmek',
+				'english': 'to regulate',
+				'spanish': 'regular',
+				'chinese': '调节/规范',
+				'hindi': 'नियमन करना',
+				'french': 'réguler'
+			}
+		},
+		{
+			'word': 'relevant',
+			'translations': {
+				'turkish': 'ilgili',
+				'english': 'relevant',
+				'spanish': 'relevante',
+				'chinese': '相关的',
+				'hindi': 'संबंधित',
+				'french': 'pertinent'
+			}
+		},
+		{
+			'word': 'replizieren',
+			'translations': {
+				'turkish': 'kopyalamak/çoğaltmak',
+				'english': 'to replicate',
+				'spanish': 'replicar',
+				'chinese': '复制',
+				'hindi': 'नक़ल करना',
+				'french': 'répliquer'
+			}
+		},
+
+		// 241-260
+		{
+			'word': 'reservieren',
+			'translations': {
+				'turkish': 'rezervasyon yapmak',
+				'english': 'to reserve/book',
+				'spanish': 'reservar',
+				'chinese': '预订/保留',
+				'hindi': 'आरक्षित करना',
+				'french': 'réserver'
+			}
+		},
+		{
+			'word': 'respektieren',
+			'translations': {
+				'turkish': 'saygı göstermek',
+				'english': 'to respect',
+				'spanish': 'respetar',
+				'chinese': '尊重',
+				'hindi': 'सम्मान करना',
+				'french': 'respecter'
+			}
+		},
+		{
+			'word': 'resultat',
+			'translations': {
+				'turkish': 'sonuç',
+				'english': 'result',
+				'spanish': 'resultado',
+				'chinese': '结果',
+				'hindi': 'परिणाम',
+				'french': 'résultat'
+			}
+		},
+		{
+			'word': 'richten',
+			'translations': {
+				'turkish': 'yönlendirmek/hüküm vermek',
+				'english': 'to direct/judge',
+				'spanish': 'dirigir/juzgar',
+				'chinese': '指引/判断',
+				'hindi': 'निर्देशित करना/न्याय करना',
+				'french': 'diriger/juger'
+			}
+		},
+		{
+			'word': 'rücksichtsvoll',
+			'translations': {
+				'turkish': 'düşünceli',
+				'english': 'considerate',
+				'spanish': 'considerado',
+				'chinese': '体贴的',
+				'hindi': 'विचारशील',
+				'french': 'prévenant'
+			}
+		},
+		{
+			'word': 'sachlich',
+			'translations': {
+				'turkish': 'nesnel',
+				'english': 'objective/factual',
+				'spanish': 'objetivo',
+				'chinese': '客观的',
+				'hindi': 'तथ्यात्मक',
+				'french': 'objectif'
+			}
+		},
+		{
+			'word': 'scharfsinnig',
+			'translations': {
+				'turkish': 'zincirli/zeki',
+				'english': 'keen/shrewd',
+				'spanish': 'perspicaz',
+				'chinese': '敏锐的',
+				'hindi': 'तीक्ष्णबुद्धि',
+				'french': 'perspicace'
+			}
+		},
+		{
+			'word': 'schlüssig',
+			'translations': {
+				'turkish': 'ikna edici',
+				'english': 'conclusive/coherent',
+				'spanish': 'concluyente',
+				'chinese': '有说服力的',
+				'hindi': 'निष्कर्षात्मक',
+				'french': 'concluant'
+			}
+		},
+		{
+			'word': 'schwerwiegend',
+			'translations': {
+				'turkish': 'ciddi/ağır',
+				'english': 'serious/significant',
+				'spanish': 'grave',
+				'chinese': '严重的',
+				'hindi': 'गंभीर',
+				'french': 'grave'
+			}
+		},
+		{
+			'word': 'segmentieren',
+			'translations': {
+				'turkish': 'bölümlere ayırmak',
+				'english': 'to segment',
+				'spanish': 'segmentar',
+				'chinese': '分割/分段',
+				'hindi': 'खंडित करना',
+				'french': 'segmenter'
+			}
+		},
+
+		// 261-280
+		{
+			'word': 'sichern',
+			'translations': {
+				'turkish': 'güvence altına almak',
+				'english': 'to secure',
+				'spanish': 'asegurar',
+				'chinese': '保障/确保',
+				'hindi': 'सुरक्षित करना',
+				'french': 'assurer'
+			}
+		},
+		{
+			'word': 'signalisieren',
+			'translations': {
+				'turkish': 'işaret vermek',
+				'english': 'to signal',
+				'spanish': 'señalizar',
+				'chinese': '发信号',
+				'hindi': 'संकेत देना',
+				'french': 'signaler'
+			}
+		},
+		{
+			'word': 'simultan',
+			'translations': {
+				'turkish': 'eşzamanlı',
+				'english': 'simultaneous',
+				'spanish': 'simultáneo',
+				'chinese': '同步的',
+				'hindi': 'एक साथ',
+				'french': 'simultané'
+			}
+		},
+		{
+			'word': 'skeptisch',
+			'translations': {
+				'turkish': 'şüpheci',
+				'english': 'skeptical',
+				'spanish': 'escéptico',
+				'chinese': '怀疑的',
+				'hindi': 'संदेहास्पद',
+				'french': 'sceptique'
+			}
+		},
+		{
+			'word': 'spezifisch',
+			'translations': {
+				'turkish': 'özgül/spesifik',
+				'english': 'specific',
+				'spanish': 'específico',
+				'chinese': '具体的',
+				'hindi': 'विशिष्ट',
+				'french': 'spécifique'
+			}
+		},
+		{
+			'word': 'statistisch',
+			'translations': {
+				'turkish': 'istatistiksel',
+				'english': 'statistical',
+				'spanish': 'estadístico',
+				'chinese': '统计的',
+				'hindi': 'सांख्यिकीय',
+				'french': 'statistique'
+			}
+		},
+		{
+			'word': 'strategisch',
+			'translations': {
+				'turkish': 'stratejik',
+				'english': 'strategic',
+				'spanish': 'estratégico',
+				'chinese': '战略的',
+				'hindi': 'रणनीतिक',
+				'french': 'stratégique'
+			}
+		},
+		{
+			'word': 'strukturieren',
+			'translations': {
+				'turkish': 'yapılandırmak',
+				'english': 'to structure',
+				'spanish': 'estructurar',
+				'chinese': '结构化',
+				'hindi': 'संरचना करना',
+				'french': 'structurer'
+			}
+		},
+		{
+			'word': 'stufenweise',
+			'translations': {
+				'turkish': 'aşamalı olarak',
+				'english': 'stepwise/gradual',
+				'spanish': 'por fases',
+				'chinese': '逐步地',
+				'hindi': 'क्रमिक',
+				'french': 'progressif'
+			}
+		},
+		{
+			'word': 'substantiv',
+			'translations': {
+				'turkish': 'isim',
+				'english': 'noun',
+				'spanish': 'sustantivo',
+				'chinese': '名词',
+				'hindi': 'संज्ञा',
+				'french': 'nom'
+			}
+		},
+
+		// 281-300
+		{
+			'word': 'sukzessiv',
+			'translations': {
+				'turkish': 'ardışık',
+				'english': 'successive',
+				'spanish': 'sucesivo',
+				'chinese': '连续的',
+				'hindi': 'क्रमिक',
+				'french': 'successif'
+			}
+		},
+		{
+			'word': 'summarisch',
+			'translations': {
+				'turkish': 'özetleyici',
+				'english': 'summarized',
+				'spanish': 'resumido',
+				'chinese': '总结的',
+				'hindi': 'सारांश',
+				'french': 'résumé'
+			}
+		},
+		{
+			'word': 'symptomatisch',
+			'translations': {
+				'turkish': 'belirti gösteren',
+				'english': 'symptomatic',
+				'spanish': 'sintomático',
+				'chinese': '症状的',
+				'hindi': 'लक्षणात्मक',
+				'french': 'symptomatique'
+			}
+		},
+		{
+			'word': 'synchron',
+			'translations': {
+				'turkish': 'eşzamanlı',
+				'english': 'synchronous',
+				'spanish': 'síncrono',
+				'chinese': '同步的',
+				'hindi': 'समकालिक',
+				'french': 'synchrone'
+			}
+		},
+		{
+			'word': 'tendenz',
+			'translations': {
+				'turkish': 'eğilim',
+				'english': 'tendency/trend',
+				'spanish': 'tendencia',
+				'chinese': '趋势',
+				'hindi': 'रुझान',
+				'french': 'tendance'
+			}
+		},
+		{
+			'word': 'tolerant',
+			'translations': {
+				'turkish': 'hoşgörülü',
+				'english': 'tolerant',
+				'spanish': 'tolerante',
+				'chinese': '宽容的',
+				'hindi': 'सहिष्णु',
+				'french': 'tolérant'
+			}
+		},
+		{
+			'word': 'transferieren',
+			'translations': {
+				'turkish': 'aktarmak',
+				'english': 'to transfer',
+				'spanish': 'transferir',
+				'chinese': '转移/传输',
+				'hindi': 'स्थानांतरण करना',
+				'french': 'transférer'
+			}
+		},
+		{
+			'word': 'treffsicher',
+			'translations': {
+				'turkish': 'isabetli',
+				'english': 'accurate/targeted',
+				'spanish': 'preciso',
+				'chinese': '准确的',
+				'hindi': 'सटीक',
+				'french': 'précis'
+			}
+		},
+		{
+			'word': 'trivial',
+			'translations': {
+				'turkish': 'önemsiz',
+				'english': 'trivial',
+				'spanish': 'trivial',
+				'chinese': '琐碎的',
+				'hindi': 'तात्कालिक',
+				'french': 'trivial'
+			}
+		},
+		{
+			'word': 'tüchtig',
+			'translations': {
+				'turkish': 'yetenekli',
+				'english': 'efficient/capable',
+				'spanish': 'competente',
+				'chinese': '能干的',
+				'hindi': 'कुशल',
+				'french': 'compétent'
+			}
+		},
+
+		// 301-320
+		{
+			'word': 'überdenken',
+			'translations': {
+				'turkish': 'yeniden düşünmek',
+				'english': 'to rethink',
+				'spanish': 'repensar',
+				'chinese': '重新考虑',
+				'hindi': 'फिर से सोचना',
+				'french': 'repenser'
+			}
+		},
+		{
+			'word': 'übergreifend',
+			'translations': {
+				'turkish': 'genel/örtüşen',
+				'english': 'cross-cutting/overall',
+				'spanish': 'transversal',
+				'chinese': '跨越的/总体的',
+				'hindi': 'व्यापक',
+				'french': 'transversal'
+			}
+		},
+		{
+			'word': 'überwinden',
+			'translations': {
+				'turkish': 'üstesinden gelmek',
+				'english': 'to overcome',
+				'spanish': 'superar',
+				'chinese': '克服',
+				'hindi': 'पार पाना',
+				'french': 'surmonter'
+			}
+		},
+		{
+			'word': 'umfänglich',
+			'translations': {
+				'turkish': 'kapsamlı',
+				'english': 'comprehensive',
+				'spanish': 'extenso',
+				'chinese': '全面的',
+				'hindi': 'व्यापक',
+				'french': 'complet'
+			}
+		},
+		{
+			'word': 'umgehen',
+			'translations': {
+				'turkish': 'ele almak/etrafta dolaşmak',
+				'english': 'to handle/circumvent',
+				'spanish': 'evitar/manejar',
+				'chinese': '处理/规避',
+				'hindi': 'निपटना/परिहार करना',
+				'french': 'éviter/contourner'
+			}
+		},
+		{
+			'word': 'umfangreich',
+			'translations': {
+				'turkish': 'kapsamlı',
+				'english': 'extensive',
+				'spanish': 'amplio',
+				'chinese': '广泛的',
+				'hindi': 'विशाल',
+				'french': 'vaste'
+			}
+		},
+		{
+			'word': 'umlaufen',
+			'translations': {
+				'turkish': 'çevresinde dönmek',
+				'english': 'to circulate/run around',
+				'spanish': 'circular',
+				'chinese': '循环',
+				'hindi': 'परिभ्रमण करना',
+				'french': 'circuler'
+			}
+		},
+		{
+			'word': 'unterdrücken',
+			'translations': {
+				'turkish': 'bastırmak',
+				'english': 'to suppress',
+				'spanish': 'suprimir',
+				'chinese': '压制',
+				'hindi': 'दमन करना',
+				'french': 'supprimer'
+			}
+		},
+		{
+			'word': 'untergeben',
+			'translations': {
+				'turkish': 'ast olmak',
+				'english': 'to subordinate',
+				'spanish': 'subordinar',
+				'chinese': '下属',
+				'hindi': 'आयोगित करना',
+				'french': 'subordonner'
+			}
+		},
+		{
+			'word': 'unterbrechen',
+			'translations': {
+				'turkish': 'arasını kesmek',
+				'english': 'to interrupt',
+				'spanish': 'interrumpir',
+				'chinese': '中断',
+				'hindi': 'बाधित करना',
+				'french': 'interrompre'
+			}
+		},
+
+		// 321-340
+		{
+			'word': 'unterstützen',
+			'translations': {
+				'turkish': 'desteklemek',
+				'english': 'to support',
+				'spanish': 'apoyar',
+				'chinese': '支持',
+				'hindi': 'समर्थन करना',
+				'french': 'soutenir'
+			}
+		},
+		{
+			'word': 'unverzüglich',
+			'translations': {
+				'turkish': 'derhal',
+				'english': 'immediately',
+				'spanish': 'inmediatamente',
+				'chinese': '立即',
+				'hindi': 'तुरन्त',
+				'french': 'immédiatement'
+			}
+		},
+		{
+			'word': 'urban',
+			'translations': {
+				'turkish': 'kentsel',
+				'english': 'urban',
+				'spanish': 'urbano',
+				'chinese': '城市的',
+				'hindi': 'शहरी',
+				'french': 'urbain'
+			}
+		},
+		{
+			'word': 'verabschieden',
+			'translations': {
+				'turkish': 'vedalaşmak/yürürlüğe koymak',
+				'english': 'to adopt/see off',
+				'spanish': 'aprobar/despedir',
+				'chinese': '通过/送别',
+				'hindi': 'विधान पास करना/विदा देना',
+				'french': 'adopter/faire ses adieux'
+			}
+		},
+		{
+			'word': 'veranlassen',
+			'translations': {
+				'turkish': 'sebeplemek/başlatmak',
+				'english': 'to arrange/cause',
+				'spanish': 'disponer/causar',
+				'chinese': '促使/安排',
+				'hindi': 'कारण बनाना',
+				'french': 'ordonner'
+			}
+		},
+		{
+			'word': 'verantwortlich',
+			'translations': {
+				'turkish': 'sorumlu',
+				'english': 'responsible',
+				'spanish': 'responsable',
+				'chinese': '负责的',
+				'hindi': 'ज़िम्मेदार',
+				'french': 'responsable'
+			}
+		},
+		{
+			'word': 'veranschaulichen',
+			'translations': {
+				'turkish': 'örneklerle göstermek',
+				'english': 'to illustrate',
+				'spanish': 'ilustrar',
+				'chinese': '说明/举例',
+				'hindi': 'उदाहरण के साथ समझाना',
+				'french': 'illustrer'
+			}
+		},
+		{
+			'word': 'verbreiten',
+			'translations': {
+				'turkish': 'yaymak/dağıtmak',
+				'english': 'to spread/disseminate',
+				'spanish': 'difundir',
+				'chinese': '传播',
+				'hindi': 'पैसाना',
+				'french': 'diffuser'
+			}
+		},
+		{
+			'word': 'verfügen',
+			'translations': {
+				'turkish': 'emir vermek/elde bulundurmak',
+				'english': 'to decree/have at disposal',
+				'spanish': 'disponer',
+				'chinese': '命令/支配',
+				'hindi': 'हुक्म देना/हुनर रखना',
+				'french': 'disposer'
+			}
+		},
+		{
+			'word': 'verhandeln',
+			'translations': {
+				'turkish': 'müzakere etmek',
+				'english': 'to negotiate',
+				'spanish': 'negociar',
+				'chinese': '协商',
+				'hindi': 'मोलभाव करना',
+				'french': 'négocier'
+			}
+		},
+		{
+			'word': 'vermitteln',
+			'translations': {
+				'turkish': 'aracılık etmek/öğretmek',
+				'english': 'to mediate/convey',
+				'spanish': 'mediar/transmitir',
+				'chinese': '传达/调停',
+				'hindi': 'मध्यस्थता करना',
+				'french': 'transmettre'
+			}
+		},
+
+		// 341-360
+		{
+			'word': 'verpassen',
+			'translations': {
+				'turkish': 'kaçırmak',
+				'english': 'to miss',
+				'spanish': 'perder',
+				'chinese': '错过',
+				'hindi': 'छोड़ देना',
+				'french': 'rater'
+			}
+		},
+		{
+			'word': 'verpflichtend',
+			'translations': {
+				'turkish': 'zorunlu',
+				'english': 'obligatory/mandatory',
+				'spanish': 'obligatorio',
+				'chinese': '强制的',
+				'hindi': 'अनिवार्य',
+				'french': 'obligatoire'
+			}
+		},
+		{
+			'word': 'verringern',
+			'translations': {
+				'turkish': 'azaltmak',
+				'english': 'to reduce/decrease',
+				'spanish': 'reducir',
+				'chinese': '减少',
+				'hindi': 'कम करना',
+				'french': 'réduire'
+			}
+		},
+		{
+			'word': 'versagen',
+			'translations': {
+				'turkish': 'başarısız olmak',
+				'english': 'to fail',
+				'spanish': 'fracasar',
+				'chinese': '失败',
+				'hindi': 'असफल होना',
+				'french': 'échouer'
+			}
+		},
+		{
+			'word': 'versichern',
+			'translations': {
+				'turkish': 'garanti etmek/sigorta etmek',
+				'english': 'to assure/insure',
+				'spanish': 'asegurar',
+				'chinese': '保证/保险',
+				'hindi': 'आश्वस्त करना/बीमित करना',
+				'french': 'assurer'
+			}
+		},
+		{
+			'word': 'vertauschen',
+			'translations': {
+				'turkish': 'değiş tokuş etmek',
+				'english': 'to swap',
+				'spanish': 'intercambiar',
+				'chinese': '交换',
+				'hindi': 'बदला लेना',
+				'french': 'échanger'
+			}
+		},
+		{
+			'word': 'vertretbar',
+			'translations': {
+				'turkish': 'savunulabilir',
+				'english': 'defensible',
+				'spanish': 'defendible',
+				'chinese': '可辩护的',
+				'hindi': 'कृत्रिम रूप से समर्थित',
+				'french': 'défendable'
+			}
+		},
+		{
+			'word': 'verursachen',
+			'translations': {
+				'turkish': 'neden olmak',
+				'english': 'to cause',
+				'spanish': 'causar',
+				'chinese': '引起',
+				'hindi': 'कारण बनना',
+				'french': 'causer'
+			}
+		},
+		{
+			'word': 'vorherrschen',
+			'translations': {
+				'turkish': 'egemen olmak',
+				'english': 'to prevail/dominate',
+				'spanish': 'predominar',
+				'chinese': '占主导地位',
+				'hindi': 'प्रबल होना',
+				'french': 'prévaloir'
+			}
+		},
+		{
+			'word': 'vornehmen',
+			'translations': {
+				'turkish': 'yapmak/planlamak',
+				'english': 'to undertake/perform',
+				'spanish': 'emprender',
+				'chinese': '进行/实施',
+				'hindi': 'अंजाम देना',
+				'french': 'entreprendre'
+			}
+		},
+
+		// 361-380
+		{
+			'word': 'vorzüglich',
+			'translations': {
+				'turkish': 'mükemmel',
+				'english': 'excellent',
+				'spanish': 'excelente',
+				'chinese': '优秀的',
+				'hindi': 'उत्कृष्ट',
+				'french': 'excellent'
+			}
+		},
+		{
+			'word': 'wachsam',
+			'translations': {
+				'turkish': 'uyanık',
+				'english': 'vigilant/alert',
+				'spanish': 'vigilante',
+				'chinese': '警觉的',
+				'hindi': 'सतर्क',
+				'french': 'vigilant'
+			}
+		},
+		{
+			'word': 'weitsichtig',
+			'translations': {
+				'turkish': 'ileriyi gören',
+				'english': 'far-sighted',
+				'spanish': 'previsor',
+				'chinese': '有远见的',
+				'hindi': 'दूरदर्शी',
+				'french': 'prévoyant'
+			}
+		},
+		{
+			'word': 'wenigstens',
+			'translations': {
+				'turkish': 'en azından',
+				'english': 'at least',
+				'spanish': 'al menos',
+				'chinese': '至少',
+				'hindi': 'कम से कम',
+				'french': 'au moins'
+			}
+		},
+		{
+			'word': 'wertvoll',
+			'translations': {
+				'turkish': 'değerli',
+				'english': 'valuable',
+				'spanish': 'valioso',
+				'chinese': '有价值的',
+				'hindi': 'कीमती',
+				'french': 'précieux'
+			}
+		},
+		{
+			'word': 'widersprüchlich',
+			'translations': {
+				'turkish': 'çelişkili',
+				'english': 'contradictory',
+				'spanish': 'contradictorio',
+				'chinese': '矛盾的',
+				'hindi': 'विरोधाभासी',
+				'french': 'contradictoire'
+			}
+		},
+		{
+			'word': 'wirklich',
+			'translations': {
+				'turkish': 'gerçekten',
+				'english': 'really/genuine',
+				'spanish': 'realmente',
+				'chinese': '真的',
+				'hindi': 'वास्तव में',
+				'french': 'vraiment'
+			}
+		},
+		{
+			'word': 'wichtiger',
+			'translations': {
+				'turkish': 'daha önemli',
+				'english': 'more important',
+				'spanish': 'más importante',
+				'chinese': '更重要的',
+				'hindi': 'अधिक महत्वपूर्ण',
+				'french': 'plus important'
+			}
+		},
+
+		// 381-400
+		{
+			'word': 'zukunftsfähig',
+			'translations': {
+				'turkish': 'geleceğe uygun',
+				'english': 'future-proof/sustainable',
+				'spanish': 'sostenible',
+				'chinese': '面向未来的/可持续的',
+				'hindi': 'भविष्योन्मुख',
+				'french': 'durable'
+			}
+		},
+		{
+			'word': 'zögerlich',
+			'translations': {
+				'turkish': 'çekingen',
+				'english': 'hesitant',
+				'spanish': 'vacilante',
+				'chinese': '犹豫的',
+				'hindi': 'हिचकिचाहट',
+				'french': 'hésitant'
+			}
+		},
+		{
+			'word': 'zweckmäßig',
+			'translations': {
+				'turkish': 'amaca uygun',
+				'english': 'appropriate/expedient',
+				'spanish': 'conveniente',
+				'chinese': '适当的',
+				'hindi': 'उपयुक्त',
+				'french': 'approprié'
+			}
+		}
+	];

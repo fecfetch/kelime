@@ -3,6 +3,9 @@ import 'package:provider/provider.dart';
 import '../providers/feature_timer_provider.dart';
 import '../providers/progress_provider.dart';
 import '../providers/game_state_provider.dart';
+import '../providers/ad_provider.dart';
+import '../services/audio_service.dart';
+import '../l10n/app_localizations.dart';
 
 class CircularHintButton extends StatefulWidget {
   final String hints;
@@ -28,10 +31,14 @@ class CircularHintButton extends StatefulWidget {
 
 class _CircularHintButtonState extends State<CircularHintButton> {
   Set<int> _revealedHints = {};
+  late AudioService _audioService;
 
   @override
   void initState() {
     super.initState();
+    // Get the singleton instance of AudioService
+    _audioService = AudioService();
+    
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _loadRevealedHints();
     });
@@ -46,97 +53,96 @@ class _CircularHintButtonState extends State<CircularHintButton> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
     return Consumer3<FeatureTimerProvider, ProgressProvider, GameStateProvider>(
       builder: (context, timerProvider, progressProvider, gameState, child) {
         final hintsList = widget.hints.split(' | ');
         final hasUnrevealedHints = _hasAvailableHints(hintsList, gameState);
 
-        return Container(
-          padding: const EdgeInsets.all(8),
-          decoration: BoxDecoration(
-            color: Colors.grey.withOpacity(0.2),
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.grey.withOpacity(0.3)),
-          ),
-          child: Column(
+        return LayoutBuilder(builder: (context, constraints) {
+          final size = (constraints.maxHeight / 2).clamp(27.0, 60.0);
+
+          return Column(
             mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-            // Circular hint button
-            GestureDetector(
-              onTap: hasUnrevealedHints
-                  ? () => _attemptRevealHint(timerProvider)
-                  : null,
-              child: Container(
-                width: 80,
-                height: 80,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: timerProvider.canUseTranslation() && hasUnrevealedHints
-                      ? Colors.blue
-                      : Colors.grey,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.black.withOpacity(0.3),
-                      blurRadius: 8,
-                      offset: const Offset(0, 4),
-                    ),
-                  ],
-                ),
-                child: Icon(
-                  Icons.translate,
-                  size: 36,
-                  color: timerProvider.canUseTranslation() && hasUnrevealedHints
-                      ? Colors.white
-                      : Colors.white.withOpacity(0.5),
-                ),
-              ),
-            ),
-            
-            const SizedBox(height: 8),
-            
-            // Timer display under button
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-              decoration: BoxDecoration(
-                color: timerProvider.canUseTranslation()
-                    ? Colors.green.withOpacity(0.2)
-                    : Colors.orange.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(
-                  color: timerProvider.canUseTranslation()
-                      ? Colors.green.withOpacity(0.5)
-                      : Colors.orange.withOpacity(0.5),
-                ),
-              ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Icon(
-                    Icons.access_time,
-                    size: 16,
-                    color: timerProvider.canUseTranslation()
-                        ? Colors.green
-                        : Colors.orange,
+              // Circular hint button
+              GestureDetector(
+                onTap: hasUnrevealedHints
+                    ? () => _attemptRevealHint(timerProvider, l10n)
+                    : null,
+                child: Container(
+                  width: size,
+                  height: size,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: timerProvider.canUseTranslation() &&
+                            hasUnrevealedHints
+                        ? Colors.blue
+                        : Colors.grey,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.3),
+                        blurRadius: size * 0.1,
+                        offset: Offset(0, size * 0.05),
+                      ),
+                    ],
                   ),
-                  const SizedBox(width: 4),
-                  Text(
-                    timerProvider.getTranslationTimerDisplay(),
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
+                  child: Icon(
+                    Icons.translate,
+                    size: size * 0.6,
+                    color: timerProvider.canUseTranslation() &&
+                            hasUnrevealedHints
+                        ? Colors.white
+                        : Colors.white.withOpacity(0.5),
+                  ),
+                ),
+              ),
+
+              SizedBox(height: size * 0.1),
+
+              // Timer display under button
+              Container(
+                padding: EdgeInsets.symmetric(
+                    horizontal: size * 0.2, vertical: size * 0.1),
+                decoration: BoxDecoration(
+                  color: timerProvider.canUseTranslation()
+                      ? Colors.green.withOpacity(0.2)
+                      : Colors.orange.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(size * 0.3),
+                  border: Border.all(
+                    color: timerProvider.canUseTranslation()
+                        ? Colors.green.withOpacity(0.5)
+                        : Colors.orange.withOpacity(0.5),
+                  ),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(
+                      Icons.access_time,
+                      size: size * 0.25,
                       color: timerProvider.canUseTranslation()
                           ? Colors.green
                           : Colors.orange,
                     ),
-                  ),
-                ],
+                    SizedBox(width: size * 0.05),
+                    Text(
+                      timerProvider.getTranslationTimerDisplay(),
+                      style: TextStyle(
+                        fontSize: size * 0.2,
+                        fontWeight: FontWeight.bold,
+                        color: timerProvider.canUseTranslation()
+                            ? Colors.green
+                            : Colors.orange,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            
-
-          ],
-        ),
-        );
+            ],
+          );
+        });
       },
     );
   }
@@ -153,11 +159,11 @@ class _CircularHintButtonState extends State<CircularHintButton> {
     return false;
   }
 
-  void _attemptRevealHint(FeatureTimerProvider timerProvider) {
+  void _attemptRevealHint(FeatureTimerProvider timerProvider, AppLocalizations l10n) {
     if (timerProvider.canUseTranslation()) {
       _revealRandomHint(timerProvider);
     } else {
-      _showGetMoreHintsDialog(context);
+      _showGetMoreHintsDialog(context, l10n);
     }
   }
 
@@ -187,12 +193,15 @@ class _CircularHintButtonState extends State<CircularHintButton> {
           widget.world, widget.subWorld, widget.level, randomIndex);
       timerProvider.useTranslation();
       
+      // Play button sound effect
+      _audioService.playSoundEffect(AudioService.buttonSound);
+      
       // Notify parent widget that a hint was revealed
       widget.onHintRevealed?.call(randomIndex);
     }
   }
 
-  void _showGetMoreHintsDialog(BuildContext context) {
+  void _showGetMoreHintsDialog(BuildContext context, AppLocalizations l10n) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -203,21 +212,26 @@ class _CircularHintButtonState extends State<CircularHintButton> {
                 children: [
                   Icon(Icons.translate, color: Colors.blue, size: 28),
                   const SizedBox(width: 8),
-                  const Text('Need More Hints?'),
+                  Expanded(
+                    child: Text(
+                      l10n.needMoreHints,
+                      softWrap: true,
+                    ),
+                  ),
                 ],
               ),
               content: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  const Text(
-                    'You\'re out of translation hints!',
-                    style: TextStyle(fontSize: 16),
+                  Text(
+                    l10n.outOfTranslationHints,
+                    style: const TextStyle(fontSize: 16),
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 16),
-                  const Text(
-                    'Choose an option to get more hints:',
-                    style: TextStyle(fontSize: 14, color: Colors.grey),
+                  Text(
+                    l10n.chooseOptionToGetMoreHints,
+                    style: const TextStyle(fontSize: 14, color: Colors.grey),
                     textAlign: TextAlign.center,
                   ),
                 ],
@@ -229,10 +243,10 @@ class _CircularHintButtonState extends State<CircularHintButton> {
                   child: ElevatedButton.icon(
                     onPressed: () {
                       Navigator.of(context).pop();
-                      _watchAdForHints(timerProvider);
+                      _watchAdForHints(timerProvider, l10n);
                     },
                     icon: const Icon(Icons.play_circle_outline),
-                    label: const Text('Watch Ad (+2 hints)'),
+                    label: Text(l10n.watchAdForHints),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                       foregroundColor: Colors.white,
@@ -247,14 +261,14 @@ class _CircularHintButtonState extends State<CircularHintButton> {
                   children: [
                     Expanded(
                       child: ElevatedButton(
-                        onPressed: progressProvider.rubies >= 5
+                        onPressed: progressProvider.rubies >= progressProvider.translationHintCost
                             ? () {
                                 Navigator.of(context).pop();
-                                _buyHints(timerProvider, progressProvider);
+                                _buyHints(timerProvider, progressProvider, l10n);
                               }
                             : null,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: progressProvider.rubies >= 5
+                          backgroundColor: progressProvider.rubies >= progressProvider.translationHintCost
                               ? Colors.purple
                               : Colors.grey,
                           foregroundColor: Colors.white,
@@ -267,9 +281,9 @@ class _CircularHintButtonState extends State<CircularHintButton> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Text(
-                              '5 translation hints',
-                              style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
+                            Text(
+                              l10n.translationHints,
+                              style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w500),
                               textAlign: TextAlign.center,
                             ),
                             const SizedBox(height: 4),
@@ -278,27 +292,27 @@ class _CircularHintButtonState extends State<CircularHintButton> {
                               children: [
                                 const Icon(Icons.diamond, size: 16),
                                 const SizedBox(width: 4),
-                                const Text('5', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const SizedBox(width: 8),
-                    Expanded(
-                      child: ElevatedButton(
-                        onPressed: progressProvider.rubies >= 15
-                            ? () {
-                                Navigator.of(context).pop();
-                                _buyUnlimitedHints(timerProvider, progressProvider);
-                              }
-                            : null,
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: progressProvider.rubies >= 15
-                              ? Colors.blue
-                              : Colors.grey,
-                          foregroundColor: Colors.white,
+                                Text('${progressProvider.translationHintCost}', style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                             ],
+                           ),
+                         ],
+                       ),
+                     ),
+                   ),
+                   const SizedBox(width: 8),
+                   Expanded(
+                     child: ElevatedButton(
+                       onPressed: progressProvider.rubies >= progressProvider.unlimitedTranslationHintCost
+                           ? () {
+                               Navigator.of(context).pop();
+                               _buyUnlimitedHints(timerProvider, progressProvider, l10n);
+                             }
+                           : null,
+                       style: ElevatedButton.styleFrom(
+                         backgroundColor: progressProvider.rubies >= progressProvider.unlimitedTranslationHintCost
+                             ? Colors.blue
+                             : Colors.grey,
+                         foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
                           minimumSize: const Size(0, 60),
                           shape: RoundedRectangleBorder(
@@ -308,9 +322,9 @@ class _CircularHintButtonState extends State<CircularHintButton> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Text(
-                              'Unlimited hints for 1 hour',
-                              style: TextStyle(fontSize: 10, fontWeight: FontWeight.w500),
+                            Text(
+                              l10n.unlimitedHintsForHour,
+                              style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w500),
                               textAlign: TextAlign.center,
                               maxLines: 2,
                             ),
@@ -320,11 +334,11 @@ class _CircularHintButtonState extends State<CircularHintButton> {
                               children: [
                                 const Icon(Icons.diamond, size: 16),
                                 const SizedBox(width: 4),
-                                const Text('15', style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
-                              ],
-                            ),
-                          ],
-                        ),
+                                Text('${progressProvider.unlimitedTranslationHintCost}', style: const TextStyle(fontSize: 14, fontWeight: FontWeight.bold)),
+                             ],
+                           ),
+                         ],
+                       ),
                       ),
                     ),
                   ],
@@ -334,7 +348,7 @@ class _CircularHintButtonState extends State<CircularHintButton> {
                 // Cancel button
                 TextButton(
                   onPressed: () => Navigator.of(context).pop(),
-                  child: const Text('Cancel'),
+                  child: Text(l10n.cancel),
                 ),
               ],
             );
@@ -344,39 +358,40 @@ class _CircularHintButtonState extends State<CircularHintButton> {
     );
   }
 
-  void _watchAdForHints(FeatureTimerProvider timerProvider) {
-    timerProvider.addTranslationHints(2);
-    
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        content: Text('Ad watched! +2 translation hints'),
-        backgroundColor: Colors.green,
-      ),
-    );
+  void _watchAdForHints(FeatureTimerProvider timerProvider, AppLocalizations l10n) {
+    context.read<AdProvider>().adService.showTranslationHintAd(() {
+      timerProvider.addTranslationHints(2);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(l10n.adWatchedForHints),
+          backgroundColor: Colors.green,
+        ),
+      );
+    });
   }
 
-  void _buyHints(FeatureTimerProvider timerProvider, ProgressProvider progressProvider) {
-    if (progressProvider.rubies >= 5) {
-      progressProvider.spendRubies(5);
-      timerProvider.addTranslationHints(5);
+  void _buyHints(FeatureTimerProvider timerProvider, ProgressProvider progressProvider, AppLocalizations l10n) {
+    if (progressProvider.rubies >= progressProvider.translationHintCost) {
+      progressProvider.spendRubies(progressProvider.translationHintCost);
+      timerProvider.addTranslationHints(3);
       
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Purchased! +5 translation hints'),
+        SnackBar(
+          content: Text(l10n.purchasedHints),
           backgroundColor: Colors.purple,
         ),
       );
     }
   }
 
-  void _buyUnlimitedHints(FeatureTimerProvider timerProvider, ProgressProvider progressProvider) {
-    if (progressProvider.rubies >= 15) {
-      progressProvider.spendRubies(15);
+  void _buyUnlimitedHints(FeatureTimerProvider timerProvider, ProgressProvider progressProvider, AppLocalizations l10n) {
+    if (progressProvider.rubies >= progressProvider.unlimitedTranslationHintCost) {
+      progressProvider.spendRubies(progressProvider.unlimitedTranslationHintCost);
       timerProvider.setUnlimitedTranslation(const Duration(hours: 1));
       
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Unlimited translation hints for 1 hour!'),
+        SnackBar(
+          content: Text(l10n.unlimitedTranslationHints),
           backgroundColor: Colors.blue,
         ),
       );

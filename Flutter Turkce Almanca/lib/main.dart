@@ -2,19 +2,56 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
+import 'screens/initial_language_selection_screen.dart';
 import 'providers/game_state_provider.dart';
 import 'providers/progress_provider.dart';
 import 'providers/language_provider.dart';
 import 'providers/feature_timer_provider.dart';
+import 'providers/ad_provider.dart';
 import 'l10n/app_localizations.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'services/ad_service.dart';
+import 'services/user_preferences_service.dart';
+import 'services/audio_service.dart';
+import 'package:workmanager/workmanager.dart';
+import 'services/background_service.dart';
+ 
+import 'dart:io' show Platform;
 
-void main() async {
+ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const WordChefApp());
+
+  // Initialize services only on Android
+  if (Platform.isAndroid) {
+    // Initialize Workmanager (Dart-side scheduling remains, but native worker
+    // will actually post notifications).
+    await Workmanager().initialize(
+      callbackDispatcher,
+      isInDebugMode: true,
+    );
+    await Workmanager().registerPeriodicTask(
+      "1",
+      backgroundTask,
+      frequency: const Duration(minutes: 15),
+    );
+    // NOTE: Notifications are now posted by the native Worker (Kotlin).
+    // We avoid initializing flutter_local_notifications here to prevent
+    // release-time plugin/resource issues. If you need foreground permission
+    // prompts, handle them in the UI where appropriate.
+  }
+  
+  // Initialize audio service
+  final audioService = AudioService();
+  await audioService.init();
+  
+  runApp(WordChefApp(audioService: audioService));
 }
 
 class WordChefApp extends StatelessWidget {
-  const WordChefApp({super.key});
+  final AdService adService = AdService();
+  final AudioService audioService;
+
+  WordChefApp({super.key, required this.audioService});
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +61,10 @@ class WordChefApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => GameStateProvider()),
         ChangeNotifierProvider(create: (_) => ProgressProvider()),
         ChangeNotifierProvider(create: (_) => FeatureTimerProvider()),
+        ChangeNotifierProxyProvider<ProgressProvider, AdProvider>(
+          create: (_) => AdProvider(adService: adService, progressProvider: ProgressProvider()),
+          update: (_, progressProvider, __) => AdProvider(adService: adService, progressProvider: progressProvider),
+        ),
       ],
       child: Consumer<LanguageProvider>(
         builder: (context, languageProvider, child) {
@@ -46,11 +87,11 @@ class WordChefApp extends StatelessWidget {
               Locale('fr'), // French
               Locale('es'), // Spanish
               Locale('tr'), // Turkish
-              Locale('pt'), // Portuguese
-              Locale('it'), // Italian
+              Locale('hi'), // Hindi
+              Locale('zh'), // Chinese
             ],
             locale: languageProvider.appLocale,
-            home: const AppInitializer(),
+            home: AppInitializer(audioService: audioService),
             debugShowCheckedModeBanner: false,
           );
         },
@@ -61,19 +102,41 @@ class WordChefApp extends StatelessWidget {
 
 /// Widget to initialize app data before showing home screen
 class AppInitializer extends StatefulWidget {
-  const AppInitializer({super.key});
+  final AudioService audioService;
+  
+  const AppInitializer({super.key, required this.audioService});
 
   @override
   State<AppInitializer> createState() => _AppInitializerState();
 }
 
-class _AppInitializerState extends State<AppInitializer> {
+class _AppInitializerState extends State<AppInitializer>
+    with WidgetsBindingObserver {
   bool _isInitialized = false;
+  bool _hasSeenInitialScreen = false;
 
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     _initializeApp();
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused) {
+      widget.audioService.pauseBackgroundMusic();
+    } else if (state == AppLifecycleState.resumed) {
+      if (widget.audioService.isMusicEnabled()) {
+        widget.audioService.resumeBackgroundMusic();
+      }
+    }
   }
 
   Future<void> _initializeApp() async {
@@ -84,6 +147,13 @@ class _AppInitializerState extends State<AppInitializer> {
     final featureTimerProvider =
         Provider.of<FeatureTimerProvider>(context, listen: false);
 
+    // Initialize first app opening time
+    await UserPreferencesService.instance.initializeFirstAppOpeningTime();
+
+    // Check if the user has seen the initial language screen
+    _hasSeenInitialScreen =
+        await UserPreferencesService.instance.getHasSeenInitialLanguageScreen();
+
     // Load language settings first
     await languageProvider.loadLanguageSettings();
 
@@ -92,6 +162,20 @@ class _AppInitializerState extends State<AppInitializer> {
 
     // Load feature timers
     await featureTimerProvider.loadTimers();
+    
+    // Load audio settings
+    final isMusicEnabled = await UserPreferencesService.instance.getIsMusicEnabled();
+    final areSoundEffectsEnabled = await UserPreferencesService.instance.getAreSoundEffectsEnabled();
+    final musicVolume = await UserPreferencesService.instance.getMusicVolume();
+    
+    widget.audioService.setMusicEnabled(isMusicEnabled);
+    widget.audioService.setSoundEffectsEnabled(areSoundEffectsEnabled);
+    widget.audioService.setMusicVolume(musicVolume);
+
+    final adProvider = Provider.of<AdProvider>(context, listen: false);
+    await adProvider.adService.initialize();
+    adProvider.adService.loadRewardedAd();
+    adProvider.adService.loadInterstitialAd();
 
     setState(() {
       _isInitialized = true;
@@ -108,6 +192,8 @@ class _AppInitializerState extends State<AppInitializer> {
       );
     }
 
-    return const HomeScreen();
+    return _hasSeenInitialScreen
+        ? const HomeScreen()
+        : const InitialLanguageSelectionScreen();
   }
 }

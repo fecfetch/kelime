@@ -9,6 +9,12 @@ class ProgressProvider extends ChangeNotifier {
   // Getters
   Map<int, Map<int, int>> get worldProgress => _worldProgress;
   int get rubies => _rubies;
+
+  // Hint costs
+  int get letterHintCost => 15;
+  int get unlimitedLetterHintCost => 100;
+  int get translationHintCost => 15;
+  int get unlimitedTranslationHintCost => 100;
   
   // Get the highest unlocked level for a specific world/subworld
   int getUnlockedLevel(int world, int subWorld) {
@@ -174,5 +180,15 @@ class ProgressProvider extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     final progressKey = 'level_progress_${world}_${subWorld}_$level';
     await prefs.remove(progressKey);
+  }
+
+  int getCompletedLevels() {
+    int completedLevels = 0;
+    for (var world in _worldProgress.keys) {
+      for (var subWorld in _worldProgress[world]!.keys) {
+        completedLevels += _worldProgress[world]![subWorld]! + 1;
+      }
+    }
+    return completedLevels;
   }
 }

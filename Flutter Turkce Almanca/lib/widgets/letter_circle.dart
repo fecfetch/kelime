@@ -6,11 +6,15 @@ import '../providers/game_state_provider.dart';
 class LetterCircle extends StatefulWidget {
   final List<String> letters;
   final Function(String) onWordFormed;
+  final Function()? onInteractionStart;
+  final Function()? onInteractionEnd;
 
   const LetterCircle({
     super.key,
     required this.letters,
     required this.onWordFormed,
+    this.onInteractionStart,
+    this.onInteractionEnd,
   });
 
   @override
@@ -21,7 +25,9 @@ class _LetterCircleState extends State<LetterCircle> {
   List<int> selectedIndices = [];
   List<Offset> letterPositions = [];
   List<String> shuffledLetters = [];
-  final double radius = 120;
+  // Diameter tracked for touch coordinate transforms. Will be computed
+  // from available layout constraints in build().
+  double _currentDiameter = 0;
   bool isDragging = false;
 
   @override
@@ -33,14 +39,15 @@ class _LetterCircleState extends State<LetterCircle> {
   void _initializeLetters() {
     shuffledLetters = List.from(widget.letters);
     shuffledLetters.shuffle();
-    _calculateLetterPositions();
+    // positions will be calculated in build when we know available size
   }
 
-  void _calculateLetterPositions() {
+  void _calculateLetterPositions(double radius) {
     letterPositions.clear();
     final numLetters = shuffledLetters.length;
+    if (numLetters == 0) return;
     final angleStep = 2 * math.pi / numLetters;
-    
+
     for (int i = 0; i < numLetters; i++) {
       final angle = i * angleStep - math.pi / 2; // Start from top
       final x = radius * math.cos(angle);
@@ -51,33 +58,63 @@ class _LetterCircleState extends State<LetterCircle> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: GestureDetector(
-          onPanStart: _onPanStart,
-          onPanUpdate: _onPanUpdate,
-          onPanEnd: _onPanEnd,
-          child: CustomPaint(
-            size: Size(radius * 2.5, radius * 2.5),
-            painter: LetterCirclePainter(
-              letters: shuffledLetters,
-              positions: letterPositions,
-              selectedIndices: selectedIndices,
-              radius: radius,
+    return LayoutBuilder(builder: (context, constraints) {
+      final scaleFactor = getScaleFactor(shuffledLetters.length);
+      final maxDim = math.min(constraints.maxWidth, constraints.maxHeight.isFinite ? constraints.maxHeight : constraints.maxWidth);
+      final diameter = (maxDim.isFinite ? maxDim * 0.9 : 360.0).clamp(120.0, 1000.0);
+      final radius = diameter / 2;
+      final letterRadius = 25.0 * scaleFactor;
+      final fontSize = 20.0 * scaleFactor;
+
+      // Store diameter for gesture coordinate calculations
+      _currentDiameter = diameter;
+
+      // Recalculate letter positions for this radius
+      _calculateLetterPositions(radius - letterRadius); // leave some margin for letters
+
+      return Center(
+        child: Listener(
+          onPointerDown: (_) {
+            // Prevent parent scroll view from scrolling
+          },
+          child: GestureDetector(
+            onPanStart: _onPanStart,
+            onPanUpdate: _onPanUpdate,
+            onPanEnd: _onPanEnd,
+            behavior: HitTestBehavior.opaque,
+            child: SizedBox(
+              width: diameter,
+              height: diameter,
+              child: CustomPaint(
+                size: Size(diameter, diameter),
+                painter: LetterCirclePainter(
+                  letters: shuffledLetters,
+                  positions: letterPositions,
+                  selectedIndices: selectedIndices,
+                  radius: radius - letterRadius,
+                  letterRadius: letterRadius,
+                  fontSize: fontSize,
+                ),
+              ),
             ),
           ),
         ),
-      ),
-    );
+      );
+    });
   }
 
   void _onPanStart(DragStartDetails details) {
+    // Notify parent that interaction has started
+    if (widget.onInteractionStart != null) {
+      widget.onInteractionStart!();
+    }
+    
     setState(() {
       isDragging = true;
       selectedIndices.clear();
     });
     
-    final localPosition = _getLocalPosition(details.localPosition);
+  final localPosition = _getLocalPosition(details.localPosition);
     final nearestIndex = _getNearestLetterIndex(localPosition);
     
     if (nearestIndex != -1) {
@@ -90,8 +127,7 @@ class _LetterCircleState extends State<LetterCircle> {
 
   void _onPanUpdate(DragUpdateDetails details) {
     if (!isDragging) return;
-    
-    final localPosition = _getLocalPosition(details.localPosition);
+  final localPosition = _getLocalPosition(details.localPosition);
     final nearestIndex = _getNearestLetterIndex(localPosition);
     
     if (nearestIndex != -1 && !selectedIndices.contains(nearestIndex)) {
@@ -117,6 +153,11 @@ class _LetterCircleState extends State<LetterCircle> {
       isDragging = false;
     });
     
+    // Notify parent that interaction has ended
+    if (widget.onInteractionEnd != null) {
+      widget.onInteractionEnd!();
+    }
+    
     if (selectedIndices.length >= 2) {
       final word = selectedIndices.map((i) => shuffledLetters[i]).join('');
       widget.onWordFormed(word);
@@ -129,14 +170,15 @@ class _LetterCircleState extends State<LetterCircle> {
   }
 
   Offset _getLocalPosition(Offset globalPosition) {
-    // Convert to center-based coordinates
-    final centerX = radius * 1.25;
-    final centerY = radius * 1.25;
-    return Offset(globalPosition.dx - centerX, globalPosition.dy - centerY);
+  // Convert to center-based coordinates using the computed diameter.
+  // Gesture localPosition is already relative to the widget's top-left.
+  final center = Offset(_currentDiameter / 2, _currentDiameter / 2);
+  return Offset(globalPosition.dx - center.dx, globalPosition.dy - center.dy);
   }
 
   int _getNearestLetterIndex(Offset position) {
-    const threshold = 40.0;
+    final scaleFactor = getScaleFactor(shuffledLetters.length);
+    final threshold = 40.0 * scaleFactor;
     double minDistance = double.infinity;
     int nearestIndex = -1;
     
@@ -152,8 +194,6 @@ class _LetterCircleState extends State<LetterCircle> {
   }
 
   bool _isValidConnection(int from, int to) {
-    // For now, allow any connection. In a more sophisticated version,
-    // you might want to limit connections to adjacent letters only
     return true;
   }
 
@@ -171,17 +211,28 @@ class _LetterCircleState extends State<LetterCircle> {
   }
 }
 
+double getScaleFactor(int letterCount) {
+  if (letterCount <= 5) return 1.0;
+  if (letterCount == 6) return 0.9;
+  if (letterCount == 7) return 0.8;
+  return 0.7;
+}
+
 class LetterCirclePainter extends CustomPainter {
   final List<String> letters;
   final List<Offset> positions;
   final List<int> selectedIndices;
   final double radius;
+  final double letterRadius;
+  final double fontSize;
 
   LetterCirclePainter({
     required this.letters,
     required this.positions,
     required this.selectedIndices,
     required this.radius,
+    required this.letterRadius,
+    required this.fontSize,
   });
 
   @override
@@ -212,7 +263,7 @@ class LetterCirclePainter extends CustomPainter {
         ..color = isSelected ? Colors.orange : Colors.white
         ..style = PaintingStyle.fill;
       
-      canvas.drawCircle(position, 25, backgroundPaint);
+      canvas.drawCircle(position, letterRadius, backgroundPaint);
       
       // Draw letter border
       final borderPaint = Paint()
@@ -220,7 +271,7 @@ class LetterCirclePainter extends CustomPainter {
         ..style = PaintingStyle.stroke
         ..strokeWidth = 3;
       
-      canvas.drawCircle(position, 25, borderPaint);
+      canvas.drawCircle(position, letterRadius, borderPaint);
       
       // Draw letter text
       final textPainter = TextPainter(
@@ -228,7 +279,7 @@ class LetterCirclePainter extends CustomPainter {
           text: letters[i].toUpperCase(),
           style: TextStyle(
             color: isSelected ? Colors.white : const Color(0xFF4A90E2),
-            fontSize: 20,
+            fontSize: fontSize,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -238,8 +289,10 @@ class LetterCirclePainter extends CustomPainter {
       textPainter.layout();
       final textOffset = position - Offset(textPainter.width / 2, textPainter.height / 2);
       textPainter.paint(canvas, textOffset);
+      
     }
   }
+  
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => true;

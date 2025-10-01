@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'dart:convert';
-import 'package:word_chef_flutter/services/level_generator.dart';
+import 'package:word_game_practice_languages/services/level_generator.dart';
 
 /// Script to pre-generate all levels and save them to JSON files
 /// Run this script before production to generate consistent levels for all users

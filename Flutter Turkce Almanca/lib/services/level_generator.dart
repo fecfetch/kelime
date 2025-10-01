@@ -5,7 +5,7 @@ import '../providers/language_provider.dart';
 import 'word_validator.dart';
 import '../services/multilingual_word_bank.dart';
 import '../data/English-WB/word_bank_english_a1.dart';
-// import '../data/English-WB/word_bank_english_a2.dart'; // TODO: File is empty
+import '../data/English-WB/word_bank_english_a2.dart';
 import '../data/English-WB/word_bank_english_b1.dart';
 import '../data/English-WB/word_bank_english_b2.dart';
 import '../data/English-WB/word_bank_english_c1.dart';
@@ -37,30 +37,31 @@ class LevelGenerator {
         wordBank = wordBankA1;
         break;
       case 'A2':
-        // TODO: wordBankA2 file is empty, using A1 for now
-        wordBank = [...wordBankA1];
+       
+        wordBank = [...wordBankA1, ...wordBankA2];
         break;
       case 'B1':
-        // TODO: wordBankA2 file is empty, using A1 for now
-        wordBank = [...wordBankA1, ...wordBankB1];
+      
+        wordBank = [...wordBankA1, ...wordBankA2, ...wordBankB1];
         break;
       case 'B2':
-        // TODO: wordBankA2 file is empty, using A1 for now
-        wordBank = [...wordBankA1, ...wordBankB1, ...wordBankB2];
+  
+        wordBank = [...wordBankA1, ...wordBankA2,...wordBankB1, ...wordBankB2];
         break;
       case 'C1':
-        // TODO: wordBankA2 file is empty, using A1 for now
         wordBank = [
           ...wordBankA1,
+          ...wordBankA2,
           ...wordBankB1,
           ...wordBankB2,
           ...wordBankC1
         ];
         break;
       case 'C2':
-        // TODO: wordBankA2 file is empty, using A1 for now
+
         wordBank = [
           ...wordBankA1,
+          ...wordBankA2,
           ...wordBankB1,
           ...wordBankB2,
           ...wordBankC1,
@@ -68,9 +69,9 @@ class LevelGenerator {
         ];
         break;
       case 'MIXED':
-        // TODO: wordBankA2 file is empty, using A1 for now
         wordBank = [
           ...wordBankA1,
+          ...wordBankA2,
           ...wordBankB1,
           ...wordBankB2,
           ...wordBankC1,
@@ -340,6 +341,7 @@ class LevelGenerator {
       int world, int subWorld, int level, {
       SupportedLanguage nativeLanguage = SupportedLanguage.turkish,
       SupportedLanguage targetLanguage = SupportedLanguage.english,
+      int? rubyReward,
     }) async {
     try {
       // Determine CEFR level based on world
@@ -559,11 +561,30 @@ class LevelGenerator {
         cefrLevel: cefrLevel,
       );
 
+      // Calculate ruby reward based on the sum of target word lengths
+      int calculateRubyReward(List<String> targetWords) {
+        if (targetWords.isEmpty) {
+          return 5;
+        }
+        
+        final totalLetterCount = targetWords.fold<int>(0, (sum, word) => sum + word.length);
+        final reward = (totalLetterCount / 3) + targetWords.length;
+        
+        // Round up to the nearest integer
+        return (reward + 0.99).toInt();
+      }
+
+      final rubyReward = calculateRubyReward(targetWords);
+
       return GameLevel(
+        world: world,
+        subWorld: subWorld,
+        level: level,
         hints: hints,
         sourceWord: expandedSourceWord,
         targetWords: targetWords,
         validWords: possibleWords.map((w) => w.toLowerCase()).toList(),
+        rubyReward: rubyReward ?? calculateRubyReward(targetWords),
       );
     } catch (e) {
       // If anything goes wrong, return a simple fallback level
@@ -586,22 +607,24 @@ class LevelGenerator {
     // Generate appropriate fallback based on target language
     if (targetLanguage == SupportedLanguage.german) {
       return GameLevel(
-        hints: nativeLanguage == SupportedLanguage.english 
-          ? 'simple word' 
+        hints: nativeLanguage == SupportedLanguage.english
+          ? 'simple word'
           : 'einfaches wort',
         sourceWord: 'EINFACH',
         targetWords: ['EINFACH', 'EIN', 'ICH'],
         validWords: ['einfach', 'ein', 'ich'],
+        rubyReward: 5,
       );
     } else {
       // Default English fallback
       return GameLevel(
-        hints: nativeLanguage == SupportedLanguage.turkish 
-          ? 'basit kelime' 
+        hints: nativeLanguage == SupportedLanguage.turkish
+          ? 'basit kelime'
           : 'simple word',
         sourceWord: 'SIMPLE',
         targetWords: ['SIMPLE', 'SIM', 'ME', 'IS'],
         validWords: ['simple', 'sim', 'me', 'is'],
+        rubyReward: 5,
       );
     }
   }

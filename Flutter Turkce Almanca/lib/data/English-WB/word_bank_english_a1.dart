@@ -1,18 +1,7 @@
 // A1 Level Word Bank - Basic English words with multilingual translations
 const List<Map<String, dynamic>> wordBankA1 = [
   // 2-4 letter words for beginners
-  {
-    'word': 'an',
-    'translations': {
-      'turkish': 'bir',
-      'german': 'ein/eine',
-      'spanish': 'un/una',
-      'chinese': '一个',
-      'hindi': 'एक',
-      'french': 'un/une'
-    }
-  },
-  {
+    {
     'word': 'at',
     'translations': {
       'turkish': 'de/da',
@@ -76,17 +65,6 @@ const List<Map<String, dynamic>> wordBankA1 = [
       'chinese': '在',
       'hindi': 'में',
       'french': 'dans'
-    }
-  },
-  {
-    'word': 'is',
-    'translations': {
-      'turkish': 'dir',
-      'german': 'ist',
-      'spanish': 'es',
-      'chinese': '是',
-      'hindi': 'है',
-      'french': 'est'
     }
   },
   {
@@ -245,28 +223,6 @@ const List<Map<String, dynamic>> wordBankA1 = [
     }
   },
   {
-    'word': 'am',
-    'translations': {
-      'turkish': 'im',
-      'german': 'bin',
-      'spanish': 'soy',
-      'chinese': '是',
-      'hindi': 'हूँ',
-      'french': 'suis'
-    }
-  },
-  {
-    'word': 'are',
-    'translations': {
-      'turkish': 'sin/sın',
-      'german': 'sind',
-      'spanish': 'eres/son',
-      'chinese': '是',
-      'hindi': 'हो',
-      'french': 'êtes'
-    }
-  },
-  {
     'word': 'was',
     'translations': {
       'turkish': 'idi',
@@ -302,7 +258,7 @@ const List<Map<String, dynamic>> wordBankA1 = [
   {
     'word': 'his',
     'translations': {
-      'turkish': 'onun',
+      'turkish': 'onun (erkek)',
       'german': 'sein',
       'spanish': 'su',
       'chinese': '他的',
@@ -313,7 +269,7 @@ const List<Map<String, dynamic>> wordBankA1 = [
   {
     'word': 'her',
     'translations': {
-      'turkish': 'onun',
+      'turkish': 'onun (kadın)',
       'german': 'ihr',
       'spanish': 'su',
       'chinese': '她的',
@@ -330,17 +286,6 @@ const List<Map<String, dynamic>> wordBankA1 = [
       'chinese': '她',
       'hindi': 'वह',
       'french': 'elle'
-    }
-  },
-  {
-    'word': 'the',
-    'translations': {
-      'turkish': 'şu/bu',
-      'german': 'der/die/das',
-      'spanish': 'el/la',
-      'chinese': '这个',
-      'hindi': 'यह',
-      'french': 'le/la'
     }
   },
   {
@@ -434,7 +379,7 @@ const List<Map<String, dynamic>> wordBankA1 = [
   {
     'word': 'its',
     'translations': {
-      'turkish': 'onun',
+      'turkish': 'onun (nesne)',
       'german': 'sein',
       'spanish': 'su',
       'chinese': '它的',
@@ -1831,7 +1776,7 @@ const List<Map<String, dynamic>> wordBankA1 = [
     }
   },
   {
-    'word': 'give',
+    'word': 'a',
     'translations': {
       'turkish': 'vermek',
       'german': 'geben',
@@ -2614,17 +2559,6 @@ const List<Map<String, dynamic>> wordBankA1 = [
       'french': 'or'
     }
   },
-  {
-    'word': 'grey',
-    'translations': {
-      'turkish': 'gri',
-      'german': 'grau',
-      'spanish': 'gris',
-      'chinese': '灰色',
-      'hindi': 'स्लेटी',
-      'french': 'gris'
-    }
-  },
   // Body parts
   {
     'word': 'arm',
@@ -3360,17 +3294,6 @@ const List<Map<String, dynamic>> wordBankA1 = [
     }
   },
   {
-    'word': 'lid',
-    'translations': {
-      'turkish': 'kapak',
-      'german': 'Deckel',
-      'spanish': 'tapa',
-      'chinese': '盖子',
-      'hindi': 'ढक्कन',
-      'french': 'couvercle'
-    }
-  },
-  {
     'word': 'lip',
     'translations': {
       'turkish': 'dudak',
@@ -3379,17 +3302,6 @@ const List<Map<String, dynamic>> wordBankA1 = [
       'chinese': '嘴唇',
       'hindi': 'होंठ',
       'french': 'lèvre'
-    }
-  },
-  {
-    'word': 'lot',
-    'translations': {
-      'turkish': 'çok',
-      'german': 'viel',
-      'spanish': 'mucho',
-      'chinese': '很多',
-      'hindi': 'बहुत',
-      'french': 'beaucoup'
     }
   },
   {

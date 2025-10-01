@@ -1,12 +1,17 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/feature_timer.dart';
+import '../services/notification_service.dart';
+import '../services/user_preferences_service.dart';
 
 class FeatureTimerProvider extends ChangeNotifier {
   late FeatureTimerManager _timerManager;
-  Timer? _refreshTimer;
+  Timer? _ticker;
+  // Cache last known counts to detect changes and avoid frequent writes
+  final Map<String, int> _lastCounts = {};
   
   // Per-level hint tracking
   final Map<String, Set<int>> _levelHints = {};
@@ -18,27 +23,12 @@ class FeatureTimerProvider extends ChangeNotifier {
   // Getters for easy access
   FeatureTimer get translationTimer => _timerManager.translationTimer;
   FeatureTimer get letterTimer => _timerManager.letterTimer;
-  FeatureTimer get audioTimer => _timerManager.audioTimer;
   FeatureTimer get definitionTimer => _timerManager.definitionTimer;
   
   FeatureTimerProvider() {
     _timerManager = FeatureTimerManager();
-    _startRefreshTimer();
   }
   
-  @override
-  void dispose() {
-    _refreshTimer?.cancel();
-    super.dispose();
-  }
-  
-  void _startRefreshTimer() {
-    // Refresh timers every minute to update UI
-    _refreshTimer = Timer.periodic(const Duration(minutes: 1), (timer) {
-      _timerManager.refillAllTimers();
-      notifyListeners();
-    });
-  }
   
   // Translation timer methods
   bool canUseTranslation() => translationTimer.canUse();
@@ -86,22 +76,6 @@ class FeatureTimerProvider extends ChangeNotifier {
     notifyListeners();
   }
   
-  // Audio timer methods
-  bool canUseAudio() => audioTimer.canUse();
-  
-  void useAudio() {
-    if (canUseAudio()) {
-      audioTimer.use();
-      _saveTimers();
-      notifyListeners();
-    }
-  }
-  
-  void addAudioPlays(int amount) {
-    audioTimer.addCount(amount);
-    _saveTimers();
-    notifyListeners();
-  }
   
   // Definition timer methods
   bool canUseDefinition() => definitionTimer.canUse();
@@ -165,6 +139,9 @@ class FeatureTimerProvider extends ChangeNotifier {
         }
         
         notifyListeners();
+        // Start foreground ticker after timers are loaded so UI countdowns
+        // progress and natural refills happen while app is in foreground.
+        _startTicker();
       } catch (e) {
         debugPrint('Error loading feature timers: $e');
       }
@@ -181,6 +158,49 @@ class FeatureTimerProvider extends ChangeNotifier {
     
     final timersJson = jsonEncode(data);
     await prefs.setString('feature_timers', timersJson);
+  }
+
+  void _startTicker() {
+    if (_ticker != null) return;
+
+    // Initialize last counts
+    _lastCounts['translation'] = translationTimer.currentCount;
+    _lastCounts['letter'] = letterTimer.currentCount;
+    _lastCounts['definition'] = definitionTimer.currentCount;
+
+    _ticker = Timer.periodic(const Duration(seconds: 1), (_) {
+      // Refill based on elapsed time since lastRefill
+      _timerManager.refillAllTimers();
+
+      final translationChanged = translationTimer.currentCount != _lastCounts['translation'];
+      final letterChanged = letterTimer.currentCount != _lastCounts['letter'];
+      final audioChanged = false;
+      final definitionChanged = definitionTimer.currentCount != _lastCounts['definition'];
+
+      // Persist only when counts actually change to reduce writes
+      if (translationChanged || letterChanged || audioChanged || definitionChanged) {
+        // Update cache
+        _lastCounts['translation'] = translationTimer.currentCount;
+        _lastCounts['letter'] = letterTimer.currentCount;
+        _lastCounts['definition'] = definitionTimer.currentCount;
+
+        _saveTimers();
+      }
+
+      // Notify listeners every tick so UI countdown displays update
+      notifyListeners();
+    });
+  }
+
+  void _stopTicker() {
+    _ticker?.cancel();
+    _ticker = null;
+  }
+  
+  @override
+  void dispose() {
+    _stopTicker();
+    super.dispose();
   }
   
   // Per-level hint tracking methods
@@ -233,6 +253,26 @@ class FeatureTimerProvider extends ChangeNotifier {
     }
   }
   
+  void revealAllHints(int world, int subWorld, int level, int hintCount) {
+    final key = _getLevelKey(world, subWorld, level);
+    _levelHints[key] ??= {};
+    _levelOrderedHints[key] ??= [];
+
+    for (int i = 0; i < hintCount; i++) {
+      _levelHints[key]!.add(i);
+      if (!_levelOrderedHints[key]!.contains(i)) {
+        _levelOrderedHints[key]!.add(i);
+      }
+    }
+    
+    _saveTimers();
+    notifyListeners();
+  }
+
+  void revealHintWithAd() {
+    addTranslationHints(1);
+  }
+
   // Utility methods
   String getTranslationTimerDisplay() {
     final timer = translationTimer;
@@ -261,16 +301,6 @@ class FeatureTimerProvider extends ChangeNotifier {
     }
   }
 
-  String getAudioTimerDisplay() {
-    final timer = audioTimer;
-    if (timer.currentCount > 0) {
-      // Show current count, allowing display of extra purchased hints
-      return '${timer.currentCount}/${timer.maxCount}';
-    } else {
-      final timeUntilNext = timer.getTimeUntilNextRefill();
-      final minutes = timeUntilNext.inMinutes;
-      final seconds = timeUntilNext.inSeconds % 60;
-      return '${minutes}m ${seconds}s';
-    }
-  }
 }
+
+  

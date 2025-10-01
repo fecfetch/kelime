@@ -1,3 +1,32 @@
+Add a new hint button that would reveal a random word that has not been found yet. Implement the same structure as the other hints. This hint should have a max of 3 (that can be loaded by waiting) and watching an ad should give 2 hints and spending 5 gems should give 1 hint. Make sure that the word is marked as found.
+
+Missing translation strings
+
+İngilizce İlk bölümleri düzenle
+
+Text to speech
+
+Translations for tutorial pages
+
+Dont show an ad in first 5 levels or first 10 minutes of user first opening the app.
+
+audiobooks/ videos using NotebookLM
+
+C1,C2 wordbanks and levels
+
+remaining language wordbanks
+
+
+
+
+
+
+
+
+
+
+
+
 There is a problem with the hint system. When all letters of a word is revealed, clicking on the hint button again does not switch to the next word and reveal letters from the second unfound word. 
 
 English → German: isnt really working. When the user selects English → German, the app just uses fallback generation but the words are English and the texts are in Turkish

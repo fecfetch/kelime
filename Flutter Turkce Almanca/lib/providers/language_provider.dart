@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import '../services/user_preferences_service.dart';
+import '../l10n/app_localizations.dart';
+import '../services/background_service.dart';
 
 enum SupportedLanguage {
   english('en', 'English'),
@@ -18,11 +19,6 @@ enum SupportedLanguage {
   
   static SupportedLanguage fromCode(String code) {
     try {
-      // Special handling for Spanish to debug the issue
-      if (code == 'es') {
-        return SupportedLanguage.spanish;
-      }
-      
       return SupportedLanguage.values.firstWhere(
         (lang) => lang.code == code,
         orElse: () => SupportedLanguage.english,
@@ -42,10 +38,6 @@ class LanguageProvider extends ChangeNotifier {
   // Getters
   SupportedLanguage get nativeLanguage {
     try {
-      // Special handling for Spanish to debug the issue
-      if (_nativeLanguage.code == 'es') {
-        return SupportedLanguage.spanish;
-      }
       return _nativeLanguage;
     } catch (e) {
       return SupportedLanguage.english;
@@ -71,8 +63,7 @@ class LanguageProvider extends ChangeNotifier {
   // Available languages for learning (can be expanded)
   List<SupportedLanguage> get availableNativeLanguages {
     try {
-      // Special handling for Spanish to debug the issue
-      final languages = [
+      return [
         SupportedLanguage.english,
         SupportedLanguage.german,
         SupportedLanguage.french,
@@ -81,13 +72,6 @@ class LanguageProvider extends ChangeNotifier {
         SupportedLanguage.chinese,
         SupportedLanguage.hindi,
       ];
-      
-      // Ensure Spanish is in the list
-      if (!languages.contains(SupportedLanguage.spanish)) {
-        languages.add(SupportedLanguage.spanish);
-      }
-      
-      return languages;
     } catch (e) {
       // If there's an error, return a default list
       return [SupportedLanguage.english];
@@ -96,8 +80,7 @@ class LanguageProvider extends ChangeNotifier {
   
   List<SupportedLanguage> get availableTargetLanguages {
     try {
-      // Special handling for Spanish to debug the issue
-      final languages = [
+      return [
         SupportedLanguage.english,
         SupportedLanguage.german,
         SupportedLanguage.french,
@@ -106,44 +89,57 @@ class LanguageProvider extends ChangeNotifier {
         SupportedLanguage.chinese,
         SupportedLanguage.hindi,
       ];
-      
-      // Ensure Spanish is in the list
-      if (!languages.contains(SupportedLanguage.spanish)) {
-        languages.add(SupportedLanguage.spanish);
-      }
-      
-      return languages;
     } catch (e) {
       // If there's an error, return a default list
       return [SupportedLanguage.english];
     }
   }
   
+  /// Check if a language code is supported by the app
+  bool _isLanguageSupported(String languageCode) {
+    try {
+      SupportedLanguage.fromCode(languageCode);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
   /// Initialize language settings from SharedPreferences
   Future<void> loadLanguageSettings() async {
     try {
       final prefs = UserPreferencesService.instance;
       
-      final nativeLanguageCode = await prefs.getUserLanguage();
-      final targetLanguageCode = await prefs.getSourceLanguage();
+      // Check if the user has explicitly set their language preferences
+      final hasExplicitlySetLanguages = await prefs.getHasExplicitlySetLanguages();
       
-      _nativeLanguage = SupportedLanguage.fromCode(nativeLanguageCode);
-      _targetLanguage = SupportedLanguage.fromCode(targetLanguageCode);
+      if (hasExplicitlySetLanguages) {
+        // Use saved language settings
+        final nativeLanguageCode = await prefs.getUserLanguage();
+        final targetLanguageCode = await prefs.getSourceLanguage();
+        // developer.log('Loading saved languages: native=$nativeLanguageCode, target=$targetLanguageCode', name: 'LanguageProvider');
+        _nativeLanguage = SupportedLanguage.fromCode(nativeLanguageCode);
+        _targetLanguage = SupportedLanguage.fromCode(targetLanguageCode);
+      } else {
+        // Use default language settings from UserPreferencesService
+        final nativeLanguageCode = await prefs.getUserLanguage();
+        final targetLanguageCode = await prefs.getSourceLanguage();
+       // developer.log('Loading default languages: native=$nativeLanguageCode, target=$targetLanguageCode', name: 'LanguageProvider');
+        _nativeLanguage = SupportedLanguage.fromCode(nativeLanguageCode);
+        _targetLanguage = SupportedLanguage.fromCode(targetLanguageCode);
+      }
       
       try {
-        // Special handling for Spanish to debug the issue
-        if (_nativeLanguage.code == 'es') {
-          _appLocale = const Locale('es');
-        } else {
-          _appLocale = Locale(_nativeLanguage.code);
-        }
+        _appLocale = Locale(_nativeLanguage.code);
       } catch (e) {
+       // developer.log('Error creating locale: $e', name: 'LanguageProvider');
         // If there's an error creating the locale, use the default
         _appLocale = const Locale('en');
       }
       
       notifyListeners();
     } catch (e) {
+    //  developer.log('Failed to load language settings: $e', name: 'LanguageProvider');
       // If there's an error loading the settings, use default values
       _nativeLanguage = SupportedLanguage.english;
       _targetLanguage = SupportedLanguage.german;
@@ -157,9 +153,11 @@ class LanguageProvider extends ChangeNotifier {
   Future<void> saveLanguageSettings() async {
     try {
       final prefs = UserPreferencesService.instance;
+      //developer.log('Saving languages: native=${_nativeLanguage.code}, target=${_targetLanguage.code}', name: 'LanguageProvider');
       await prefs.setUserLanguage(_nativeLanguage.code);
       await prefs.setSourceLanguage(_targetLanguage.code);
     } catch (e) {
+      //developer.log('Failed to save language settings: $e', name: 'LanguageProvider');
       // If there's an error, just continue without saving
     }
   }
@@ -170,17 +168,13 @@ class LanguageProvider extends ChangeNotifier {
       if (_nativeLanguage != language) {
         _nativeLanguage = language;
         try {
-          // Special handling for Spanish to debug the issue
-          if (language.code == 'es') {
-            _appLocale = const Locale('es');
-          } else {
-            _appLocale = Locale(language.code);
-          }
+          _appLocale = Locale(language.code);
         } catch (e) {
           // If there's an error creating the locale, use the default
           _appLocale = const Locale('en');
         }
         await saveLanguageSettings();
+        await BackgroundService().updateLanguage(language.code);
         notifyListeners();
       }
     } catch (e) {
@@ -214,12 +208,7 @@ class LanguageProvider extends ChangeNotifier {
       if (_nativeLanguage != nativeLanguage) {
         _nativeLanguage = nativeLanguage;
         try {
-          // Special handling for Spanish to debug the issue
-          if (nativeLanguage.code == 'es') {
-            _appLocale = const Locale('es');
-          } else {
-            _appLocale = Locale(nativeLanguage.code);
-          }
+          _appLocale = Locale(nativeLanguage.code);
         } catch (e) {
           // If there's an error creating the locale, use the default
           _appLocale = const Locale('en');
@@ -234,8 +223,10 @@ class LanguageProvider extends ChangeNotifier {
       
       if (changed) {
         await saveLanguageSettings();
+        await BackgroundService().updateLanguage(nativeLanguage.code);
         
         // Mark that the user has explicitly chosen their language combination
+        await UserPreferencesService.instance.setHasExplicitlySetLanguages(true);
         
         notifyListeners();
       }
@@ -247,23 +238,22 @@ class LanguageProvider extends ChangeNotifier {
   
   /// Get localized language name based on current native language
   String getLocalizedLanguageName(SupportedLanguage language, BuildContext context) {
-    // This will be used to show language names in the user's native language
-    // For now, return the native name, but this can be expanded with proper localization
+    final l10n = AppLocalizations.of(context)!;
     switch (language) {
       case SupportedLanguage.english:
-        return 'English';
+        return l10n.english;
       case SupportedLanguage.german:
-        return 'German';
+        return l10n.german;
       case SupportedLanguage.french:
-        return 'French';
+        return l10n.french;
       case SupportedLanguage.spanish:
-        return 'Spanish';
+        return l10n.spanish;
       case SupportedLanguage.turkish:
-        return 'Turkish';
+        return l10n.turkish;
       case SupportedLanguage.chinese:
-        return 'Chinese';
+        return l10n.chinese;
       case SupportedLanguage.hindi:
-        return 'Hindi';
+        return l10n.hindi;
     }
   }
   

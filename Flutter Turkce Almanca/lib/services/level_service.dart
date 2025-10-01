@@ -1,5 +1,3 @@
-import 'dart:convert';
-import 'package:flutter/services.dart';
 import '../models/game_level.dart';
 import '../providers/language_provider.dart';
 import 'multilingual_level_service.dart';
@@ -35,7 +33,9 @@ class LevelService {
       
       // Generate level using multilingual system
       final generatedLevel = await _generateMultilingualLevel(
-        world, subWorld, level, nativeLanguage, targetLanguage);
+        world, subWorld, level, nativeLanguage, targetLanguage,
+        rubyReward: multilingualLevel?.rubyReward,
+      );
       if (generatedLevel != null) {
         _levelCache[key] = generatedLevel;
       }
@@ -93,8 +93,9 @@ class LevelService {
   static Future<GameLevel?> _generateMultilingualLevel(
     int world, int subWorld, int level,
     SupportedLanguage nativeLanguage,
-    SupportedLanguage targetLanguage,
-  ) async {
+    SupportedLanguage targetLanguage, {
+    int? rubyReward,
+  }) async {
     try {
       // Use the level generator with proper language parameters
       return await LevelGenerator.generateLevel(
@@ -103,6 +104,7 @@ class LevelService {
         level,
         nativeLanguage: nativeLanguage,
         targetLanguage: targetLanguage,
+        rubyReward: rubyReward,
       );
     } catch (e) {
       // If generation fails, return null to let the caller handle it

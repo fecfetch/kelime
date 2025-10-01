@@ -67,7 +67,7 @@ class FeatureTimer {
     return FeatureTimer(
       currentCount: json['currentCount'] ?? 0,
       maxCount: json['maxCount'] ?? 3,
-      refillInterval: Duration(milliseconds: json['refillIntervalMs'] ?? 600000), // 10 min default
+      refillInterval: Duration(milliseconds: json['refillIntervalMs'] ?? 300000), // 5 min default
       featureName: json['featureName'] ?? '',
       lastRefill: DateTime.fromMillisecondsSinceEpoch(json['lastRefillMs'] ?? DateTime.now().millisecondsSinceEpoch),
     );
@@ -75,14 +75,13 @@ class FeatureTimer {
 }
 
 class FeatureTimerManager {
-  static const Duration translationRefillInterval = Duration(minutes: 10);
-  static const Duration letterRefillInterval = Duration(minutes: 2);
+  static const Duration translationRefillInterval = Duration(minutes: 5);
+  static const Duration letterRefillInterval = Duration(minutes: 1);
   static const Duration audioRefillInterval = Duration(minutes: 5);
   static const Duration definitionRefillInterval = Duration(minutes: 15);
   
   late FeatureTimer translationTimer;
   late FeatureTimer letterTimer;
-  late FeatureTimer audioTimer;
   late FeatureTimer definitionTimer;
   
   FeatureTimerManager() {
@@ -104,12 +103,6 @@ class FeatureTimerManager {
       featureName: 'letter',
     );
     
-    audioTimer = FeatureTimer(
-      currentCount: 5,
-      maxCount: 5,
-      refillInterval: audioRefillInterval,
-      featureName: 'audio',
-    );
     
     definitionTimer = FeatureTimer(
       currentCount: 2,
@@ -122,7 +115,6 @@ class FeatureTimerManager {
   void refillAllTimers() {
     translationTimer.refill();
     letterTimer.refill();
-    audioTimer.refill();
     definitionTimer.refill();
   }
   
@@ -130,7 +122,6 @@ class FeatureTimerManager {
     return {
       'translationTimer': translationTimer.toJson(),
       'letterTimer': letterTimer.toJson(),
-      'audioTimer': audioTimer.toJson(),
       'definitionTimer': definitionTimer.toJson(),
     };
   }
@@ -141,9 +132,6 @@ class FeatureTimerManager {
     }
     if (json['letterTimer'] != null) {
       letterTimer = FeatureTimer.fromJson(json['letterTimer']);
-    }
-    if (json['audioTimer'] != null) {
-      audioTimer = FeatureTimer.fromJson(json['audioTimer']);
     }
     if (json['definitionTimer'] != null) {
       definitionTimer = FeatureTimer.fromJson(json['definitionTimer']);
