@@ -1,4 +1,4 @@
-# Word Chef Flutter
+# Word Game: Practice Languages
 
 A Flutter implementation of the Word Chef word puzzle game, converted from Unity.
 
